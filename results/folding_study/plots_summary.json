@@ -1,0 +1,199 @@
+{
+  "source_files": [
+    "static_spectrum.npz",
+    "grid_41.npz",
+    "curves_phi_0.npz",
+    "curves_phi_pi4.npz",
+    "curves_phi_pi2.npz"
+  ],
+  "png_dpi": 350,
+  "pdf_artists": "Vector scatter, lines, text, and heatmap cells; no rasterized artists.",
+  "interpolation": "None. All plots use computed data samples.",
+  "fig1": {
+    "D_color_limits": [
+      0.36267548650862097,
+      0.9122308270767052
+    ],
+    "omega_fold": 6.596808256505565,
+    "static_Emaxabs": 3.2984041282527823,
+    "frequency_samples": 301,
+    "scatter_points_per_panel": 53578
+  },
+  "fig2": {
+    "D_color_limits": [
+      0.47813040731292095,
+      0.7341513584767044
+    ],
+    "difference_color_limits": [
+      -0.1419595944365989,
+      0.1419595944365989
+    ],
+    "time_slices": 128,
+    "grid_shape": [
+      41,
+      41
+    ]
+  },
+  "fig3": {
+    "0": {
+      "representative_branch_ids": [
+        109,
+        110,
+        136,
+        157
+      ],
+      "anchor_q": [
+        0.048813750796605035,
+        0.23681353287659612,
+        0.32040262661832053,
+        0.4015530872070677
+      ],
+      "flagged_samples_per_branch": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "minimum_assigned_overlap_per_branch": [
+        0.999999852588256,
+        0.9999982183430296,
+        0.9999740634805661,
+        0.9939842220280134
+      ],
+      "unresolved_connection_intervals_any_tracked_state": [
+        [
+          6.08,
+          6.085
+        ],
+        [
+          6.2,
+          6.205
+        ]
+      ]
+    },
+    "pi4": {
+      "representative_branch_ids": [
+        109,
+        110,
+        138,
+        157
+      ],
+      "anchor_q": [
+        0.049515353961302064,
+        0.2369021060691328,
+        0.3201542158145194,
+        0.40027462873605224
+      ],
+      "flagged_samples_per_branch": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimum_assigned_overlap_per_branch": [
+        0.9999998285449803,
+        0.9999959193009681,
+        0.9998690654904339,
+        0.8675057518090111
+      ],
+      "unresolved_connection_intervals_any_tracked_state": []
+    },
+    "pi2": {
+      "representative_branch_ids": [
+        105,
+        110,
+        140,
+        165
+      ],
+      "anchor_q": [
+        0.05059428298124522,
+        0.23709675613957218,
+        0.3203783667830909,
+        0.39993085988901683
+      ],
+      "flagged_samples_per_branch": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimum_assigned_overlap_per_branch": [
+        0.9999996733041658,
+        0.9999704187783638,
+        0.999923286631932,
+        0.9999590788888837
+      ],
+      "unresolved_connection_intervals_any_tracked_state": []
+    }
+  },
+  "fig4": {
+    "0": {
+      "unfolded_bare": {
+        "rms": 0.02390472061713309,
+        "max_abs": 0.0882382270762726
+      },
+      "folded_bare": {
+        "rms": 0.03771673737366839,
+        "max_abs": 0.11726073148927246
+      },
+      "folded_kick": {
+        "rms": 0.037716737373668346,
+        "max_abs": 0.11726073148927235
+      }
+    },
+    "pi4": {
+      "unfolded_bare": {
+        "rms": 0.04922960357081843,
+        "max_abs": 0.12176529804942549
+      },
+      "folded_bare": {
+        "rms": 0.06690467137087401,
+        "max_abs": 0.14232561977318614
+      },
+      "folded_kick": {
+        "rms": 0.06584303078425695,
+        "max_abs": 0.1401389680422569
+      }
+    },
+    "pi2": {
+      "unfolded_bare": {
+        "rms": 0.0679745077555194,
+        "max_abs": 0.13482986187183765
+      },
+      "folded_bare": {
+        "rms": 0.0569956549438107,
+        "max_abs": 0.10992602882860125
+      },
+      "folded_kick": {
+        "rms": 0.05121329685769322,
+        "max_abs": 0.1027491664409309
+      }
+    }
+  },
+  "files": [
+    "fig1_quasienergy_folding.png",
+    "fig1_quasienergy_folding.pdf",
+    "fig2_corrected_Douter_comparison.png",
+    "fig2_corrected_Douter_comparison.pdf",
+    "fig3_eigenstate_branch_tracking.png",
+    "fig3_eigenstate_branch_tracking.pdf",
+    "fig4_effective_model_errors.png",
+    "fig4_effective_model_errors.pdf"
+  ],
+  "figure_count": 4,
+  "plotting_wall_seconds": 13.541689785997733,
+  "vector_colorbar_repair_wall_seconds": 10.369609501998639,
+  "total_plotting_wall_seconds": 25.670485926995752,
+  "pdf_image_xobjects": {
+    "fig1_quasienergy_folding.pdf": 0,
+    "fig2_corrected_Douter_comparison.pdf": 0,
+    "fig3_eigenstate_branch_tracking.pdf": 0,
+    "fig4_effective_model_errors.pdf": 0
+  },
+  "refinement_warning_plot_update_wall_seconds": 1.759186638999381,
+  "refinement_warning_metadata": {
+    "source": "refinement_summary.json",
+    "scope": "any tracked state; not only the four displayed representatives",
+    "shading_does_not_claim_phase_boundaries": true
+  }
+}

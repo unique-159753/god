@@ -1,0 +1,94 @@
+{
+  "timing": {
+    "fresh_21x21_M64_wall_s": 18.67061568799545,
+    "41x41_models_with_exact128_wall_s": 67.2561671240037,
+    "phase_curves": [
+      {
+        "phi": 0.0,
+        "tag": "0",
+        "points": 401,
+        "wall_seconds": 123.55018634999578,
+        "branch_labels": 178,
+        "representative_branches": [
+          109,
+          110,
+          136,
+          157
+        ],
+        "low_overlap_links": 8,
+        "ambiguous_links": 16
+      },
+      {
+        "phi": 0.7853981633974483,
+        "tag": "pi4",
+        "points": 401,
+        "wall_seconds": 124.38625096499163,
+        "branch_labels": 178,
+        "representative_branches": [
+          109,
+          110,
+          138,
+          157
+        ],
+        "low_overlap_links": 0,
+        "ambiguous_links": 0
+      },
+      {
+        "phi": 1.5707963267948966,
+        "tag": "pi2",
+        "points": 401,
+        "wall_seconds": 125.70617898199998,
+        "branch_labels": 178,
+        "representative_branches": [
+          105,
+          110,
+          140,
+          165
+        ],
+        "low_overlap_links": 0,
+        "ambiguous_links": 0
+      }
+    ],
+    "total_wall_s": 212.76271023198933
+  },
+  "provenance": {
+    "parameters": {
+      "t0": 1.0,
+      "Delta0": 0.5,
+      "V": 2.5,
+      "W": 0.01,
+      "A": 0.8,
+      "B": 0.8,
+      "theta": 0.0,
+      "hbar": 1.0,
+      "boundary": "PBC"
+    },
+    "source_exact_grid": "/workspace/results/rerun_02/grid_41.npz",
+    "static_Emaxabs": 3.2984041282527823,
+    "static_omega_fold": 6.596808256505565,
+    "grid_21_fresh_M64": true,
+    "final_grid_M128": true,
+    "exact_grid_reused": true,
+    "source_sha256": "139f0b86df14d0351bc49613762f86b89c6e57c8dffc70ac77acefb298775e46",
+    "independent_recompute_cache_checks": [
+      {
+        "omega": 6.0,
+        "phi": 0.0,
+        "max_quasienergy_difference": 0.0,
+        "max_IPR_difference": 0.0
+      },
+      {
+        "omega": 6.2,
+        "phi": 1.0210176124166828,
+        "max_quasienergy_difference": 0.0,
+        "max_IPR_difference": 0.0
+      },
+      {
+        "omega": 8.0,
+        "phi": 1.5707963267948966,
+        "max_quasienergy_difference": 0.0,
+        "max_IPR_difference": 0.0
+      }
+    ]
+  }
+}

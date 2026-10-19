@@ -1,0 +1,83 @@
+{
+  "files": [
+    "figS1_selectivity_controls.png",
+    "figS1_selectivity_controls.pdf"
+  ],
+  "png_dpi": 350,
+  "interpolation": "None; fixed-bin means shown as constant-color cells.",
+  "frequency_window_for_panels_abc": [
+    7,
+    10
+  ],
+  "exact_outer_phase_response": {
+    "min": 0.08015950280114625,
+    "max": 0.1136286689498468,
+    "mean": 0.10084398423979168
+  },
+  "exact_central_phase_response": {
+    "min": 0.009017476293587179,
+    "max": 0.02004452108238919,
+    "mean": 0.014348583847881322
+  },
+  "central_reconstruction_max_error": {
+    "0": 1.1102230246251565e-16,
+    "pi2": 1.1102230246251565e-16
+  },
+  "fixed_qbin_phase_response": {
+    "min": 0.010727090363231606,
+    "max": 0.12745635451198378,
+    "mean": 0.06496250887630305
+  },
+  "fixed_qbin_masked_cell_count": 275,
+  "J_dynamic_D_outer": {
+    "min": 0.05928312974247352,
+    "max": 0.08021224893972556,
+    "mean": 0.07086663600928655
+  },
+  "J_dynamic_D_central": {
+    "min": -0.0009619681474564157,
+    "max": -0.00044216716148604007,
+    "mean": -0.000696464697551887
+  },
+  "J_matched_D_outer": {
+    "min": 0.05928312974247347,
+    "max": 0.0802122489397255,
+    "mean": 0.07086663600928655
+  },
+  "kickbasis_participation_outer_all_frequencies": {
+    "0": {
+      "min": 1.0356104863064257,
+      "max": 11.631567401664986,
+      "mean": 3.581962164100482
+    },
+    "pi4": {
+      "min": 1.0458984283510158,
+      "max": 18.792558407795454,
+      "mean": 4.365279857068542
+    },
+    "pi2": {
+      "min": 1.0442135768137848,
+      "max": 6.22190370204301,
+      "mean": 1.8859769852344683
+    }
+  },
+  "kickbasis_participation_outer_7_to_10": {
+    "0": {
+      "min": 1.0356104863064257,
+      "max": 1.3120873759387097,
+      "mean": 1.1328703886819014
+    },
+    "pi4": {
+      "min": 1.0458984283510158,
+      "max": 1.386978369282639,
+      "mean": 1.1731915977649723
+    },
+    "pi2": {
+      "min": 1.0442135768137848,
+      "max": 1.4115184277107182,
+      "mean": 1.1779154772018632
+    }
+  },
+  "pdf_image_xobjects": 0,
+  "plotting_wall_seconds": 1.9273791809973773
+}

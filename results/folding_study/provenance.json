@@ -1,0 +1,40 @@
+{
+  "parameters": {
+    "t0": 1.0,
+    "Delta0": 0.5,
+    "V": 2.5,
+    "W": 0.01,
+    "A": 0.8,
+    "B": 0.8,
+    "theta": 0.0,
+    "hbar": 1.0,
+    "boundary": "PBC"
+  },
+  "source_exact_grid": "/workspace/results/rerun_02/grid_41.npz",
+  "static_Emaxabs": 3.2984041282527823,
+  "static_omega_fold": 6.596808256505565,
+  "grid_21_fresh_M64": true,
+  "final_grid_M128": true,
+  "exact_grid_reused": true,
+  "source_sha256": "139f0b86df14d0351bc49613762f86b89c6e57c8dffc70ac77acefb298775e46",
+  "independent_recompute_cache_checks": [
+    {
+      "omega": 6.0,
+      "phi": 0.0,
+      "max_quasienergy_difference": 0.0,
+      "max_IPR_difference": 0.0
+    },
+    {
+      "omega": 6.2,
+      "phi": 1.0210176124166828,
+      "max_quasienergy_difference": 0.0,
+      "max_IPR_difference": 0.0
+    },
+    {
+      "omega": 8.0,
+      "phi": 1.5707963267948966,
+      "max_quasienergy_difference": 0.0,
+      "max_IPR_difference": 0.0
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "grid_error_regions": {
+    "all": {
+      "unfolded": {
+        "rms": 0.03590477771632498,
+        "mae": 0.027775050838924502,
+        "max_abs": 0.1419595944365989,
+        "mean_signed": 0.0250117061553408
+      },
+      "folded": {
+        "rms": 0.038607796981085477,
+        "mae": 0.029335073663150118,
+        "max_abs": 0.14348654863091925,
+        "mean_signed": 0.026258391815636495
+      },
+      "kick": {
+        "rms": 0.03603222450298727,
+        "mae": 0.026901210189789807,
+        "max_abs": 0.13837549297000284,
+        "mean_signed": 0.02373462899167838
+      },
+      "kick_rms_reduction_fraction": 0.0667112003142789,
+      "fraction_kick_improved": 0.842355740630577
+    },
+    "low_6_to_6p6": {
+      "unfolded": {
+        "rms": 0.0677942716980695,
+        "mae": 0.060819629333571074,
+        "max_abs": 0.1419595944365989,
+        "mean_signed": 0.05785113618562814
+      },
+      "folded": {
+        "rms": 0.0759983165653179,
+        "mae": 0.06995690587546396,
+        "max_abs": 0.14348654863091925,
+        "mean_signed": 0.0651531521959315
+      },
+      "kick": {
+        "rms": 0.07249101725774687,
+        "mae": 0.06675193025726356,
+        "max_abs": 0.13837549297000284,
+        "mean_signed": 0.0616042926716738
+      },
+      "kick_rms_reduction_fraction": 0.04614969733647489,
+      "fraction_kick_improved": 0.8710801393728222
+    },
+    "high_7_to_10": {
+      "unfolded": {
+        "rms": 0.022378467395947375,
+        "mae": 0.01921237530008011,
+        "max_abs": 0.047311405125683215,
+        "mean_signed": 0.016405391004803718
+      },
+      "folded": {
+        "rms": 0.022378467395947375,
+        "mae": 0.019212375300080103,
+        "max_abs": 0.047311405125683215,
+        "mean_signed": 0.016405391004803718
+      },
+      "kick": {
+        "rms": 0.019817184171954952,
+        "mae": 0.017039771830375097,
+        "max_abs": 0.042966582068991066,
+        "mean_signed": 0.01419225950547924
+      },
+      "kick_rms_reduction_fraction": 0.11445302212502084,
+      "fraction_kick_improved": 0.8292682926829268
+    }
+  },
+  "old_folded_grid_reproduced_max_difference": 2.220446049250313e-16,
+  "old_exact_grid_reuse_max_difference": 0.0,
+  "phase_response": {
+    "outer_min": 0.08015950280114625,
+    "outer_max": 0.1136286689498468,
+    "central_min": 0.009017476293587179,
+    "central_max": 0.02004452108238919,
+    "selectivity_min": 0.07114202650755908,
+    "selectivity_max": 0.09369890474891651,
+    "effective_folded_states_w_ge_7": 0
+  },
+  "key_w8_pi2": {
+    "omega": 8.0,
+    "phi": 1.5707963267948966,
+    "phi_over_pi": 0.5,
+    "D_exact": 0.6090039579077802,
+    "D_unfolded": 0.5780927257948151,
+    "D_folded": 0.5780927257948151,
+    "D_folded_kick": 0.583043563058139,
+    "delta_bare": 0.030911232112965092,
+    "delta_fold": 0.030911232112965092,
+    "delta_kick": 0.02596039484964119,
+    "effective_outer_replaced": 0,
+    "effective_folded_states": 0,
+    "matched_kick_overlap_outer": 0.926510453827521,
+    "effective_basis_participation_outer": 1.1671542972685485,
+    "fixed_reference_D_outer": 0.6090039579077801
+  },
+  "key_w8_pi2_kick_abs_error_reduction": 0.16016305158044397,
+  "fixed_reference_branch_evidence": {
+    "0": {
+      "D_reference_outer_w6p3": 0.5674653446763155,
+      "D_reference_outer_w8": 0.5044996123353822,
+      "change": 0.06296573234093328,
+      "min_neighbor_overlap_reference_set": 0.8973400170821938,
+      "ambiguous_links_in_reference_range": 0
+    },
+    "pi4": {
+      "D_reference_outer_w6p3": 0.6754613875402877,
+      "D_reference_outer_w8": 0.590362079553318,
+      "change": 0.08509930798696974,
+      "min_neighbor_overlap_reference_set": 0.9990794945900743,
+      "ambiguous_links_in_reference_range": 0
+    },
+    "pi2": {
+      "D_reference_outer_w6p3": 0.6709351972806472,
+      "D_reference_outer_w8": 0.6090039579077801,
+      "change": 0.06193123937286715,
+      "min_neighbor_overlap_reference_set": 0.999976713913197,
+      "ambiguous_links_in_reference_range": 0
+    }
+  },
+  "J_control_7_to_10": {
+    "0": {
+      "J_dynamic_D_outer": {
+        "min": -5.495603971894525e-14,
+        "max": -5.484501741648273e-14
+      },
+      "J_dynamic_D_central": {
+        "min": 1.1102230246251565e-15,
+        "max": 1.1102230246251565e-15
+      },
+      "J_matched_D_outer": {
+        "min": -5.480492602948238e-14,
+        "max": -5.480492602948238e-14
+      },
+      "J_matched_D_central": {
+        "min": 1.1688181287025954e-15,
+        "max": 1.1688181287025954e-15
+      },
+      "J_control_overlap_outer": {
+        "min": 1.0000000000000002,
+        "max": 1.0000000000000004
+      }
+    },
+    "pi4": {
+      "J_dynamic_D_outer": {
+        "min": 0.04108316443682869,
+        "max": 0.0598608566397818
+      },
+      "J_dynamic_D_central": {
+        "min": -0.0004518227007500597,
+        "max": -0.00021319342156755905
+      },
+      "J_matched_D_outer": {
+        "min": 0.04108316443682879,
+        "max": 0.05986085663978177
+      },
+      "J_matched_D_central": {
+        "min": -0.0004518227007500011,
+        "max": -0.0002131934215675868
+      },
+      "J_control_overlap_outer": {
+        "min": 0.7485929272117979,
+        "max": 0.8317171328579822
+      }
+    },
+    "pi2": {
+      "J_dynamic_D_outer": {
+        "min": 0.05928312974247352,
+        "max": 0.08021224893972556
+      },
+      "J_dynamic_D_central": {
+        "min": -0.0009619681474564157,
+        "max": -0.00044216716148604007
+      },
+      "J_matched_D_outer": {
+        "min": 0.05928312974247347,
+        "max": 0.0802122489397255
+      },
+      "J_matched_D_central": {
+        "min": -0.0009619681474564095,
+        "max": -0.00044216716148596917
+      },
+      "J_control_overlap_outer": {
+        "min": 0.6576984003985452,
+        "max": 0.7511682956288301
+      }
+    }
+  },
+  "effective_basis_mixing": {
+    "0": {
+      "w6p3_participation": 4.877513234248848,
+      "w6p3_matched_overlap": 0.4173912047939763,
+      "w8_participation": 1.1226740194608877
+    },
+    "pi4": {
+      "w6p3_participation": 2.5899450386482563,
+      "w6p3_matched_overlap": 0.6137132391768526,
+      "w8_participation": 1.1653337622951314
+    },
+    "pi2": {
+      "w6p3_participation": 2.0307452047438335,
+      "w6p3_matched_overlap": 0.6957189953927566,
+      "w8_participation": 1.1671542972685485
+    }
+  }
+}

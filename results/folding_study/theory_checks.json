@@ -1,0 +1,111 @@
+{
+  "convention": "H(t)=sum H_m exp(+i m omega t)",
+  "commutator_T_S_minus_2iJ_max": 0.0,
+  "fourier_commutator_minus_ABsinphiJ_max": 1.1102230246251565e-16,
+  "fourier_commutator_plus_ABsinphiJ_max": 1.2800000000000002,
+  "hermiticity_max": 0.0,
+  "physical_dressing": "psi_lab=exp(-i K0) psi_eff; K0=B sin(phi) S / omega",
+  "kick_sign_test": [
+    {
+      "omega": 8.0,
+      "phi": 1.5707963267948966,
+      "slices": 256,
+      "unitarity_relative_fro": 6.137801478365895e-14,
+      "bare_U_error": 0.27804646659080506,
+      "correct_minus_K_U_error": 0.1820652412782801,
+      "wrong_plus_K_U_error": 0.43297488716307847,
+      "wrong_Heff_correction_with_correct_K_U_error": 0.2045852479051885
+    },
+    {
+      "omega": 16.0,
+      "phi": 1.5707963267948966,
+      "slices": 256,
+      "unitarity_relative_fro": 6.17911150954933e-14,
+      "bare_U_error": 0.06834976542640192,
+      "correct_minus_K_U_error": 0.028949990080738574,
+      "wrong_plus_K_U_error": 0.12498163817443626,
+      "wrong_Heff_correction_with_correct_K_U_error": 0.04705018277141617
+    },
+    {
+      "omega": 32.0,
+      "phi": 1.5707963267948966,
+      "slices": 256,
+      "unitarity_relative_fro": 6.178991681026424e-14,
+      "bare_U_error": 0.016671295388830398,
+      "correct_minus_K_U_error": 0.0038442936742124124,
+      "wrong_plus_K_U_error": 0.0325220325489459,
+      "wrong_Heff_correction_with_correct_K_U_error": 0.011287382041509694
+    },
+    {
+      "omega": 64.0,
+      "phi": 1.5707963267948966,
+      "slices": 256,
+      "unitarity_relative_fro": 6.144771678977043e-14,
+      "bare_U_error": 0.004133949082453156,
+      "correct_minus_K_U_error": 0.00048785979661533646,
+      "wrong_plus_K_U_error": 0.00821498524473735,
+      "wrong_Heff_correction_with_correct_K_U_error": 0.002788215090673215
+    }
+  ],
+  "static_energy_min": -3.2984041282527823,
+  "static_energy_max": 3.2984041282527827,
+  "static_max_abs_energy": 3.2984041282527827,
+  "static_fold_threshold": 6.5968082565055655,
+  "static_selection": [
+    {
+      "omega": 5.8,
+      "outside_principal_zone_count": 42,
+      "outer_count": 36,
+      "outer_replaced_by_folding": 36
+    },
+    {
+      "omega": 6.0,
+      "outside_principal_zone_count": 42,
+      "outer_count": 36,
+      "outer_replaced_by_folding": 26
+    },
+    {
+      "omega": 6.3,
+      "outside_principal_zone_count": 42,
+      "outer_count": 36,
+      "outer_replaced_by_folding": 6
+    },
+    {
+      "omega": 6.5,
+      "outside_principal_zone_count": 42,
+      "outer_count": 36,
+      "outer_replaced_by_folding": 6
+    },
+    {
+      "omega": 6.6,
+      "outside_principal_zone_count": 0,
+      "outer_count": 36,
+      "outer_replaced_by_folding": 0
+    },
+    {
+      "omega": 7.0,
+      "outside_principal_zone_count": 0,
+      "outer_count": 36,
+      "outer_replaced_by_folding": 0
+    },
+    {
+      "omega": 8.0,
+      "outside_principal_zone_count": 0,
+      "outer_count": 36,
+      "outer_replaced_by_folding": 0
+    },
+    {
+      "omega": 10.0,
+      "outside_principal_zone_count": 0,
+      "outer_count": 36,
+      "outer_replaced_by_folding": 0
+    }
+  ],
+  "high_frequency_error_power_laws": {
+    "bare_U_error": 2.0236719310763895,
+    "correct_minus_K_U_error": 2.945476222316855,
+    "wrong_plus_K_U_error": 1.9636571805411367,
+    "wrong_Heff_correction_with_correct_K_U_error": 2.0383932815715604
+  },
+  "seconds": 5.374700546002714
+}

@@ -1,0 +1,99 @@
+{
+  "grid_21": {
+    "csv_rows": 1764,
+    "slices": 64,
+    "metrics_rebuilt_max_error": 0.0,
+    "kick_norm_max_error": 2.220446049250313e-15
+  },
+  "grid_41": {
+    "csv_rows": 6724,
+    "slices": 128,
+    "metrics_rebuilt_max_error": 0.0,
+    "kick_norm_max_error": 2.55351295663786e-15
+  },
+  "curves": {
+    "0": {
+      "points": 401,
+      "tracked_states": 71378,
+      "ambiguous_links": 16,
+      "selection_identity_error": 2.23562487966511e-16,
+      "maximum_basis_participation": 21.714348665838724
+    },
+    "pi4": {
+      "points": 401,
+      "tracked_states": 71378,
+      "ambiguous_links": 0,
+      "selection_identity_error": 2.498001805406602e-16,
+      "maximum_basis_participation": 29.296662980765312
+    },
+    "pi2": {
+      "points": 401,
+      "tracked_states": 71378,
+      "ambiguous_links": 0,
+      "selection_identity_error": 2.097118052130087e-16,
+      "maximum_basis_participation": 9.3677347150712
+    }
+  },
+  "reuse_provenance_verified": true,
+  "prior_folded_model_reproduced_error": 2.220446049250313e-16,
+  "exact_cache_metrics_reproduced_error": 0.0,
+  "remaining_branch_ambiguity_intervals": 2,
+  "figures": {
+    "fig1_quasienergy_folding": {
+      "png_pixels": [
+        4994,
+        1857
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "pdf_embedded_images": 0
+    },
+    "fig2_corrected_Douter_comparison": {
+      "png_pixels": [
+        3683,
+        3014
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "pdf_embedded_images": 0
+    },
+    "fig3_eigenstate_branch_tracking": {
+      "png_pixels": [
+        4207,
+        3789
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "pdf_embedded_images": 0
+    },
+    "fig4_effective_model_errors": {
+      "png_pixels": [
+        4734,
+        1943
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "pdf_embedded_images": 0
+    },
+    "figS1_selectivity_controls": {
+      "png_pixels": [
+        4148,
+        3278
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "pdf_embedded_images": 0
+    }
+  },
+  "status": "passed"
+}

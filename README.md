@@ -1,4 +1,19 @@
-# Exact Floquet 二维热图
+# Floquet 数值结果与下载
+
+## 新计算：准能量折叠、kick 修正与分支追踪
+
+- [下载五张图及完整分析报告](https://raw.githubusercontent.com/unique-159753/god/main/results/folding_study/figures_and_report.zip)
+- [下载完整代码、CSV/NPZ 数据及全部图片](https://raw.githubusercontent.com/unique-159753/god/main/results/folding_study/full_study.zip)
+- [直接阅读中文分析](results/folding_study/REPORT.md)
+- [计算方法、复现说明与文件索引](results/folding_study/README.md)
+
+本次统一比较未折叠选态、已折叠选态、已折叠且经一阶 kick 修正的有效模型。低频差异没有在统一折叠后整体消失；kick 使全网格外侧 D 的 RMS 误差降低约 6.67%。频率 7–10 的相位响应对外侧态更明显；这些有限尺寸结果没有建立新的迁移边或相变。
+
+![Exact Floquet 与修正有效模型比较](results/folding_study/fig2_corrected_Douter_comparison.png)
+
+以下保留此前的二维热图下载。
+
+## Exact Floquet 二维热图
 
 一维双组分准周期 Raman 晶格的真实时间有序 Floquet 数值结果。
 主图参数：L=89，alpha=55/89，41×41 网格，每周期128个中点时间片。
