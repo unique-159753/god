@@ -1,0 +1,2193 @@
+{
+  "scope": "read-only whole-grid audit plus selected convergence diagnostics; production data unchanged",
+  "metadata": {
+    "parameters": {
+      "L": 89,
+      "alpha": 0.6179775280898876,
+      "t0": 1.0,
+      "delta0": 0.5,
+      "V": 2.5,
+      "W": 0.01,
+      "A": 0.8,
+      "B": 0.8,
+      "theta": 0.0
+    },
+    "steps": 64,
+    "omega_range": [
+      5.8,
+      8.0,
+      111
+    ],
+    "phi_range": [
+      0.0,
+      3.141592653589793,
+      81
+    ],
+    "extra_exact_slice_phi": 1.0471975511965976,
+    "physical_drive_initial_time": 0.0,
+    "outer_count": 36,
+    "outer_rule": "center-fold [-omega/2,omega/2), then highest 36 |epsilon|",
+    "static_outer_rule": "highest 36 |unfolded E|, fixed across scan",
+    "primary_D": "-log(sum_j (|up_j|^2+|down_j|^2)^2)/log(89)",
+    "secondary_D": "-log(sum_components |psi|^4)/log(178)",
+    "effective_frame": "lab-frame exp(-i K1(0)); K1(0)=B sin(phi) S/omega",
+    "matching": "maximum-total-squared-overlap Hungarian assignment in lab frame",
+    "model_sha256": "2a8b4ae6cc5d3cf299145170929a4f503214160fb05f93b8cd80501f366b11ef",
+    "observables_sha256": "92812961ed7dafb6893e7644306c8fb573c9e24df90a26853760f12addb9f83d"
+  },
+  "failures": [],
+  "source_hash_checks": {
+    "model.py": {
+      "expected": "2a8b4ae6cc5d3cf299145170929a4f503214160fb05f93b8cd80501f366b11ef",
+      "actual": "2a8b4ae6cc5d3cf299145170929a4f503214160fb05f93b8cd80501f366b11ef",
+      "passed": true
+    },
+    "observables.py": {
+      "expected": "92812961ed7dafb6893e7644306c8fb573c9e24df90a26853760f12addb9f83d",
+      "actual": "92812961ed7dafb6893e7644306c8fb573c9e24df90a26853760f12addb9f83d",
+      "passed": true
+    }
+  },
+  "integrity": {
+    "grid": {
+      "label": "8991 phase/frequency grid points",
+      "passed": true,
+      "failures": [],
+      "metrics": {
+        "shape": [
+          81,
+          111
+        ],
+        "points": 8991,
+        "physical_modes_per_point": 178,
+        "exact_quasienergy_range": [
+          -3.263236360646728,
+          3.2632363606467303
+        ],
+        "exact_ipr_site_range": [
+          0.012848880312464056,
+          0.31390965794794723
+        ],
+        "exact_ipr_component_range": [
+          0.008368839200894672,
+          0.18615836290391063
+        ],
+        "effective_quasienergy_range": [
+          -3.3060822397929406,
+          3.3060822397929406
+        ],
+        "effective_ipr_site_range": [
+          0.016351744940865647,
+          0.15681769805849619
+        ],
+        "effective_ipr_component_range": [
+          0.012686713172064214,
+          0.15269605988278123
+        ],
+        "max_unitarity_error": 2.9514447018188595e-14,
+        "max_eigen_residual": 9.752473386523879e-15,
+        "max_orthogonality_error": 6.604537132569979e-15,
+        "max_eigenvalue_modulus_error": 2.55351295663786e-14,
+        "max_schur_offdiagonal_error": 9.351376094902976e-15,
+        "min_eigenphase_gap": 6.24389429049188e-13,
+        "points_with_eigenphase_gap_below_1e-9": 51
+      },
+      "maximum_recomputation_errors": {
+        "exact_outer_indices": 0.0,
+        "exact_outer_count": 0.0,
+        "exact_outer_selection_gap": 0.0,
+        "exact_D_site_from_IPR": 0.0,
+        "exact_D_component_from_IPR": 0.0,
+        "exact_D_component_logL_from_IPR": 0.0,
+        "exact_projector_weight_sum": 1.1368683772161603e-13,
+        "exact_projector_recorded_sum_error": 0.0,
+        "exact_outer_D_site": 0.0,
+        "exact_all_D_site": 0.0,
+        "exact_projected_D_site": 3.3306690738754696e-16,
+        "exact_outer_D_component": 0.0,
+        "exact_all_D_component": 0.0,
+        "exact_projected_D_component": 3.3306690738754696e-16,
+        "exact_outer_D_component_logL": 0.0,
+        "exact_all_D_component_logL": 0.0,
+        "exact_outer_ipr_site": 0.0,
+        "exact_all_ipr_site": 0.0,
+        "exact_projected_ipr_site": 4.163336342344337e-17,
+        "exact_outer_ipr_component": 0.0,
+        "exact_all_ipr_component": 0.0,
+        "exact_projected_ipr_component": 4.163336342344337e-17,
+        "effective_outer_indices": 0.0,
+        "effective_outer_count": 0.0,
+        "effective_outer_selection_gap": 0.0,
+        "effective_D_site_from_IPR": 0.0,
+        "effective_D_component_from_IPR": 0.0,
+        "effective_D_component_logL_from_IPR": 0.0,
+        "effective_projector_weight_sum": 4.263256414560601e-14,
+        "effective_projector_recorded_sum_error": 0.0,
+        "effective_outer_D_site": 0.0,
+        "effective_all_D_site": 0.0,
+        "effective_projected_D_site": 3.3306690738754696e-16,
+        "effective_outer_D_component": 0.0,
+        "effective_all_D_component": 0.0,
+        "effective_projected_D_component": 3.3306690738754696e-16,
+        "effective_outer_D_component_logL": 0.0,
+        "effective_all_D_component_logL": 0.0,
+        "effective_outer_ipr_site": 0.0,
+        "effective_all_ipr_site": 0.0,
+        "effective_projected_ipr_site": 4.163336342344337e-17,
+        "effective_outer_ipr_component": 0.0,
+        "effective_all_ipr_component": 0.0,
+        "effective_projected_ipr_component": 4.163336342344337e-17,
+        "Hungarian_permutation": 0.0,
+        "mean_outer_matched_overlap": 0.0,
+        "min_outer_matched_overlap": 0.0,
+        "delta_D_site": 0.0,
+        "matched_delta_D_site": 0.0,
+        "selection_delta_D_site": 0.0,
+        "delta_decomposition_D_site": 0.0,
+        "delta_D_component": 0.0,
+        "matched_delta_D_component": 0.0,
+        "selection_delta_D_component": 0.0,
+        "delta_decomposition_D_component": 0.0,
+        "delta_D_component_logL": 0.0,
+        "matched_delta_D_component_logL": 0.0,
+        "selection_delta_D_component_logL": 0.0,
+        "delta_decomposition_D_component_logL": 0.0,
+        "projected_delta_D_site": 0.0,
+        "projected_delta_D_component": 0.0
+      }
+    },
+    "slices": {
+      "label": "six frequency cuts including 111 extra exact pi/3 points",
+      "passed": true,
+      "failures": [],
+      "metrics": {
+        "shape": [
+          6,
+          111
+        ],
+        "points": 666,
+        "physical_modes_per_point": 178,
+        "exact_quasienergy_range": [
+          -3.263236360646728,
+          3.2632363606467303
+        ],
+        "exact_ipr_site_range": [
+          0.012957876666628208,
+          0.2968329419921587
+        ],
+        "exact_ipr_component_range": [
+          0.008613261022758101,
+          0.18615836290391063
+        ],
+        "effective_quasienergy_range": [
+          -3.3060822397929406,
+          3.3060822397929406
+        ],
+        "effective_ipr_site_range": [
+          0.016351744940865647,
+          0.15681769805849619
+        ],
+        "effective_ipr_component_range": [
+          0.012686713172064214,
+          0.15269605988278123
+        ],
+        "max_unitarity_error": 2.840760222355972e-14,
+        "max_eigen_residual": 9.513672519291483e-15,
+        "max_orthogonality_error": 6.306629133421637e-15,
+        "max_eigenvalue_modulus_error": 2.19824158875781e-14,
+        "max_schur_offdiagonal_error": 9.043808373472609e-15,
+        "min_eigenphase_gap": 1.0795808691455022e-12,
+        "points_with_eigenphase_gap_below_1e-9": 8
+      },
+      "maximum_recomputation_errors": {
+        "exact_outer_indices": 0.0,
+        "exact_outer_count": 0.0,
+        "exact_outer_selection_gap": 0.0,
+        "exact_D_site_from_IPR": 0.0,
+        "exact_D_component_from_IPR": 0.0,
+        "exact_D_component_logL_from_IPR": 0.0,
+        "exact_projector_weight_sum": 1.1368683772161603e-13,
+        "exact_projector_recorded_sum_error": 0.0,
+        "exact_outer_D_site": 0.0,
+        "exact_all_D_site": 0.0,
+        "exact_projected_D_site": 2.220446049250313e-16,
+        "exact_outer_D_component": 0.0,
+        "exact_all_D_component": 0.0,
+        "exact_projected_D_component": 3.3306690738754696e-16,
+        "exact_outer_D_component_logL": 0.0,
+        "exact_all_D_component_logL": 0.0,
+        "exact_outer_ipr_site": 0.0,
+        "exact_all_ipr_site": 0.0,
+        "exact_projected_ipr_site": 2.7755575615628914e-17,
+        "exact_outer_ipr_component": 0.0,
+        "exact_all_ipr_component": 0.0,
+        "exact_projected_ipr_component": 2.7755575615628914e-17,
+        "effective_outer_indices": 0.0,
+        "effective_outer_count": 0.0,
+        "effective_outer_selection_gap": 0.0,
+        "effective_D_site_from_IPR": 0.0,
+        "effective_D_component_from_IPR": 0.0,
+        "effective_D_component_logL_from_IPR": 0.0,
+        "effective_projector_weight_sum": 4.263256414560601e-14,
+        "effective_projector_recorded_sum_error": 0.0,
+        "effective_outer_D_site": 0.0,
+        "effective_all_D_site": 0.0,
+        "effective_projected_D_site": 2.220446049250313e-16,
+        "effective_outer_D_component": 0.0,
+        "effective_all_D_component": 0.0,
+        "effective_projected_D_component": 2.220446049250313e-16,
+        "effective_outer_D_component_logL": 0.0,
+        "effective_all_D_component_logL": 0.0,
+        "effective_outer_ipr_site": 0.0,
+        "effective_all_ipr_site": 0.0,
+        "effective_projected_ipr_site": 2.7755575615628914e-17,
+        "effective_outer_ipr_component": 0.0,
+        "effective_all_ipr_component": 0.0,
+        "effective_projected_ipr_component": 2.7755575615628914e-17,
+        "Hungarian_permutation": 0.0,
+        "mean_outer_matched_overlap": 0.0,
+        "min_outer_matched_overlap": 0.0,
+        "delta_D_site": 0.0,
+        "matched_delta_D_site": 0.0,
+        "selection_delta_D_site": 0.0,
+        "delta_decomposition_D_site": 0.0,
+        "delta_D_component": 0.0,
+        "matched_delta_D_component": 0.0,
+        "selection_delta_D_component": 0.0,
+        "delta_decomposition_D_component": 0.0,
+        "delta_D_component_logL": 0.0,
+        "matched_delta_D_component_logL": 0.0,
+        "selection_delta_D_component_logL": 0.0,
+        "delta_decomposition_D_component_logL": 0.0,
+        "projected_delta_D_site": 0.0,
+        "projected_delta_D_component": 0.0
+      }
+    }
+  },
+  "checkpoint_files": {
+    "expected": 9102,
+    "actual": 9102,
+    "missing": [],
+    "unexpected": [],
+    "coordinate_or_steps_errors": []
+  },
+  "slice_grid_consistency_max_error": 0.0,
+  "selected_points": [
+    {
+      "labels": [
+        "maximum_delta_D_site"
+      ],
+      "phi_index": 14,
+      "omega_index": 26,
+      "checkpoint_phi_index": 14,
+      "omega": 6.32,
+      "phi": 0.5497787143782138
+    },
+    {
+      "labels": [
+        "minimum_delta_D_site"
+      ],
+      "phi_index": 18,
+      "omega_index": 0,
+      "checkpoint_phi_index": 18,
+      "omega": 5.8,
+      "phi": 0.7068583470577035
+    },
+    {
+      "labels": [
+        "minimum_eigenphase_gap"
+      ],
+      "phi_index": 1,
+      "omega_index": 17,
+      "checkpoint_phi_index": 1,
+      "omega": 6.14,
+      "phi": 0.039269908169872414
+    },
+    {
+      "labels": [
+        "minimum_nonzero_exact_outer_selection_gap"
+      ],
+      "phi_index": 2,
+      "omega_index": 20,
+      "checkpoint_phi_index": 2,
+      "omega": 6.2,
+      "phi": 0.07853981633974483
+    },
+    {
+      "labels": [
+        "minimum_nonzero_effective_outer_selection_gap"
+      ],
+      "phi_index": 13,
+      "omega_index": 12,
+      "checkpoint_phi_index": 13,
+      "omega": 6.04,
+      "phi": 0.5105088062083414
+    },
+    {
+      "labels": [
+        "reference_6p2_pi_over_3"
+      ],
+      "phi_index": 2,
+      "omega_index": 20,
+      "checkpoint_phi_index": 81,
+      "omega": 6.2,
+      "phi": 1.0471975511965976
+    },
+    {
+      "labels": [
+        "reference_6p2_pi_over_2"
+      ],
+      "phi_index": 40,
+      "omega_index": 20,
+      "checkpoint_phi_index": 40,
+      "omega": 6.2,
+      "phi": 1.5707963267948966
+    },
+    {
+      "labels": [
+        "reference_6p2_zero"
+      ],
+      "phi_index": 0,
+      "omega_index": 20,
+      "checkpoint_phi_index": 0,
+      "omega": 6.2,
+      "phi": 0.0
+    },
+    {
+      "labels": [
+        "reference_8_pi_over_2"
+      ],
+      "phi_index": 40,
+      "omega_index": 110,
+      "checkpoint_phi_index": 40,
+      "omega": 8.0,
+      "phi": 1.5707963267948966
+    }
+  ],
+  "grid_csv": {
+    "rows": 8991,
+    "expected_rows": 8991,
+    "unique_coordinates": 8991,
+    "coordinate_set_correct": true
+  },
+  "extra_pi_over_3_csv": {
+    "rows": 111,
+    "expected_rows": 111,
+    "unique_coordinates": 111,
+    "coordinate_set_correct": true
+  },
+  "convergence_points": [
+    {
+      "labels": [
+        "maximum_delta_D_site"
+      ],
+      "phi_index": 14,
+      "omega_index": 26,
+      "checkpoint_phi_index": 14,
+      "omega": 6.32,
+      "phi": 0.5497787143782138,
+      "resolutions": [
+        {
+          "steps": 32,
+          "reference_steps": 128,
+          "outer_D_site": 0.7166127387901056,
+          "outer_D_component": 0.6608622363167771,
+          "outer_D_site_absolute_error": 7.182624366164347e-06,
+          "max_sorted_quasienergy_error": 9.26817861479634e-06,
+          "max_matched_circular_quasienergy_error": 9.26817861479634e-06,
+          "outer_subspace_mean_squared_overlap": 0.9999999956577046,
+          "outer_subspace_min_squared_singular_value": 0.9999999555734116,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999956577044,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999947100153599,
+          "minimum_outer_matched_mode_overlap": 0.9999999556168204,
+          "mean_outer_matched_mode_overlap": 0.9999999859077872,
+          "unitarity_error": 9.69775674131213e-15,
+          "eigen_residual": 6.596882525690719e-15,
+          "min_eigenphase_gap": 2.4142821462014297e-06
+        },
+        {
+          "steps": 64,
+          "reference_steps": 128,
+          "outer_D_site": 0.7166194981860805,
+          "outer_D_component": 0.6608642900280395,
+          "outer_D_site_absolute_error": 4.2322839122199696e-07,
+          "max_sorted_quasienergy_error": 5.460728056405628e-07,
+          "max_matched_circular_quasienergy_error": 5.460728056405628e-07,
+          "outer_subspace_mean_squared_overlap": 0.9999999999848936,
+          "outer_subspace_min_squared_singular_value": 0.9999999998455071,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999999848939,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.999999980595952,
+          "minimum_outer_matched_mode_overlap": 0.9999999998456586,
+          "mean_outer_matched_mode_overlap": 0.9999999999509444,
+          "unitarity_error": 1.9472282619709334e-14,
+          "eigen_residual": 7.978693497113431e-15,
+          "min_eigenphase_gap": 2.3539451645682163e-06
+        },
+        {
+          "steps": 128,
+          "reference_steps": 128,
+          "outer_D_site": 0.7166199214144717,
+          "outer_D_component": 0.6608644194207764,
+          "outer_D_site_absolute_error": 0.0,
+          "max_sorted_quasienergy_error": 0.0,
+          "max_matched_circular_quasienergy_error": 0.0,
+          "outer_subspace_mean_squared_overlap": 1.0000000000000002,
+          "outer_subspace_min_squared_singular_value": 0.9999999999999969,
+          "matched_outer_subspace_mean_squared_overlap": 1.0000000000000002,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.999999999999986,
+          "minimum_outer_matched_mode_overlap": 0.9999999999999876,
+          "mean_outer_matched_mode_overlap": 1.0,
+          "unitarity_error": 1.9836796241457626e-14,
+          "eigen_residual": 1.3644387722608581e-14,
+          "min_eigenphase_gap": 2.3501347325982636e-06
+        }
+      ],
+      "independent_DOP853": {
+        "solver": {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "rhs_evaluations": 389,
+          "seconds": 0.2322154169960413
+        },
+        "resolutions": [
+          {
+            "steps": 32,
+            "outer_D_site": 0.7166127387901056,
+            "outer_D_component": 0.6608622363167771,
+            "outer_D_site_absolute_error": 7.210851912575755e-06,
+            "max_sorted_quasienergy_error": 9.304599440262962e-06,
+            "max_matched_circular_quasienergy_error": 9.304599440262962e-06,
+            "outer_subspace_mean_squared_overlap": 0.9999999956234643,
+            "outer_subspace_min_squared_singular_value": 0.9999999552231947,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999956234645,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999946670965055,
+            "minimum_outer_matched_mode_overlap": 0.9999999552669493,
+            "mean_outer_matched_mode_overlap": 0.9999999857966222,
+            "unitarity_error": 9.69775674131213e-15,
+            "eigen_residual": 6.596882525690719e-15,
+            "min_eigenphase_gap": 2.4142821462014297e-06
+          },
+          {
+            "steps": 64,
+            "outer_D_site": 0.7166194981860805,
+            "outer_D_component": 0.6608642900280395,
+            "outer_D_site_absolute_error": 4.5145593763340486e-07,
+            "max_sorted_quasienergy_error": 5.824936311071838e-07,
+            "max_matched_circular_quasienergy_error": 5.824936311071838e-07,
+            "outer_subspace_mean_squared_overlap": 0.9999999999828107,
+            "outer_subspace_min_squared_singular_value": 0.99999999982421,
+            "matched_outer_subspace_mean_squared_overlap": 0.999999999982811,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999779150389,
+            "minimum_outer_matched_mode_overlap": 0.9999999998243823,
+            "mean_outer_matched_mode_overlap": 0.9999999999441802,
+            "unitarity_error": 1.9472282619709334e-14,
+            "eigen_residual": 7.978693497113431e-15,
+            "min_eigenphase_gap": 2.3539451645682163e-06
+          },
+          {
+            "steps": 128,
+            "outer_D_site": 0.7166199214144717,
+            "outer_D_component": 0.6608644194207764,
+            "outer_D_site_absolute_error": 2.82275464114079e-08,
+            "max_sorted_quasienergy_error": 3.6420825466620954e-08,
+            "max_matched_circular_quasienergy_error": 3.6420825466620954e-08,
+            "outer_subspace_mean_squared_overlap": 0.9999999999999325,
+            "outer_subspace_min_squared_singular_value": 0.999999999999313,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999999325,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999999132785,
+            "minimum_outer_matched_mode_overlap": 0.9999999999993132,
+            "mean_outer_matched_mode_overlap": 0.9999999999997815,
+            "unitarity_error": 1.9836796241457626e-14,
+            "eigen_residual": 1.3644387722608581e-14,
+            "min_eigenphase_gap": 2.3501347325982636e-06
+          }
+        ]
+      },
+      "checkpoint_quasienergies_max_recomputation_error": 0.0,
+      "checkpoint_D_site_max_recomputation_error": 0.0
+    },
+    {
+      "labels": [
+        "minimum_delta_D_site"
+      ],
+      "phi_index": 18,
+      "omega_index": 0,
+      "checkpoint_phi_index": 18,
+      "omega": 5.8,
+      "phi": 0.7068583470577035,
+      "resolutions": [
+        {
+          "steps": 32,
+          "reference_steps": 128,
+          "outer_D_site": 0.4752614579549441,
+          "outer_D_component": 0.5351401869803764,
+          "outer_D_site_absolute_error": 6.973091666861997e-06,
+          "max_sorted_quasienergy_error": 1.112094155608645e-05,
+          "max_matched_circular_quasienergy_error": 1.112094155608645e-05,
+          "outer_subspace_mean_squared_overlap": 0.9999999927211642,
+          "outer_subspace_min_squared_singular_value": 0.9999999564388526,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999927211645,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999972058044021,
+          "minimum_outer_matched_mode_overlap": 0.999999728772806,
+          "mean_outer_matched_mode_overlap": 0.9999999249221668,
+          "unitarity_error": 4.745377667211269e-15,
+          "eigen_residual": 6.306825391797224e-15,
+          "min_eigenphase_gap": 2.8398249529715258e-08
+        },
+        {
+          "steps": 64,
+          "reference_steps": 128,
+          "outer_D_site": 0.4752548973382455,
+          "outer_D_component": 0.5351335972492925,
+          "outer_D_site_absolute_error": 4.12474968236598e-07,
+          "max_sorted_quasienergy_error": 6.603483173606151e-07,
+          "max_matched_circular_quasienergy_error": 6.603483173606151e-07,
+          "outer_subspace_mean_squared_overlap": 0.999999999974407,
+          "outer_subspace_min_squared_singular_value": 0.999999999846805,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999999744065,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999901901953,
+          "minimum_outer_matched_mode_overlap": 0.9999999990455526,
+          "mean_outer_matched_mode_overlap": 0.9999999997358009,
+          "unitarity_error": 1.0971419675837217e-14,
+          "eigen_residual": 7.812444460180934e-15,
+          "min_eigenphase_gap": 2.828646250563338e-08
+        },
+        {
+          "steps": 128,
+          "reference_steps": 128,
+          "outer_D_site": 0.47525448486327726,
+          "outer_D_component": 0.5351331826554566,
+          "outer_D_site_absolute_error": 0.0,
+          "max_sorted_quasienergy_error": 0.0,
+          "max_matched_circular_quasienergy_error": 0.0,
+          "outer_subspace_mean_squared_overlap": 1.0000000000000002,
+          "outer_subspace_min_squared_singular_value": 0.9999999999999898,
+          "matched_outer_subspace_mean_squared_overlap": 1.0000000000000002,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999999999798,
+          "minimum_outer_matched_mode_overlap": 0.9999999999999798,
+          "mean_outer_matched_mode_overlap": 1.0,
+          "unitarity_error": 1.5695756878774292e-14,
+          "eigen_residual": 1.2075200676434363e-14,
+          "min_eigenphase_gap": 2.827944323158249e-08
+        }
+      ],
+      "independent_DOP853": {
+        "solver": {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "rhs_evaluations": 413,
+          "seconds": 0.2447004780115094
+        },
+        "resolutions": [
+          {
+            "steps": 32,
+            "outer_D_site": 0.4752614579549441,
+            "outer_D_component": 0.5351401869803764,
+            "outer_D_site_absolute_error": 7.000640899090804e-06,
+            "max_sorted_quasienergy_error": 1.1165076989172462e-05,
+            "max_matched_circular_quasienergy_error": 1.1165076989172462e-05,
+            "outer_subspace_mean_squared_overlap": 0.9999999926633778,
+            "outer_subspace_min_squared_singular_value": 0.9999999560929917,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999926633776,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999971836686766,
+            "minimum_outer_matched_mode_overlap": 0.9999997266186251,
+            "mean_outer_matched_mode_overlap": 0.9999999243258385,
+            "unitarity_error": 4.745377667211269e-15,
+            "eigen_residual": 6.306825391797224e-15,
+            "min_eigenphase_gap": 2.8398249529715258e-08
+          },
+          {
+            "steps": 64,
+            "outer_D_site": 0.4752548973382455,
+            "outer_D_component": 0.5351335972492925,
+            "outer_D_site_absolute_error": 4.4002420046540536e-07,
+            "max_sorted_quasienergy_error": 7.044837504466273e-07,
+            "max_matched_circular_quasienergy_error": 7.044837504466273e-07,
+            "outer_subspace_mean_squared_overlap": 0.9999999999708725,
+            "outer_subspace_min_squared_singular_value": 0.9999999998256539,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999708726,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.999999988837531,
+            "minimum_outer_matched_mode_overlap": 0.9999999989137556,
+            "mean_outer_matched_mode_overlap": 0.9999999996993165,
+            "unitarity_error": 1.0971419675837217e-14,
+            "eigen_residual": 7.812444460180934e-15,
+            "min_eigenphase_gap": 2.828646250563338e-08
+          },
+          {
+            "steps": 128,
+            "outer_D_site": 0.47525448486327726,
+            "outer_D_component": 0.5351331826554566,
+            "outer_D_site_absolute_error": 2.754923222880734e-08,
+            "max_sorted_quasienergy_error": 4.41354330860122e-08,
+            "max_matched_circular_quasienergy_error": 4.41354330860122e-08,
+            "outer_subspace_mean_squared_overlap": 0.9999999999998871,
+            "outer_subspace_min_squared_singular_value": 0.9999999999993145,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999998868,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999999563338,
+            "minimum_outer_matched_mode_overlap": 0.9999999999957352,
+            "mean_outer_matched_mode_overlap": 0.9999999999988205,
+            "unitarity_error": 1.5695756878774292e-14,
+            "eigen_residual": 1.2075200676434363e-14,
+            "min_eigenphase_gap": 2.827944323158249e-08
+          }
+        ]
+      },
+      "checkpoint_quasienergies_max_recomputation_error": 0.0,
+      "checkpoint_D_site_max_recomputation_error": 0.0
+    },
+    {
+      "labels": [
+        "minimum_eigenphase_gap"
+      ],
+      "phi_index": 1,
+      "omega_index": 17,
+      "checkpoint_phi_index": 1,
+      "omega": 6.14,
+      "phi": 0.039269908169872414,
+      "resolutions": [
+        {
+          "steps": 32,
+          "reference_steps": 128,
+          "outer_D_site": 0.4600820978516529,
+          "outer_D_component": 0.5081854715934142,
+          "outer_D_site_absolute_error": 3.972564547538582e-06,
+          "max_sorted_quasienergy_error": 1.0143660335693028e-05,
+          "max_matched_circular_quasienergy_error": 1.0143660335693028e-05,
+          "outer_subspace_mean_squared_overlap": 0.9999999986105874,
+          "outer_subspace_min_squared_singular_value": 0.9999999900783989,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999986105872,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.999997643222383,
+          "minimum_outer_matched_mode_overlap": 0.9999993582943892,
+          "mean_outer_matched_mode_overlap": 0.9999999274541229,
+          "unitarity_error": 5.601781549937934e-15,
+          "eigen_residual": 6.131005344784085e-15,
+          "min_eigenphase_gap": 6.261657858885883e-13
+        },
+        {
+          "steps": 64,
+          "reference_steps": 128,
+          "outer_D_site": 0.46007906168626417,
+          "outer_D_component": 0.5081839175305939,
+          "outer_D_site_absolute_error": 9.363991588240417e-07,
+          "max_sorted_quasienergy_error": 5.972059158310117e-07,
+          "max_matched_circular_quasienergy_error": 5.972059158310117e-07,
+          "outer_subspace_mean_squared_overlap": 0.9999999999951079,
+          "outer_subspace_min_squared_singular_value": 0.9999999999649003,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999999951079,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999958313491025,
+          "minimum_outer_matched_mode_overlap": 0.9999958313491025,
+          "mean_outer_matched_mode_overlap": 0.9999997170619009,
+          "unitarity_error": 9.704868497224259e-15,
+          "eigen_residual": 8.574396435174038e-15,
+          "min_eigenphase_gap": 6.24389429049188e-13
+        },
+        {
+          "steps": 128,
+          "reference_steps": 128,
+          "outer_D_site": 0.46007812528710534,
+          "outer_D_component": 0.5081831747964946,
+          "outer_D_site_absolute_error": 0.0,
+          "max_sorted_quasienergy_error": 0.0,
+          "max_matched_circular_quasienergy_error": 0.0,
+          "outer_subspace_mean_squared_overlap": 1.000000000000001,
+          "outer_subspace_min_squared_singular_value": 0.9999999999999969,
+          "matched_outer_subspace_mean_squared_overlap": 1.000000000000001,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999999999845,
+          "minimum_outer_matched_mode_overlap": 0.9999999999999867,
+          "mean_outer_matched_mode_overlap": 1.0000000000000009,
+          "unitarity_error": 1.947017564020558e-14,
+          "eigen_residual": 1.3612897871905879e-14,
+          "min_eigenphase_gap": 6.24389429049188e-13
+        }
+      ],
+      "independent_DOP853": {
+        "solver": {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "rhs_evaluations": 377,
+          "seconds": 0.19818699700408615
+        },
+        "resolutions": [
+          {
+            "steps": 32,
+            "outer_D_site": 0.4600820978516529,
+            "outer_D_component": 0.5081854715934142,
+            "outer_D_site_absolute_error": 3.5878611971962293e-06,
+            "max_sorted_quasienergy_error": 1.0183483377446123e-05,
+            "max_matched_circular_quasienergy_error": 1.0183483377446123e-05,
+            "outer_subspace_mean_squared_overlap": 0.9999999985995431,
+            "outer_subspace_min_squared_singular_value": 0.9999999899993297,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999985995438,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999975726896452,
+            "minimum_outer_matched_mode_overlap": 0.9999975726896452,
+            "mean_outer_matched_mode_overlap": 0.9999998192788362,
+            "unitarity_error": 5.601781549937934e-15,
+            "eigen_residual": 6.131005344784085e-15,
+            "min_eigenphase_gap": 6.261657858885883e-13
+          },
+          {
+            "steps": 64,
+            "outer_D_site": 0.46007906168626417,
+            "outer_D_component": 0.5081839175305939,
+            "outer_D_site_absolute_error": 5.516958084816892e-07,
+            "max_sorted_quasienergy_error": 6.37028957584107e-07,
+            "max_matched_circular_quasienergy_error": 6.37028957584107e-07,
+            "outer_subspace_mean_squared_overlap": 0.9999999999944301,
+            "outer_subspace_min_squared_singular_value": 0.99999999996005,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999944298,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999994348024271,
+            "minimum_outer_matched_mode_overlap": 0.9999994348024271,
+            "mean_outer_matched_mode_overlap": 0.9999999578625967,
+            "unitarity_error": 9.704868497224259e-15,
+            "eigen_residual": 8.574396435174038e-15,
+            "min_eigenphase_gap": 6.24389429049188e-13
+          },
+          {
+            "steps": 128,
+            "outer_D_site": 0.46007812528710534,
+            "outer_D_component": 0.5081831747964946,
+            "outer_D_site_absolute_error": 3.847033503423525e-07,
+            "max_sorted_quasienergy_error": 3.982304175309537e-08,
+            "max_matched_circular_quasienergy_error": 3.982304175309537e-08,
+            "outer_subspace_mean_squared_overlap": 0.9999999999999779,
+            "outer_subspace_min_squared_singular_value": 0.9999999999998401,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999999774,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999981312090471,
+            "minimum_outer_matched_mode_overlap": 0.9999981312090471,
+            "mean_outer_matched_mode_overlap": 0.9999997980889646,
+            "unitarity_error": 1.947017564020558e-14,
+            "eigen_residual": 1.3612897871905879e-14,
+            "min_eigenphase_gap": 6.24389429049188e-13
+          }
+        ]
+      },
+      "checkpoint_quasienergies_max_recomputation_error": 0.0,
+      "checkpoint_D_site_max_recomputation_error": 0.0
+    },
+    {
+      "labels": [
+        "minimum_nonzero_exact_outer_selection_gap"
+      ],
+      "phi_index": 2,
+      "omega_index": 20,
+      "checkpoint_phi_index": 2,
+      "omega": 6.2,
+      "phi": 0.07853981633974483,
+      "resolutions": [
+        {
+          "steps": 32,
+          "reference_steps": 128,
+          "outer_D_site": 0.47494332905991615,
+          "outer_D_component": 0.5123230575062924,
+          "outer_D_site_absolute_error": 0.007696937778267354,
+          "max_sorted_quasienergy_error": 9.902057814148435e-06,
+          "max_matched_circular_quasienergy_error": 9.902057814148435e-06,
+          "outer_subspace_mean_squared_overlap": 0.9945101941899284,
+          "outer_subspace_min_squared_singular_value": 0.9011835026024734,
+          "matched_outer_subspace_mean_squared_overlap": 0.9945101941899281,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9011835024150309,
+          "minimum_outer_matched_mode_overlap": 0.9011835024150309,
+          "mean_outer_matched_mode_overlap": 0.9945101933485159,
+          "unitarity_error": 4.942021858123419e-15,
+          "eigen_residual": 6.21534103254724e-15,
+          "min_eigenphase_gap": 6.91149359965948e-10
+        },
+        {
+          "steps": 64,
+          "reference_steps": 128,
+          "outer_D_site": 0.4821924487394832,
+          "outer_D_component": 0.5181095099172761,
+          "outer_D_site_absolute_error": 0.0004478180987003144,
+          "max_sorted_quasienergy_error": 5.830500224845991e-07,
+          "max_matched_circular_quasienergy_error": 5.830500224845991e-07,
+          "outer_subspace_mean_squared_overlap": 0.9999739612852971,
+          "outer_subspace_min_squared_singular_value": 0.9995313029406998,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999739612852971,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9995313029407353,
+          "minimum_outer_matched_mode_overlap": 0.9995313029407353,
+          "mean_outer_matched_mode_overlap": 0.9999739612809324,
+          "unitarity_error": 9.529973433608516e-15,
+          "eigen_residual": 8.464417434712478e-15,
+          "min_eigenphase_gap": 6.882667769048112e-10
+        },
+        {
+          "steps": 128,
+          "reference_steps": 128,
+          "outer_D_site": 0.4826402668381835,
+          "outer_D_component": 0.518427983794395,
+          "outer_D_site_absolute_error": 0.0,
+          "max_sorted_quasienergy_error": 0.0,
+          "max_matched_circular_quasienergy_error": 0.0,
+          "outer_subspace_mean_squared_overlap": 1.0000000000000022,
+          "outer_subspace_min_squared_singular_value": 0.9999999999999936,
+          "matched_outer_subspace_mean_squared_overlap": 1.0000000000000022,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999999999867,
+          "minimum_outer_matched_mode_overlap": 0.9999999999999911,
+          "mean_outer_matched_mode_overlap": 1.0000000000000022,
+          "unitarity_error": 3.1424069594275167e-14,
+          "eigen_residual": 1.2761643880179085e-14,
+          "min_eigenphase_gap": 6.880847003287727e-10
+        }
+      ],
+      "independent_DOP853": {
+        "solver": {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "rhs_evaluations": 377,
+          "seconds": 0.19973016198491678
+        },
+        "resolutions": [
+          {
+            "steps": 32,
+            "outer_D_site": 0.47494332905991615,
+            "outer_D_component": 0.5123230575062924,
+            "outer_D_site_absolute_error": 0.007725745562381758,
+            "max_sorted_quasienergy_error": 9.940938163754964e-06,
+            "max_matched_circular_quasienergy_error": 9.940938163754964e-06,
+            "outer_subspace_mean_squared_overlap": 0.9944620919808622,
+            "outer_subspace_min_squared_singular_value": 0.9003176648877926,
+            "matched_outer_subspace_mean_squared_overlap": 0.9944620919808624,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9003176646998772,
+            "minimum_outer_matched_mode_overlap": 0.9003176646998772,
+            "mean_outer_matched_mode_overlap": 0.9944620911325391,
+            "unitarity_error": 4.942021858123419e-15,
+            "eigen_residual": 6.21534103254724e-15,
+            "min_eigenphase_gap": 6.91149359965948e-10
+          },
+          {
+            "steps": 64,
+            "outer_D_site": 0.4821924487394832,
+            "outer_D_component": 0.5181095099172761,
+            "outer_D_site_absolute_error": 0.0004766258828147185,
+            "max_sorted_quasienergy_error": 6.219303720911284e-07,
+            "max_matched_circular_quasienergy_error": 6.219303720911284e-07,
+            "outer_subspace_mean_squared_overlap": 0.9999703628083467,
+            "outer_subspace_min_squared_singular_value": 0.9994665304977647,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999703628083467,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9994665304978119,
+            "minimum_outer_matched_mode_overlap": 0.9994665304978119,
+            "mean_outer_matched_mode_overlap": 0.9999703628046299,
+            "unitarity_error": 9.529973433608516e-15,
+            "eigen_residual": 8.464417434712478e-15,
+            "min_eigenphase_gap": 6.882667769048112e-10
+          },
+          {
+            "steps": 128,
+            "outer_D_site": 0.4826402668381835,
+            "outer_D_component": 0.518427983794395,
+            "outer_D_site_absolute_error": 2.88077841144041e-05,
+            "max_sorted_quasienergy_error": 3.888034960652931e-08,
+            "max_matched_circular_quasienergy_error": 3.888034960652931e-08,
+            "outer_subspace_mean_squared_overlap": 0.9999998835306543,
+            "outer_subspace_min_squared_singular_value": 0.9999979035423233,
+            "matched_outer_subspace_mean_squared_overlap": 0.999999883530654,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999979035423218,
+            "minimum_outer_matched_mode_overlap": 0.9999979035423227,
+            "mean_outer_matched_mode_overlap": 0.9999998835301942,
+            "unitarity_error": 3.1424069594275167e-14,
+            "eigen_residual": 1.2761643880179085e-14,
+            "min_eigenphase_gap": 6.880847003287727e-10
+          }
+        ]
+      },
+      "checkpoint_quasienergies_max_recomputation_error": 0.0,
+      "checkpoint_D_site_max_recomputation_error": 0.0
+    },
+    {
+      "labels": [
+        "minimum_nonzero_effective_outer_selection_gap"
+      ],
+      "phi_index": 13,
+      "omega_index": 12,
+      "checkpoint_phi_index": 13,
+      "omega": 6.04,
+      "phi": 0.5105088062083414,
+      "resolutions": [
+        {
+          "steps": 32,
+          "reference_steps": 128,
+          "outer_D_site": 0.47413650661723505,
+          "outer_D_component": 0.5275221157130989,
+          "outer_D_site_absolute_error": 5.6807734223340844e-06,
+          "max_sorted_quasienergy_error": 1.019140316849132e-05,
+          "max_matched_circular_quasienergy_error": 1.019140316849132e-05,
+          "outer_subspace_mean_squared_overlap": 0.9999999973336775,
+          "outer_subspace_min_squared_singular_value": 0.9999999821398998,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999973336767,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.99999800550859,
+          "minimum_outer_matched_mode_overlap": 0.9999998659411182,
+          "mean_outer_matched_mode_overlap": 0.9999999660140839,
+          "unitarity_error": 4.834153961335021e-15,
+          "eigen_residual": 6.214759036087552e-15,
+          "min_eigenphase_gap": 9.387428745455395e-08
+        },
+        {
+          "steps": 64,
+          "reference_steps": 128,
+          "outer_D_site": 0.47413116324228355,
+          "outer_D_component": 0.5275191215051205,
+          "outer_D_site_absolute_error": 3.3739847082880914e-07,
+          "max_sorted_quasienergy_error": 6.001291095181216e-07,
+          "max_matched_circular_quasienergy_error": 6.001291095181216e-07,
+          "outer_subspace_mean_squared_overlap": 0.9999999999905993,
+          "outer_subspace_min_squared_singular_value": 0.9999999999369451,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999999905993,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999931661183,
+          "minimum_outer_matched_mode_overlap": 0.9999999995262641,
+          "mean_outer_matched_mode_overlap": 0.9999999998798832,
+          "unitarity_error": 1.0887471480753448e-14,
+          "eigen_residual": 8.206351321200155e-15,
+          "min_eigenphase_gap": 9.374806175799222e-08
+        },
+        {
+          "steps": 128,
+          "reference_steps": 128,
+          "outer_D_site": 0.4741308258438127,
+          "outer_D_component": 0.5275189323694826,
+          "outer_D_site_absolute_error": 0.0,
+          "max_sorted_quasienergy_error": 0.0,
+          "max_matched_circular_quasienergy_error": 0.0,
+          "outer_subspace_mean_squared_overlap": 0.9999999999999988,
+          "outer_subspace_min_squared_singular_value": 0.9999999999999951,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999999999988,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999999999818,
+          "minimum_outer_matched_mode_overlap": 0.9999999999999878,
+          "mean_outer_matched_mode_overlap": 0.999999999999999,
+          "unitarity_error": 1.6757674189234095e-14,
+          "eigen_residual": 1.253695948995834e-14,
+          "min_eigenphase_gap": 9.374011566976037e-08
+        }
+      ],
+      "independent_DOP853": {
+        "solver": {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "rhs_evaluations": 401,
+          "seconds": 0.21854691300541162
+        },
+        "resolutions": [
+          {
+            "steps": 32,
+            "outer_D_site": 0.47413650661723505,
+            "outer_D_component": 0.5275221157130989,
+            "outer_D_site_absolute_error": 5.7033269109108e-06,
+            "max_sorted_quasienergy_error": 1.0231423129170025e-05,
+            "max_matched_circular_quasienergy_error": 1.0231423129170025e-05,
+            "outer_subspace_mean_squared_overlap": 0.9999999973124716,
+            "outer_subspace_min_squared_singular_value": 0.9999999819977433,
+            "matched_outer_subspace_mean_squared_overlap": 0.999999997312472,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999979899044911,
+            "minimum_outer_matched_mode_overlap": 0.9999998648735179,
+            "mean_outer_matched_mode_overlap": 0.9999999657433821,
+            "unitarity_error": 4.834153961335021e-15,
+            "eigen_residual": 6.214759036087552e-15,
+            "min_eigenphase_gap": 9.387428745455395e-08
+          },
+          {
+            "steps": 64,
+            "outer_D_site": 0.47413116324228355,
+            "outer_D_component": 0.5275191215051205,
+            "outer_D_site_absolute_error": 3.599519594055245e-07,
+            "max_sorted_quasienergy_error": 6.401490697527379e-07,
+            "max_matched_circular_quasienergy_error": 6.401490697527379e-07,
+            "outer_subspace_mean_squared_overlap": 0.999999999989301,
+            "outer_subspace_min_squared_singular_value": 0.9999999999282367,
+            "matched_outer_subspace_mean_squared_overlap": 0.999999999989301,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999922241021,
+            "minimum_outer_matched_mode_overlap": 0.9999999994608098,
+            "mean_outer_matched_mode_overlap": 0.9999999998632852,
+            "unitarity_error": 1.0887471480753448e-14,
+            "eigen_residual": 8.206351321200155e-15,
+            "min_eigenphase_gap": 9.374806175799222e-08
+          },
+          {
+            "steps": 128,
+            "outer_D_site": 0.4741308258438127,
+            "outer_D_component": 0.5275189323694826,
+            "outer_D_site_absolute_error": 2.2553488576715353e-08,
+            "max_sorted_quasienergy_error": 4.00199606787055e-08,
+            "max_matched_circular_quasienergy_error": 4.00199606787055e-08,
+            "outer_subspace_mean_squared_overlap": 0.9999999999999571,
+            "outer_subspace_min_squared_singular_value": 0.9999999999997131,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999999578,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999999696003,
+            "minimum_outer_matched_mode_overlap": 0.9999999999978799,
+            "mean_outer_matched_mode_overlap": 0.9999999999994622,
+            "unitarity_error": 1.6757674189234095e-14,
+            "eigen_residual": 1.253695948995834e-14,
+            "min_eigenphase_gap": 9.374011566976037e-08
+          }
+        ]
+      },
+      "checkpoint_quasienergies_max_recomputation_error": 0.0,
+      "checkpoint_D_site_max_recomputation_error": 0.0
+    },
+    {
+      "labels": [
+        "reference_6p2_pi_over_3"
+      ],
+      "phi_index": 2,
+      "omega_index": 20,
+      "checkpoint_phi_index": 81,
+      "omega": 6.2,
+      "phi": 1.0471975511965976,
+      "resolutions": [
+        {
+          "steps": 32,
+          "reference_steps": 128,
+          "outer_D_site": 0.7590679141763307,
+          "outer_D_component": 0.7086268493486844,
+          "outer_D_site_absolute_error": 7.406165807632981e-06,
+          "max_sorted_quasienergy_error": 9.487949289344044e-06,
+          "max_matched_circular_quasienergy_error": 9.487949289344044e-06,
+          "outer_subspace_mean_squared_overlap": 0.9999999922912175,
+          "outer_subspace_min_squared_singular_value": 0.9999999296941212,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999922912173,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999970154733704,
+          "minimum_outer_matched_mode_overlap": 0.999999877563915,
+          "mean_outer_matched_mode_overlap": 0.9999999650403267,
+          "unitarity_error": 5.402751349004189e-15,
+          "eigen_residual": 6.073919836881602e-15,
+          "min_eigenphase_gap": 8.25759976530449e-06
+        },
+        {
+          "steps": 64,
+          "reference_steps": 128,
+          "outer_D_site": 0.7590748851724134,
+          "outer_D_component": 0.7086275410837529,
+          "outer_D_site_absolute_error": 4.3516972492163575e-07,
+          "max_sorted_quasienergy_error": 5.594791767649099e-07,
+          "max_matched_circular_quasienergy_error": 5.594791767649099e-07,
+          "outer_subspace_mean_squared_overlap": 0.9999999999733247,
+          "outer_subspace_min_squared_singular_value": 0.9999999997568985,
+          "matched_outer_subspace_mean_squared_overlap": 0.999999999973325,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999899460452,
+          "minimum_outer_matched_mode_overlap": 0.9999999995464772,
+          "mean_outer_matched_mode_overlap": 0.9999999998757372,
+          "unitarity_error": 9.791122180025326e-15,
+          "eigen_residual": 8.770439450885203e-15,
+          "min_eigenphase_gap": 8.487571509618874e-06
+        },
+        {
+          "steps": 128,
+          "reference_steps": 128,
+          "outer_D_site": 0.7590753203421383,
+          "outer_D_component": 0.7086275853102668,
+          "outer_D_site_absolute_error": 0.0,
+          "max_sorted_quasienergy_error": 0.0,
+          "max_matched_circular_quasienergy_error": 0.0,
+          "outer_subspace_mean_squared_overlap": 0.9999999999999996,
+          "outer_subspace_min_squared_singular_value": 0.9999999999999882,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999999999996,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.999999999999984,
+          "minimum_outer_matched_mode_overlap": 0.9999999999999882,
+          "mean_outer_matched_mode_overlap": 0.9999999999999996,
+          "unitarity_error": 2.111443144497065e-14,
+          "eigen_residual": 1.2541009836980837e-14,
+          "min_eigenphase_gap": 8.502149122069369e-06
+        }
+      ],
+      "independent_DOP853": {
+        "solver": {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "rhs_evaluations": 401,
+          "seconds": 0.21277145799831487
+        },
+        "resolutions": [
+          {
+            "steps": 32,
+            "outer_D_site": 0.7590679141763307,
+            "outer_D_component": 0.7086268493486844,
+            "outer_D_site_absolute_error": 7.4351732515243185e-06,
+            "max_sorted_quasienergy_error": 9.525272508970062e-06,
+            "max_matched_circular_quasienergy_error": 9.525272508970062e-06,
+            "outer_subspace_mean_squared_overlap": 0.9999999922306374,
+            "outer_subspace_min_squared_singular_value": 0.9999999291418714,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999922306374,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999969923359244,
+            "minimum_outer_matched_mode_overlap": 0.9999998765665252,
+            "mean_outer_matched_mode_overlap": 0.9999999647617199,
+            "unitarity_error": 5.402751349004189e-15,
+            "eigen_residual": 6.073919836881602e-15,
+            "min_eigenphase_gap": 8.25759976530449e-06
+          },
+          {
+            "steps": 64,
+            "outer_D_site": 0.7590748851724134,
+            "outer_D_component": 0.7086275410837529,
+            "outer_D_site_absolute_error": 4.6417716881297366e-07,
+            "max_sorted_quasienergy_error": 5.968023946145706e-07,
+            "max_matched_circular_quasienergy_error": 5.968023946145706e-07,
+            "outer_subspace_mean_squared_overlap": 0.9999999999696482,
+            "outer_subspace_min_squared_singular_value": 0.9999999997234001,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999696476,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999885610573,
+            "minimum_outer_matched_mode_overlap": 0.9999999994838709,
+            "mean_outer_matched_mode_overlap": 0.999999999858602,
+            "unitarity_error": 9.791122180025326e-15,
+            "eigen_residual": 8.770439450885203e-15,
+            "min_eigenphase_gap": 8.487571509618874e-06
+          },
+          {
+            "steps": 128,
+            "outer_D_site": 0.7590753203421383,
+            "outer_D_component": 0.7086275853102668,
+            "outer_D_site_absolute_error": 2.9007443891337914e-08,
+            "max_sorted_quasienergy_error": 3.732321962601759e-08,
+            "max_matched_circular_quasienergy_error": 3.732321962601759e-08,
+            "outer_subspace_mean_squared_overlap": 0.9999999999998794,
+            "outer_subspace_min_squared_singular_value": 0.9999999999989146,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999998794,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999999553311,
+            "minimum_outer_matched_mode_overlap": 0.9999999999979752,
+            "mean_outer_matched_mode_overlap": 0.9999999999994446,
+            "unitarity_error": 2.111443144497065e-14,
+            "eigen_residual": 1.2541009836980837e-14,
+            "min_eigenphase_gap": 8.502149122069369e-06
+          }
+        ]
+      },
+      "checkpoint_quasienergies_max_recomputation_error": 0.0,
+      "checkpoint_D_site_max_recomputation_error": 0.0
+    },
+    {
+      "labels": [
+        "reference_6p2_pi_over_2"
+      ],
+      "phi_index": 40,
+      "omega_index": 20,
+      "checkpoint_phi_index": 40,
+      "omega": 6.2,
+      "phi": 1.5707963267948966,
+      "resolutions": [
+        {
+          "steps": 32,
+          "reference_steps": 128,
+          "outer_D_site": 0.7565462356705565,
+          "outer_D_component": 0.6838021998430225,
+          "outer_D_site_absolute_error": 5.732577696870855e-06,
+          "max_sorted_quasienergy_error": 9.243908414724444e-06,
+          "max_matched_circular_quasienergy_error": 9.243908414724444e-06,
+          "outer_subspace_mean_squared_overlap": 0.999999988989158,
+          "outer_subspace_min_squared_singular_value": 0.9999999029993337,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999889891582,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999779922331621,
+          "minimum_outer_matched_mode_overlap": 0.9999994381494216,
+          "mean_outer_matched_mode_overlap": 0.9999998350651806,
+          "unitarity_error": 6.878130125591476e-15,
+          "eigen_residual": 6.216092804498592e-15,
+          "min_eigenphase_gap": 1.1615988366742158e-06
+        },
+        {
+          "steps": 64,
+          "reference_steps": 128,
+          "outer_D_site": 0.7565408434531573,
+          "outer_D_component": 0.6837951733647386,
+          "outer_D_site_absolute_error": 3.4036029772366305e-07,
+          "max_sorted_quasienergy_error": 5.454616593958406e-07,
+          "max_matched_circular_quasienergy_error": 5.454616593958406e-07,
+          "outer_subspace_mean_squared_overlap": 0.9999999999619789,
+          "outer_subspace_min_squared_singular_value": 0.9999999996652416,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999999619784,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999998954282087,
+          "minimum_outer_matched_mode_overlap": 0.9999999978729794,
+          "mean_outer_matched_mode_overlap": 0.9999999994217218,
+          "unitarity_error": 9.239426563277947e-15,
+          "eigen_residual": 8.50683314791113e-15,
+          "min_eigenphase_gap": 5.867621943878021e-07
+        },
+        {
+          "steps": 128,
+          "reference_steps": 128,
+          "outer_D_site": 0.7565405030928596,
+          "outer_D_component": 0.6837947304601457,
+          "outer_D_site_absolute_error": 0.0,
+          "max_sorted_quasienergy_error": 0.0,
+          "max_matched_circular_quasienergy_error": 0.0,
+          "outer_subspace_mean_squared_overlap": 1.000000000000001,
+          "outer_subspace_min_squared_singular_value": 0.9999999999999984,
+          "matched_outer_subspace_mean_squared_overlap": 1.000000000000001,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999999999774,
+          "minimum_outer_matched_mode_overlap": 0.999999999999994,
+          "mean_outer_matched_mode_overlap": 1.000000000000001,
+          "unitarity_error": 1.8010104159011952e-14,
+          "eigen_residual": 1.3208823358962266e-14,
+          "min_eigenphase_gap": 5.508133955611783e-07
+        }
+      ],
+      "independent_DOP853": {
+        "solver": {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "rhs_evaluations": 413,
+          "seconds": 0.2257498149992898
+        },
+        "resolutions": [
+          {
+            "steps": 32,
+            "outer_D_site": 0.7565462356705565,
+            "outer_D_component": 0.6838021998430225,
+            "outer_D_site_absolute_error": 5.7553233046014896e-06,
+            "max_sorted_quasienergy_error": 9.28030320412887e-06,
+            "max_matched_circular_quasienergy_error": 9.28030320412887e-06,
+            "outer_subspace_mean_squared_overlap": 0.9999999889027436,
+            "outer_subspace_min_squared_singular_value": 0.999999902238339,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999889027436,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999777869359674,
+            "minimum_outer_matched_mode_overlap": 0.9999994335128358,
+            "mean_outer_matched_mode_overlap": 0.999999833759799,
+            "unitarity_error": 6.878130125591476e-15,
+            "eigen_residual": 6.216092804498592e-15,
+            "min_eigenphase_gap": 1.1615988366742158e-06
+          },
+          {
+            "steps": 64,
+            "outer_D_site": 0.7565408434531573,
+            "outer_D_component": 0.6837951733647386,
+            "outer_D_site_absolute_error": 3.6310590545429733e-07,
+            "max_sorted_quasienergy_error": 5.818564488002664e-07,
+            "max_matched_circular_quasienergy_error": 5.818564488002664e-07,
+            "outer_subspace_mean_squared_overlap": 0.9999999999567408,
+            "outer_subspace_min_squared_singular_value": 0.9999999996191362,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999567406,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999998808326085,
+            "minimum_outer_matched_mode_overlap": 0.9999999975787157,
+            "mean_outer_matched_mode_overlap": 0.9999999993419384,
+            "unitarity_error": 9.239426563277947e-15,
+            "eigen_residual": 8.50683314791113e-15,
+            "min_eigenphase_gap": 5.867621943878021e-07
+          },
+          {
+            "steps": 128,
+            "outer_D_site": 0.7565405030928596,
+            "outer_D_component": 0.6837947304601457,
+            "outer_D_site_absolute_error": 2.2745607730634276e-08,
+            "max_sorted_quasienergy_error": 3.6394789404425865e-08,
+            "max_matched_circular_quasienergy_error": 3.6394789404425865e-08,
+            "outer_subspace_mean_squared_overlap": 0.9999999999998322,
+            "outer_subspace_min_squared_singular_value": 0.9999999999985123,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999998322,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999995233937,
+            "minimum_outer_matched_mode_overlap": 0.9999999999904645,
+            "mean_outer_matched_mode_overlap": 0.9999999999974237,
+            "unitarity_error": 1.8010104159011952e-14,
+            "eigen_residual": 1.3208823358962266e-14,
+            "min_eigenphase_gap": 5.508133955611783e-07
+          }
+        ]
+      },
+      "checkpoint_quasienergies_max_recomputation_error": 0.0,
+      "checkpoint_D_site_max_recomputation_error": 0.0
+    },
+    {
+      "labels": [
+        "reference_6p2_zero"
+      ],
+      "phi_index": 0,
+      "omega_index": 20,
+      "checkpoint_phi_index": 0,
+      "omega": 6.2,
+      "phi": 0.0,
+      "resolutions": [
+        {
+          "steps": 32,
+          "reference_steps": 128,
+          "outer_D_site": 0.4794164252239585,
+          "outer_D_component": 0.5145986836149871,
+          "outer_D_site_absolute_error": 2.0121835043740433e-06,
+          "max_sorted_quasienergy_error": 9.93906876534112e-06,
+          "max_matched_circular_quasienergy_error": 9.93906876534112e-06,
+          "outer_subspace_mean_squared_overlap": 0.9999999993797475,
+          "outer_subspace_min_squared_singular_value": 0.9999999984137198,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999993797482,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999979324755686,
+          "minimum_outer_matched_mode_overlap": 0.9999999970956395,
+          "mean_outer_matched_mode_overlap": 0.9999999985985425,
+          "unitarity_error": 8.145267263531005e-15,
+          "eigen_residual": 6.324515971698683e-15,
+          "min_eigenphase_gap": 5.626641375044983e-10
+        },
+        {
+          "steps": 64,
+          "reference_steps": 128,
+          "outer_D_site": 0.4794145352522772,
+          "outer_D_component": 0.514597430687203,
+          "outer_D_site_absolute_error": 1.222118230503888e-07,
+          "max_sorted_quasienergy_error": 5.852221764968135e-07,
+          "max_matched_circular_quasienergy_error": 5.852221764968135e-07,
+          "outer_subspace_mean_squared_overlap": 0.9999999999978313,
+          "outer_subspace_min_squared_singular_value": 0.9999999999943789,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999999978308,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999928241816,
+          "minimum_outer_matched_mode_overlap": 0.9999999999863842,
+          "mean_outer_matched_mode_overlap": 0.9999999999946699,
+          "unitarity_error": 9.265199416096223e-15,
+          "eigen_residual": 8.323464934851907e-15,
+          "min_eigenphase_gap": 5.60659962900445e-10
+        },
+        {
+          "steps": 128,
+          "reference_steps": 128,
+          "outer_D_site": 0.4794144130404541,
+          "outer_D_component": 0.5145973504288458,
+          "outer_D_site_absolute_error": 0.0,
+          "max_sorted_quasienergy_error": 0.0,
+          "max_matched_circular_quasienergy_error": 0.0,
+          "outer_subspace_mean_squared_overlap": 1.0000000000000007,
+          "outer_subspace_min_squared_singular_value": 0.9999999999999962,
+          "matched_outer_subspace_mean_squared_overlap": 1.0000000000000007,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999999999751,
+          "minimum_outer_matched_mode_overlap": 0.9999999999999867,
+          "mean_outer_matched_mode_overlap": 1.0000000000000009,
+          "unitarity_error": 1.8771625981003052e-14,
+          "eigen_residual": 1.3213292489038973e-14,
+          "min_eigenphase_gap": 5.605333974756377e-10
+        }
+      ],
+      "independent_DOP853": {
+        "solver": {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "rhs_evaluations": 377,
+          "seconds": 0.21836558601353317
+        },
+        "resolutions": [
+          {
+            "steps": 32,
+            "outer_D_site": 0.4794164252239585,
+            "outer_D_component": 0.5145986836149871,
+            "outer_D_site_absolute_error": 2.0204025406034276e-06,
+            "max_sorted_quasienergy_error": 9.978093832518908e-06,
+            "max_matched_circular_quasienergy_error": 9.978093832518908e-06,
+            "outer_subspace_mean_squared_overlap": 0.9999999993748391,
+            "outer_subspace_min_squared_singular_value": 0.9999999984010548,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999993748396,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999979161969346,
+            "minimum_outer_matched_mode_overlap": 0.9999999970723974,
+            "mean_outer_matched_mode_overlap": 0.9999999985870398,
+            "unitarity_error": 8.145267263531005e-15,
+            "eigen_residual": 6.324515971698683e-15,
+            "min_eigenphase_gap": 5.626641375044983e-10
+          },
+          {
+            "steps": 64,
+            "outer_D_site": 0.4794145352522772,
+            "outer_D_component": 0.514597430687203,
+            "outer_D_site_absolute_error": 1.3043085927977316e-07,
+            "max_sorted_quasienergy_error": 6.242472450068703e-07,
+            "max_matched_circular_quasienergy_error": 6.242472450068703e-07,
+            "outer_subspace_mean_squared_overlap": 0.9999999999975306,
+            "outer_subspace_min_squared_singular_value": 0.9999999999935978,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999975309,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999918351212,
+            "minimum_outer_matched_mode_overlap": 0.9999999999882316,
+            "mean_outer_matched_mode_overlap": 0.9999999999942857,
+            "unitarity_error": 9.265199416096223e-15,
+            "eigen_residual": 8.323464934851907e-15,
+            "min_eigenphase_gap": 5.60659962900445e-10
+          },
+          {
+            "steps": 128,
+            "outer_D_site": 0.4794144130404541,
+            "outer_D_component": 0.5145973504288458,
+            "outer_D_site_absolute_error": 8.219036229384358e-09,
+            "max_sorted_quasienergy_error": 3.9025068510056826e-08,
+            "max_matched_circular_quasienergy_error": 3.9025068510056826e-08,
+            "outer_subspace_mean_squared_overlap": 0.9999999999999901,
+            "outer_subspace_min_squared_singular_value": 0.999999999999984,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999999903,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999999680824,
+            "minimum_outer_matched_mode_overlap": 0.9999999999934865,
+            "mean_outer_matched_mode_overlap": 0.9999999999996039,
+            "unitarity_error": 1.8771625981003052e-14,
+            "eigen_residual": 1.3213292489038973e-14,
+            "min_eigenphase_gap": 5.605333974756377e-10
+          }
+        ]
+      },
+      "checkpoint_quasienergies_max_recomputation_error": 0.0,
+      "checkpoint_D_site_max_recomputation_error": 0.0
+    },
+    {
+      "labels": [
+        "reference_8_pi_over_2"
+      ],
+      "phi_index": 40,
+      "omega_index": 110,
+      "checkpoint_phi_index": 40,
+      "omega": 8.0,
+      "phi": 1.5707963267948966,
+      "resolutions": [
+        {
+          "steps": 32,
+          "reference_steps": 128,
+          "outer_D_site": 0.7021514744385041,
+          "outer_D_component": 0.6090135473890977,
+          "outer_D_site_absolute_error": 2.0056313814187376e-06,
+          "max_sorted_quasienergy_error": 8.015765911029149e-06,
+          "max_matched_circular_quasienergy_error": 8.015765911029149e-06,
+          "outer_subspace_mean_squared_overlap": 0.9999999968253851,
+          "outer_subspace_min_squared_singular_value": 0.9999999669386961,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999968253849,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999997945095213,
+          "minimum_outer_matched_mode_overlap": 0.9999997945095213,
+          "mean_outer_matched_mode_overlap": 0.999999961531435,
+          "unitarity_error": 5.566453468604426e-15,
+          "eigen_residual": 7.204663586689755e-15,
+          "min_eigenphase_gap": 4.3743290909503685e-06
+        },
+        {
+          "steps": 64,
+          "reference_steps": 128,
+          "outer_D_site": 0.7021495879714544,
+          "outer_D_component": 0.6090119446094812,
+          "outer_D_site_absolute_error": 1.1916433173553287e-07,
+          "max_sorted_quasienergy_error": 4.7255321034000985e-07,
+          "max_matched_circular_quasienergy_error": 4.7255321034000985e-07,
+          "outer_subspace_mean_squared_overlap": 0.9999999999889267,
+          "outer_subspace_min_squared_singular_value": 0.9999999998846774,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999999889267,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999992835826,
+          "minimum_outer_matched_mode_overlap": 0.9999999992835826,
+          "mean_outer_matched_mode_overlap": 0.9999999998653755,
+          "unitarity_error": 9.60599480965969e-15,
+          "eigen_residual": 8.879423262937072e-15,
+          "min_eigenphase_gap": 4.777519709620037e-06
+        },
+        {
+          "steps": 128,
+          "reference_steps": 128,
+          "outer_D_site": 0.7021494688071227,
+          "outer_D_component": 0.6090118433554919,
+          "outer_D_site_absolute_error": 0.0,
+          "max_sorted_quasienergy_error": 0.0,
+          "max_matched_circular_quasienergy_error": 0.0,
+          "outer_subspace_mean_squared_overlap": 1.0000000000000009,
+          "outer_subspace_min_squared_singular_value": 0.9999999999999953,
+          "matched_outer_subspace_mean_squared_overlap": 1.0000000000000009,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9999999999999831,
+          "minimum_outer_matched_mode_overlap": 0.9999999999999933,
+          "mean_outer_matched_mode_overlap": 1.0000000000000009,
+          "unitarity_error": 1.8438937993087086e-14,
+          "eigen_residual": 1.3162431253431738e-14,
+          "min_eigenphase_gap": 4.8028527603882765e-06
+        }
+      ],
+      "independent_DOP853": {
+        "solver": {
+          "method": "DOP853",
+          "rtol": 2e-12,
+          "atol": 2e-14,
+          "rhs_evaluations": 377,
+          "seconds": 0.20091498200781643
+        },
+        "resolutions": [
+          {
+            "steps": 32,
+            "outer_D_site": 0.7021514744385041,
+            "outer_D_component": 0.6090135473890977,
+            "outer_D_site_absolute_error": 2.0135923336495054e-06,
+            "max_sorted_quasienergy_error": 8.047288256207707e-06,
+            "max_matched_circular_quasienergy_error": 8.047288256207707e-06,
+            "outer_subspace_mean_squared_overlap": 0.9999999968003114,
+            "outer_subspace_min_squared_singular_value": 0.9999999666775675,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999968003118,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999997928866683,
+            "minimum_outer_matched_mode_overlap": 0.9999997928866683,
+            "mean_outer_matched_mode_overlap": 0.9999999612270426,
+            "unitarity_error": 5.566453468604426e-15,
+            "eigen_residual": 7.204663586689755e-15,
+            "min_eigenphase_gap": 4.3743290909503685e-06
+          },
+          {
+            "steps": 64,
+            "outer_D_site": 0.7021495879714544,
+            "outer_D_component": 0.6090119446094812,
+            "outer_D_site_absolute_error": 1.2712528396630063e-07,
+            "max_sorted_quasienergy_error": 5.040755555185683e-07,
+            "max_matched_circular_quasienergy_error": 5.040755555185683e-07,
+            "outer_subspace_mean_squared_overlap": 0.9999999999874001,
+            "outer_subspace_min_squared_singular_value": 0.9999999998687723,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999874003,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999991847526,
+            "minimum_outer_matched_mode_overlap": 0.9999999991847526,
+            "mean_outer_matched_mode_overlap": 0.9999999998468044,
+            "unitarity_error": 9.60599480965969e-15,
+            "eigen_residual": 8.879423262937072e-15,
+            "min_eigenphase_gap": 4.777519709620037e-06
+          },
+          {
+            "steps": 128,
+            "outer_D_site": 0.7021494688071227,
+            "outer_D_component": 0.6090118433554919,
+            "outer_D_site_absolute_error": 7.96095223076776e-09,
+            "max_sorted_quasienergy_error": 3.152234562264766e-08,
+            "max_matched_circular_quasienergy_error": 3.152234562264766e-08,
+            "outer_subspace_mean_squared_overlap": 0.9999999999999526,
+            "outer_subspace_min_squared_singular_value": 0.9999999999994837,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999999526,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999999968117,
+            "minimum_outer_matched_mode_overlap": 0.9999999999968117,
+            "mean_outer_matched_mode_overlap": 0.9999999999994019,
+            "unitarity_error": 1.8438937993087086e-14,
+            "eigen_residual": 1.3162431253431738e-14,
+            "min_eigenphase_gap": 4.8028527603882765e-06
+          }
+        ]
+      },
+      "checkpoint_quasienergies_max_recomputation_error": 0.0,
+      "checkpoint_D_site_max_recomputation_error": 0.0
+    }
+  ],
+  "reflection_spin_symmetry": {
+    "point": {
+      "labels": [
+        "minimum_eigenphase_gap"
+      ],
+      "phi_index": 1,
+      "omega_index": 17,
+      "checkpoint_phi_index": 1,
+      "omega": 6.14,
+      "phi": 0.039269908169872414
+    },
+    "Q_definition": "reflection index i -> (-i-2) mod 89, tensor sigma_z",
+    "Q_involution_error": 0.0,
+    "hamiltonian_commutator_relative_errors": [
+      2.485880763125049e-14,
+      3.1060623357377293e-14,
+      4.868677387824632e-14
+    ],
+    "resolutions": [
+      {
+        "steps": 32,
+        "operator_commutator_relative_Frobenius_error": 1.565698551072833e-07,
+        "Q_block_projection_relative_Frobenius_error": 7.828492755551468e-08,
+        "generic_outer_D_site": 0.4600820978516529,
+        "Q_resolved_vs_generic": {
+          "outer_D_site": 0.46009426614308147,
+          "outer_D_component": 0.5081960121794312,
+          "outer_D_site_absolute_error": 1.2168291428582556e-05,
+          "max_sorted_quasienergy_error": 8.79296635503124e-14,
+          "max_matched_circular_quasienergy_error": 8.79296635503124e-14,
+          "outer_subspace_mean_squared_overlap": 0.9999999999999896,
+          "outer_subspace_min_squared_singular_value": 0.9999999999998066,
+          "matched_outer_subspace_mean_squared_overlap": 0.9999999999999893,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9998704960711405,
+          "minimum_outer_matched_mode_overlap": 0.9998704960711405,
+          "mean_outer_matched_mode_overlap": 0.9999862889886053,
+          "unitarity_error": 5.601781549937934e-15,
+          "eigen_residual": 7.828492755167149e-08,
+          "min_eigenphase_gap": 6.261657858885883e-13
+        }
+      },
+      {
+        "steps": 64,
+        "operator_commutator_relative_Frobenius_error": 9.84653755192455e-09,
+        "Q_block_projection_relative_Frobenius_error": 4.923268778434178e-09,
+        "generic_outer_D_site": 0.46007906168626417,
+        "Q_resolved_vs_generic": {
+          "outer_D_site": 0.4600907663138327,
+          "outer_D_component": 0.50819405647532,
+          "outer_D_site_absolute_error": 1.1704627568553949e-05,
+          "max_sorted_quasienergy_error": 3.552713678800501e-15,
+          "max_matched_circular_quasienergy_error": 3.552713678800501e-15,
+          "outer_subspace_mean_squared_overlap": 1.0000000000000009,
+          "outer_subspace_min_squared_singular_value": 0.9999999999999991,
+          "matched_outer_subspace_mean_squared_overlap": 1.0000000000000009,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9998751934043246,
+          "minimum_outer_matched_mode_overlap": 0.9998751934043246,
+          "mean_outer_matched_mode_overlap": 0.9999868222659709,
+          "unitarity_error": 9.704868497224259e-15,
+          "eigen_residual": 4.923268772762482e-09,
+          "min_eigenphase_gap": 6.226130722097878e-13
+        }
+      },
+      {
+        "steps": 128,
+        "operator_commutator_relative_Frobenius_error": 6.163640438758253e-10,
+        "Q_block_projection_relative_Frobenius_error": 3.081820210275467e-10,
+        "generic_outer_D_site": 0.46007812528710534,
+        "Q_resolved_vs_generic": {
+          "outer_D_site": 0.46009054387802334,
+          "outer_D_component": 0.5081939322004465,
+          "outer_D_site_absolute_error": 1.2418590917995243e-05,
+          "max_sorted_quasienergy_error": 3.552713678800501e-15,
+          "max_matched_circular_quasienergy_error": 3.552713678800501e-15,
+          "outer_subspace_mean_squared_overlap": 1.0000000000000004,
+          "outer_subspace_min_squared_singular_value": 0.9999999999999987,
+          "matched_outer_subspace_mean_squared_overlap": 1.0000000000000004,
+          "outer_membership_changes_after_Hungarian_matching": 0,
+          "minimum_matched_mode_overlap": 0.9998667989453365,
+          "minimum_outer_matched_mode_overlap": 0.9998667989453365,
+          "mean_outer_matched_mode_overlap": 0.9999859352702425,
+          "unitarity_error": 1.947017564020558e-14,
+          "eigen_residual": 3.0818202154971075e-10,
+          "min_eigenphase_gap": 6.235012506294879e-13
+        }
+      }
+    ],
+    "independent_DOP853": {
+      "solver": {
+        "method": "DOP853",
+        "rtol": 2e-12,
+        "atol": 2e-14,
+        "rhs_evaluations": 377,
+        "seconds": 0.19818699700408615
+      },
+      "operator_commutator_relative_Frobenius_error": 7.991147059759597e-14,
+      "Q_resolved_vs_generic": {
+        "outer_D_site": 0.46009052898776076,
+        "outer_D_component": 0.5081939238811641,
+        "outer_D_site_absolute_error": 1.2018997305074386e-05,
+        "max_sorted_quasienergy_error": 3.1086244689504383e-15,
+        "max_matched_circular_quasienergy_error": 3.1086244689504383e-15,
+        "outer_subspace_mean_squared_overlap": 0.9999999999999992,
+        "outer_subspace_min_squared_singular_value": 0.9999999999999971,
+        "matched_outer_subspace_mean_squared_overlap": 0.999999999999999,
+        "outer_membership_changes_after_Hungarian_matching": 0,
+        "minimum_matched_mode_overlap": 0.9998741732500823,
+        "minimum_outer_matched_mode_overlap": 0.9998741732500823,
+        "mean_outer_matched_mode_overlap": 0.9999864443070181,
+        "unitarity_error": 1.3218738040353415e-12,
+        "eigen_residual": 3.7833225945867475e-13,
+        "min_eigenphase_gap": 6.23945339839338e-13
+      },
+      "production64_generic_vs_Q_resolved_DOP853": {
+        "outer_D_site": 0.46007906168626417,
+        "outer_D_component": 0.5081839175305939,
+        "outer_D_site_absolute_error": 1.1467301496592697e-05,
+        "max_sorted_quasienergy_error": 6.370289580281963e-07,
+        "max_matched_circular_quasienergy_error": 6.370289580281963e-07,
+        "outer_subspace_mean_squared_overlap": 0.9999999999944319,
+        "outer_subspace_min_squared_singular_value": 0.9999999999600526,
+        "matched_outer_subspace_mean_squared_overlap": 0.9999999999944319,
+        "outer_membership_changes_after_Hungarian_matching": 0,
+        "minimum_matched_mode_overlap": 0.9998751933925613,
+        "minimum_outer_matched_mode_overlap": 0.9998751933925613,
+        "mean_outer_matched_mode_overlap": 0.9999868222428085,
+        "unitarity_error": 9.704868497224259e-15,
+        "eigen_residual": 8.574396435174038e-15,
+        "min_eigenphase_gap": 6.24389429049188e-13
+      },
+      "production128_generic_vs_Q_resolved_DOP853": {
+        "outer_D_site": 0.46007812528710534,
+        "outer_D_component": 0.5081831747964946,
+        "outer_D_site_absolute_error": 1.2403700655416738e-05,
+        "max_sorted_quasienergy_error": 3.982304352945221e-08,
+        "max_matched_circular_quasienergy_error": 3.982304352945221e-08,
+        "outer_subspace_mean_squared_overlap": 0.9999999999999789,
+        "outer_subspace_min_squared_singular_value": 0.9999999999998443,
+        "matched_outer_subspace_mean_squared_overlap": 0.9999999999999791,
+        "outer_membership_changes_after_Hungarian_matching": 0,
+        "minimum_matched_mode_overlap": 0.9998667989452902,
+        "minimum_outer_matched_mode_overlap": 0.9998667989452902,
+        "mean_outer_matched_mode_overlap": 0.9999859352701517,
+        "unitarity_error": 1.947017564020558e-14,
+        "eigen_residual": 1.3612897871905879e-14,
+        "min_eigenphase_gap": 6.24389429049188e-13
+      }
+    }
+  },
+  "phase_reversal": [
+    {
+      "omega": 6.2,
+      "phi": 1.0471975511965976,
+      "U_minus_phi_vs_U_phi_transpose_relative_Frobenius_error": 5.083700273930611e-15,
+      "outer_D_site_symmetry_error": 6.8833827526759706e-15,
+      "conjugate_modes_vs_negative_phi": {
+        "outer_D_site": 0.7590753203421314,
+        "outer_D_component": 0.7086275853102624,
+        "outer_D_site_absolute_error": 6.8833827526759706e-15,
+        "max_sorted_quasienergy_error": 3.552713678800501e-15,
+        "max_matched_circular_quasienergy_error": 3.552713678800501e-15,
+        "outer_subspace_mean_squared_overlap": 1.0,
+        "outer_subspace_min_squared_singular_value": 0.999999999999994,
+        "matched_outer_subspace_mean_squared_overlap": 1.0000000000000002,
+        "outer_membership_changes_after_Hungarian_matching": 0,
+        "minimum_matched_mode_overlap": 0.9999999999999778,
+        "minimum_outer_matched_mode_overlap": 0.999999999999992,
+        "mean_outer_matched_mode_overlap": 0.9999999999999996,
+        "unitarity_error": 2.1452197852175312e-14,
+        "eigen_residual": 1.295625498467064e-14,
+        "min_eigenphase_gap": 8.502149120737101e-06
+      }
+    },
+    {
+      "omega": 6.2,
+      "phi": 1.5707963267948966,
+      "U_minus_phi_vs_U_phi_transpose_relative_Frobenius_error": 5.682788711267289e-15,
+      "outer_D_site_symmetry_error": 1.0769163338864018e-14,
+      "conjugate_modes_vs_negative_phi": {
+        "outer_D_site": 0.7565405030928704,
+        "outer_D_component": 0.6837947304601553,
+        "outer_D_site_absolute_error": 1.0769163338864018e-14,
+        "max_sorted_quasienergy_error": 4.440892098500626e-15,
+        "max_matched_circular_quasienergy_error": 4.440892098500626e-15,
+        "outer_subspace_mean_squared_overlap": 1.0000000000000004,
+        "outer_subspace_min_squared_singular_value": 0.9999999999999984,
+        "matched_outer_subspace_mean_squared_overlap": 1.0000000000000007,
+        "outer_membership_changes_after_Hungarian_matching": 0,
+        "minimum_matched_mode_overlap": 0.9999999999999853,
+        "minimum_outer_matched_mode_overlap": 0.9999999999999931,
+        "mean_outer_matched_mode_overlap": 1.0000000000000007,
+        "unitarity_error": 1.7363449974766213e-14,
+        "eigen_residual": 1.2870688145831339e-14,
+        "min_eigenphase_gap": 5.508133957832229e-07
+      }
+    },
+    {
+      "omega": 8.0,
+      "phi": 1.5707963267948966,
+      "U_minus_phi_vs_U_phi_transpose_relative_Frobenius_error": 5.7292867829066174e-15,
+      "outer_D_site_symmetry_error": 3.064215547965432e-14,
+      "conjugate_modes_vs_negative_phi": {
+        "outer_D_site": 0.7021494688070921,
+        "outer_D_component": 0.6090118433554654,
+        "outer_D_site_absolute_error": 3.064215547965432e-14,
+        "max_sorted_quasienergy_error": 5.773159728050814e-15,
+        "max_matched_circular_quasienergy_error": 5.329070518200751e-15,
+        "outer_subspace_mean_squared_overlap": 1.000000000000001,
+        "outer_subspace_min_squared_singular_value": 0.9999999999999982,
+        "matched_outer_subspace_mean_squared_overlap": 1.0000000000000009,
+        "outer_membership_changes_after_Hungarian_matching": 0,
+        "minimum_matched_mode_overlap": 0.9999999999999898,
+        "minimum_outer_matched_mode_overlap": 0.9999999999999929,
+        "mean_outer_matched_mode_overlap": 1.0000000000000009,
+        "unitarity_error": 1.9537410462215415e-14,
+        "eigen_residual": 1.362630405903863e-14,
+        "min_eigenphase_gap": 4.80285275861192e-06
+      }
+    }
+  ],
+  "sensitive_point_validation": [
+    {
+      "point": {
+        "labels": [
+          "minimum_nonzero_exact_outer_selection_gap"
+        ],
+        "phi_index": 2,
+        "omega_index": 20,
+        "checkpoint_phi_index": 2,
+        "omega": 6.2,
+        "phi": 0.07853981633974483
+      },
+      "ODE_solver": {
+        "method": "DOP853",
+        "rtol": 2e-12,
+        "atol": 2e-14,
+        "rhs_evaluations": 377,
+        "seconds": 0.19973016198491678
+      },
+      "ODE_generic_vs_Q_resolved": {
+        "outer_D_site": 0.4826690745649289,
+        "outer_D_component": 0.51844813909543,
+        "outer_D_site_absolute_error": 5.7368998440665564e-11,
+        "max_sorted_quasienergy_error": 2.886579864025407e-15,
+        "max_matched_circular_quasienergy_error": 3.1086244689504383e-15,
+        "outer_subspace_mean_squared_overlap": 1.0000000000000009,
+        "outer_subspace_min_squared_singular_value": 0.9999999999999982,
+        "matched_outer_subspace_mean_squared_overlap": 1.0000000000000009,
+        "outer_membership_changes_after_Hungarian_matching": 0,
+        "minimum_matched_mode_overlap": 0.999999999822095,
+        "minimum_outer_matched_mode_overlap": 0.999999999822095,
+        "mean_outer_matched_mode_overlap": 0.9999999999809559,
+        "unitarity_error": 1.3468626650118574e-12,
+        "eigen_residual": 3.8150347328796037e-13,
+        "min_eigenphase_gap": 6.880709335632673e-10
+      },
+      "resolutions": [
+        {
+          "steps": 32,
+          "against_ODE": {
+            "outer_D_site": 0.47494332905991615,
+            "outer_D_component": 0.5123230575062924,
+            "outer_D_site_absolute_error": 0.007725745562381758,
+            "max_sorted_quasienergy_error": 9.940938163754964e-06,
+            "max_matched_circular_quasienergy_error": 9.940938163754964e-06,
+            "outer_subspace_mean_squared_overlap": 0.9944620919808622,
+            "outer_subspace_min_squared_singular_value": 0.9003176648877926,
+            "matched_outer_subspace_mean_squared_overlap": 0.9944620919808624,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9003176646998772,
+            "minimum_outer_matched_mode_overlap": 0.9003176646998772,
+            "mean_outer_matched_mode_overlap": 0.9944620911325391,
+            "unitarity_error": 4.942021858123419e-15,
+            "eigen_residual": 6.21534103254724e-15,
+            "min_eigenphase_gap": 6.91149359965948e-10
+          },
+          "against_Q_resolved_ODE": {
+            "outer_D_site": 0.47494332905991615,
+            "outer_D_component": 0.5123230575062924,
+            "outer_D_site_absolute_error": 0.00772574550501276,
+            "max_sorted_quasienergy_error": 9.940938163754964e-06,
+            "max_matched_circular_quasienergy_error": 9.940938163754964e-06,
+            "outer_subspace_mean_squared_overlap": 0.9944620921054206,
+            "outer_subspace_min_squared_singular_value": 0.9003176667853221,
+            "matched_outer_subspace_mean_squared_overlap": 0.9944620921054206,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9003176665974071,
+            "minimum_outer_matched_mode_overlap": 0.9003176665974071,
+            "mean_outer_matched_mode_overlap": 0.9944620912430602,
+            "unitarity_error": 4.942021858123419e-15,
+            "eigen_residual": 6.21534103254724e-15,
+            "min_eigenphase_gap": 6.91149359965948e-10
+          },
+          "Q_projection": {
+            "outer_D_site": 0.4749433290747162,
+            "outer_D_component": 0.512323057516969,
+            "outer_D_site_absolute_error": 1.4800050074370574e-11,
+            "max_sorted_quasienergy_error": 7.549516567451064e-14,
+            "max_matched_circular_quasienergy_error": 7.549516567451064e-14,
+            "outer_subspace_mean_squared_overlap": 0.9999999999999498,
+            "outer_subspace_min_squared_singular_value": 0.9999999999992875,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999999495,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999998636016,
+            "minimum_outer_matched_mode_overlap": 0.9999999998636016,
+            "mean_outer_matched_mode_overlap": 0.9999999999785489,
+            "unitarity_error": 4.942021858123419e-15,
+            "eigen_residual": 7.363345572902813e-08,
+            "min_eigenphase_gap": 6.911502481443677e-10
+          }
+        },
+        {
+          "steps": 64,
+          "against_ODE": {
+            "outer_D_site": 0.4821924487394832,
+            "outer_D_component": 0.5181095099172761,
+            "outer_D_site_absolute_error": 0.0004766258828147185,
+            "max_sorted_quasienergy_error": 6.219303720911284e-07,
+            "max_matched_circular_quasienergy_error": 6.219303720911284e-07,
+            "outer_subspace_mean_squared_overlap": 0.9999703628083467,
+            "outer_subspace_min_squared_singular_value": 0.9994665304977647,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999703628083467,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9994665304978119,
+            "minimum_outer_matched_mode_overlap": 0.9994665304978119,
+            "mean_outer_matched_mode_overlap": 0.9999703628046299,
+            "unitarity_error": 9.529973433608516e-15,
+            "eigen_residual": 8.464417434712478e-15,
+            "min_eigenphase_gap": 6.882667769048112e-10
+          },
+          "against_Q_resolved_ODE": {
+            "outer_D_site": 0.4821924487394832,
+            "outer_D_component": 0.5181095099172761,
+            "outer_D_site_absolute_error": 0.0004766258254457201,
+            "max_sorted_quasienergy_error": 6.219303729793069e-07,
+            "max_matched_circular_quasienergy_error": 6.219303729793069e-07,
+            "outer_subspace_mean_squared_overlap": 0.9999703628179479,
+            "outer_subspace_min_squared_singular_value": 0.9994665306440275,
+            "matched_outer_subspace_mean_squared_overlap": 0.999970362817948,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.999466530644075,
+            "minimum_outer_matched_mode_overlap": 0.999466530644075,
+            "mean_outer_matched_mode_overlap": 0.9999703627934396,
+            "unitarity_error": 9.529973433608516e-15,
+            "eigen_residual": 8.464417434712478e-15,
+            "min_eigenphase_gap": 6.882667769048112e-10
+          },
+          "Q_projection": {
+            "outer_D_site": 0.48219244880162637,
+            "outer_D_component": 0.5181095099647344,
+            "outer_D_site_absolute_error": 6.214317949115866e-11,
+            "max_sorted_quasienergy_error": 3.9968028886505635e-15,
+            "max_matched_circular_quasienergy_error": 3.9968028886505635e-15,
+            "outer_subspace_mean_squared_overlap": 1.0000000000000004,
+            "outer_subspace_min_squared_singular_value": 0.9999999999999984,
+            "matched_outer_subspace_mean_squared_overlap": 1.0,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.999999999805351,
+            "minimum_outer_matched_mode_overlap": 0.999999999805351,
+            "mean_outer_matched_mode_overlap": 0.9999999999788532,
+            "unitarity_error": 9.529973433608516e-15,
+            "eigen_residual": 4.630788645866902e-09,
+            "min_eigenphase_gap": 6.882663328156013e-10
+          }
+        },
+        {
+          "steps": 128,
+          "against_ODE": {
+            "outer_D_site": 0.4826402668381835,
+            "outer_D_component": 0.518427983794395,
+            "outer_D_site_absolute_error": 2.88077841144041e-05,
+            "max_sorted_quasienergy_error": 3.888034960652931e-08,
+            "max_matched_circular_quasienergy_error": 3.888034960652931e-08,
+            "outer_subspace_mean_squared_overlap": 0.9999998835306543,
+            "outer_subspace_min_squared_singular_value": 0.9999979035423233,
+            "matched_outer_subspace_mean_squared_overlap": 0.999999883530654,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999979035423218,
+            "minimum_outer_matched_mode_overlap": 0.9999979035423227,
+            "mean_outer_matched_mode_overlap": 0.9999998835301942,
+            "unitarity_error": 3.1424069594275167e-14,
+            "eigen_residual": 1.2761643880179085e-14,
+            "min_eigenphase_gap": 6.880847003287727e-10
+          },
+          "against_Q_resolved_ODE": {
+            "outer_D_site": 0.4826402668381835,
+            "outer_D_component": 0.518427983794395,
+            "outer_D_site_absolute_error": 2.880772674540566e-05,
+            "max_sorted_quasienergy_error": 3.888035049470773e-08,
+            "max_matched_circular_quasienergy_error": 3.888035049470773e-08,
+            "outer_subspace_mean_squared_overlap": 0.9999998835312568,
+            "outer_subspace_min_squared_singular_value": 0.9999979035548215,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999998835312572,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999979035548195,
+            "minimum_outer_matched_mode_overlap": 0.9999979035548215,
+            "mean_outer_matched_mode_overlap": 0.9999998835107363,
+            "unitarity_error": 3.1424069594275167e-14,
+            "eigen_residual": 1.2761643880179085e-14,
+            "min_eigenphase_gap": 6.880847003287727e-10
+          },
+          "Q_projection": {
+            "outer_D_site": 0.4826402669540077,
+            "outer_D_component": 0.5184279838785224,
+            "outer_D_site_absolute_error": 1.1582418357747315e-10,
+            "max_sorted_quasienergy_error": 4.884981308350689e-15,
+            "max_matched_circular_quasienergy_error": 4.884981308350689e-15,
+            "outer_subspace_mean_squared_overlap": 1.000000000000001,
+            "outer_subspace_min_squared_singular_value": 0.999999999999998,
+            "matched_outer_subspace_mean_squared_overlap": 1.000000000000001,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999998032127,
+            "minimum_outer_matched_mode_overlap": 0.9999999998032127,
+            "mean_outer_matched_mode_overlap": 0.9999999999794937,
+            "unitarity_error": 3.1424069594275167e-14,
+            "eigen_residual": 2.8987403132669706e-10,
+            "min_eigenphase_gap": 6.88083812150353e-10
+          }
+        },
+        {
+          "steps": 256,
+          "against_ODE": {
+            "outer_D_site": 0.48266727863926967,
+            "outer_D_component": 0.5184468838531677,
+            "outer_D_site_absolute_error": 1.7959830282410216e-06,
+            "max_sorted_quasienergy_error": 2.4303266066283413e-09,
+            "max_matched_circular_quasienergy_error": 2.4303266066283413e-09,
+            "outer_subspace_mean_squared_overlap": 0.999999999545092,
+            "outer_subspace_min_squared_singular_value": 0.9999999918114304,
+            "matched_outer_subspace_mean_squared_overlap": 0.999999999545092,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999918114133,
+            "minimum_outer_matched_mode_overlap": 0.9999999918114157,
+            "mean_outer_matched_mode_overlap": 0.9999999995450489,
+            "unitarity_error": 3.315619691232341e-14,
+            "eigen_residual": 2.2195599874668155e-14,
+            "min_eigenphase_gap": 6.880727099201067e-10
+          },
+          "against_Q_resolved_ODE": {
+            "outer_D_site": 0.48266727863926967,
+            "outer_D_component": 0.5184468838531677,
+            "outer_D_site_absolute_error": 1.795925659242581e-06,
+            "max_sorted_quasienergy_error": 2.4303266066283413e-09,
+            "max_matched_circular_quasienergy_error": 2.4303266066283413e-09,
+            "outer_subspace_mean_squared_overlap": 0.9999999995451306,
+            "outer_subspace_min_squared_singular_value": 0.9999999918120028,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999995451305,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.999999991811992,
+            "minimum_outer_matched_mode_overlap": 0.9999999918119944,
+            "mean_outer_matched_mode_overlap": 0.999999999526272,
+            "unitarity_error": 3.315619691232341e-14,
+            "eigen_residual": 2.2195599874668155e-14,
+            "min_eigenphase_gap": 6.880727099201067e-10
+          },
+          "Q_projection": {
+            "outer_D_site": 0.48266727866754866,
+            "outer_D_component": 0.5184468838757256,
+            "outer_D_site_absolute_error": 2.8278990260588444e-11,
+            "max_sorted_quasienergy_error": 3.9968028886505635e-15,
+            "max_matched_circular_quasienergy_error": 3.9968028886505635e-15,
+            "outer_subspace_mean_squared_overlap": 1.0000000000000004,
+            "outer_subspace_min_squared_singular_value": 0.9999999999999944,
+            "matched_outer_subspace_mean_squared_overlap": 1.0000000000000009,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999998218054,
+            "minimum_outer_matched_mode_overlap": 0.9999999998218054,
+            "mean_outer_matched_mode_overlap": 0.9999999999811424,
+            "unitarity_error": 3.315619691232341e-14,
+            "eigen_residual": 1.8121018512974823e-11,
+            "min_eigenphase_gap": 6.880727099201067e-10
+          }
+        },
+        {
+          "steps": 512,
+          "against_ODE": {
+            "outer_D_site": 0.4826689641728133,
+            "outer_D_component": 0.5184480619405881,
+            "outer_D_site_absolute_error": 1.1044948461380599e-07,
+            "max_sorted_quasienergy_error": 1.5205436909582204e-10,
+            "max_matched_circular_quasienergy_error": 1.5205436909582204e-10,
+            "outer_subspace_mean_squared_overlap": 0.99999999999828,
+            "outer_subspace_min_squared_singular_value": 0.9999999999689908,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999982797,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999999689901,
+            "minimum_outer_matched_mode_overlap": 0.9999999999689906,
+            "mean_outer_matched_mode_overlap": 0.9999999999982321,
+            "unitarity_error": 7.919428284826127e-14,
+            "eigen_residual": 4.908226165940403e-14,
+            "min_eigenphase_gap": 6.880704894740575e-10
+          },
+          "against_Q_resolved_ODE": {
+            "outer_D_site": 0.4826689641728133,
+            "outer_D_component": 0.5184480619405881,
+            "outer_D_site_absolute_error": 1.1039211561536533e-07,
+            "max_sorted_quasienergy_error": 1.5205525727424174e-10,
+            "max_matched_circular_quasienergy_error": 1.5205525727424174e-10,
+            "outer_subspace_mean_squared_overlap": 0.9999999999982833,
+            "outer_subspace_min_squared_singular_value": 0.9999999999690314,
+            "matched_outer_subspace_mean_squared_overlap": 0.9999999999982828,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999998184321,
+            "minimum_outer_matched_mode_overlap": 0.9999999998184321,
+            "mean_outer_matched_mode_overlap": 0.9999999999787378,
+            "unitarity_error": 7.919428284826127e-14,
+            "eigen_residual": 4.908226165940403e-14,
+            "min_eigenphase_gap": 6.880704894740575e-10
+          },
+          "Q_projection": {
+            "outer_D_site": 0.48266896410604665,
+            "outer_D_component": 0.5184480618968136,
+            "outer_D_site_absolute_error": 6.67666477660589e-11,
+            "max_sorted_quasienergy_error": 3.552713678800501e-15,
+            "max_matched_circular_quasienergy_error": 3.552713678800501e-15,
+            "outer_subspace_mean_squared_overlap": 1.0000000000000013,
+            "outer_subspace_min_squared_singular_value": 0.9999999999999996,
+            "matched_outer_subspace_mean_squared_overlap": 1.0000000000000013,
+            "outer_membership_changes_after_Hungarian_matching": 0,
+            "minimum_matched_mode_overlap": 0.9999999998184286,
+            "minimum_outer_matched_mode_overlap": 0.9999999998184286,
+            "mean_outer_matched_mode_overlap": 0.9999999999804561,
+            "unitarity_error": 7.919428284826127e-14,
+            "eigen_residual": 1.1308459479376661e-12,
+            "min_eigenphase_gap": 6.88071821741687e-10
+          }
+        }
+      ],
+      "interpretation": "No hard outer members exchange. This point has a small but nonzero outer-selection gap; time-step errors rotate the nearby modes. At this point Q resolution changes mean D by approximately 1e-10, so the M64 discrepancy is not explained by Q parity mixing."
+    }
+  ],
+  "data_integrity_passed": true,
+  "numerical_warnings": [
+    {
+      "point": [
+        "minimum_nonzero_exact_outer_selection_gap"
+      ],
+      "reason": "M64 versus M128 outer-mean D differs by more than 1e-4",
+      "error": 0.0004478180987003144
+    },
+    {
+      "point": "minimum_eigenphase_gap",
+      "steps": 32,
+      "reason": "Q-resolved and generic outer-mean D differ",
+      "error": 1.2168291428582556e-05
+    },
+    {
+      "point": "minimum_eigenphase_gap",
+      "steps": 64,
+      "reason": "Q-resolved and generic outer-mean D differ",
+      "error": 1.1704627568553949e-05
+    },
+    {
+      "point": "minimum_eigenphase_gap",
+      "steps": 128,
+      "reason": "Q-resolved and generic outer-mean D differ",
+      "error": 1.2418590917995243e-05
+    }
+  ],
+  "interpretation": "Small unitarity/eigen residuals audit the diagonalization of the computed U; they do not by themselves bound individual IPR errors near a very small eigenphase gap. The nine-point convergence audit is a sample, not a uniform error guarantee for all 9102 points. At the minimum spectral gap (~6.24e-13 radians), Q resolution changes outer-mean D by ~1.2e-5 even for an independent ODE solution: report this basis/symmetry sensitivity rather than machine-precision wavefunction convergence. No production point has been changed.",
+  "diagnostic_artifacts": {
+    "validation_diagnostics.csv": {
+      "sha256": "44a9d9dc16bbf6400ffbc6b29dc332d276d0eb8f90fa4f947dd165396e09d1b6",
+      "bytes": 21634
+    },
+    "validation_diagnostics.npz": {
+      "sha256": "ae6ae525570ea617d86d59bba9e04474e4d27dc7729a59f0029e33918b1ea4a8",
+      "bytes": 18139857
+    },
+    "grid_min_gap_Q_diagnostic.npz": {
+      "sha256": "6fe4ba66e2ceaba2b842bf19a542007f7dc55a40e3a2e814f829cfd7672c78cf",
+      "bytes": 357518
+    },
+    "grid_sensitive_point_validation.json": {
+      "sha256": "c1b609be84fd1df262fee2f714ac7f76a30ea64b21d7ea5b982ab48a9310a14d",
+      "bytes": 16516
+    }
+  },
+  "files_sha256": {
+    "localization_grid.npz": "181c5c2403204f5837e61467d398188ce467ba555399885b591c3b925a7b5ea8",
+    "localization_slices.npz": "9a0a07d81f0db0a6c1e5e0ad1545b736f51ca6b161f07d5ed892ec8d9ed2217e",
+    "localization_grid.csv": "d6924298494bb7e87537110e0f5557f5abab1923148e63d515cb3de7e4759c09",
+    "localization_extra_pi_over_3.csv": "28d8a8d20c4d117f49b9e08ddf8c487e6af7ae165eca3992b3563754299eae97",
+    "localization_parameters.json": "4baac7a09fe725e0d685a1cf70df975f14fe4523f687a1de47b5d8c8d3c24fb8"
+  },
+  "seconds": 17.00395741101238
+}

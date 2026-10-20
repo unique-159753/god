@@ -1,0 +1,177 @@
+{
+  "parameters": {
+    "L": 89,
+    "alpha": 0.6179775280898876,
+    "t0": 1.0,
+    "delta0": 0.5,
+    "V": 2.5,
+    "W": 0.01,
+    "A": 0.8,
+    "B": 0.8,
+    "theta": 0.0
+  },
+  "N": 178,
+  "static_outer_count": 36,
+  "static_outer_rule": "ceil(20% of 178)=36 largest |E|, at least one endpoint",
+  "energy_min": -3.2984041282527814,
+  "energy_max": 3.2984041282527805,
+  "folding_reference_2Emax": 6.596808256505563,
+  "static_eigen_residual": 4.108911922649067e-15,
+  "shared_model_operator_crosscheck": {
+    "available": true,
+    "max_element_differences": {
+      "T": 0.0,
+      "S": 0.0,
+      "HZ": 0.0,
+      "H0": 0.0
+    }
+  },
+  "shared_static_basis_crosscheck": {
+    "available": true,
+    "energy_max_absolute_difference": 7.993605777301127e-15,
+    "minimum_diagonal_squared_overlap": 0.9999999999999978
+  },
+  "state_index_base": 0,
+  "physical_site_index_base": 1,
+  "matrix_element_decomposition_max_error": 2.7755575615628914e-16,
+  "phi_to_minus_phi_matrix_element_max_error": 0.0,
+  "phase_dependence": "R(omega,phi;eta)=a(omega;eta)+b(omega;eta)*cos(phi), exact for this real static basis",
+  "cross_coefficient_range": [
+    -14.679855787151011,
+    0.028666917814823577
+  ],
+  "cross_coefficient_negative_at_all_grid_points": false,
+  "interior_phase_maximum_count": 0,
+  "maxima": [
+    {
+      "eta": 0.02,
+      "region": "full",
+      "omega": 5.9799999999999995,
+      "phi": 3.141592653589793,
+      "phi_over_pi": 1.0,
+      "R": 48.6787968278125,
+      "Rnorm": 0.019471518731125
+    },
+    {
+      "eta": 0.02,
+      "region": "outer",
+      "omega": 5.9799999999999995,
+      "phi": 3.141592653589793,
+      "phi_over_pi": 1.0,
+      "R": 47.933177580279754,
+      "Rnorm": 0.019173271032111902
+    },
+    {
+      "eta": 0.05,
+      "region": "full",
+      "omega": 5.9799999999999995,
+      "phi": 3.141592653589793,
+      "phi_over_pi": 1.0,
+      "R": 13.63763143040672,
+      "Rnorm": 0.03409407857601681
+    },
+    {
+      "eta": 0.05,
+      "region": "outer",
+      "omega": 5.9799999999999995,
+      "phi": 3.141592653589793,
+      "phi_over_pi": 1.0,
+      "R": 13.078581691584938,
+      "Rnorm": 0.032696454228962356
+    },
+    {
+      "eta": 0.1,
+      "region": "full",
+      "omega": 5.9799999999999995,
+      "phi": 3.141592653589793,
+      "phi_over_pi": 1.0,
+      "R": 4.4321823739550545,
+      "Rnorm": 0.044321823739550556
+    },
+    {
+      "eta": 0.1,
+      "region": "outer",
+      "omega": 5.9799999999999995,
+      "phi": 3.141592653589793,
+      "phi_over_pi": 1.0,
+      "R": 4.089250453335767,
+      "Rnorm": 0.04089250453335768
+    }
+  ],
+  "representative_pairs": [
+    {
+      "case": 0,
+      "omega": 6.2,
+      "phi": 1.0471975511965976,
+      "phi_over_pi": 0.3333333333333333,
+      "total_near_pairs": 130,
+      "coupled_near_pairs": 66,
+      "smallest_positive_gap_detuning": 0.08036066860346569,
+      "returned_pairs": 10,
+      "ranking": "M2/(detuning2+0.05\u00b2), all E_m>E_n; near-only pairs separately exported",
+      "top1_fraction_all_positive": 0.04402853472593852,
+      "top10_fraction_all_positive": 0.43200434960434597,
+      "all_near_window_fraction_all_positive": 0.006523572266775469,
+      "coupled_pairs_with_absM_ge_absdetuning": 44,
+      "no_coupled_pair_within_detuning_window_010": false,
+      "omega_exceeds_all_static_energy_differences": false
+    },
+    {
+      "case": 1,
+      "omega": 6.2,
+      "phi": 0.0,
+      "phi_over_pi": 0.0,
+      "total_near_pairs": 130,
+      "coupled_near_pairs": 66,
+      "smallest_positive_gap_detuning": 0.08036066860346569,
+      "returned_pairs": 10,
+      "ranking": "M2/(detuning2+0.05\u00b2), all E_m>E_n; near-only pairs separately exported",
+      "top1_fraction_all_positive": 0.046472207888877654,
+      "top10_fraction_all_positive": 0.4572579961198022,
+      "all_near_window_fraction_all_positive": 0.006796530625687438,
+      "coupled_pairs_with_absM_ge_absdetuning": 42,
+      "no_coupled_pair_within_detuning_window_010": false,
+      "omega_exceeds_all_static_energy_differences": false
+    },
+    {
+      "case": 2,
+      "omega": 6.2,
+      "phi": 1.5707963267948966,
+      "phi_over_pi": 0.5,
+      "total_near_pairs": 130,
+      "coupled_near_pairs": 66,
+      "smallest_positive_gap_detuning": 0.08036066860346569,
+      "returned_pairs": 10,
+      "ranking": "M2/(detuning2+0.05\u00b2), all E_m>E_n; near-only pairs separately exported",
+      "top1_fraction_all_positive": 0.04254228958959437,
+      "top10_fraction_all_positive": 0.4157541964652935,
+      "all_near_window_fraction_all_positive": 0.0063479297063955605,
+      "coupled_pairs_with_absM_ge_absdetuning": 44,
+      "no_coupled_pair_within_detuning_window_010": false,
+      "omega_exceeds_all_static_energy_differences": false
+    },
+    {
+      "case": 3,
+      "omega": 8.0,
+      "phi": 1.5707963267948966,
+      "phi_over_pi": 0.5,
+      "total_near_pairs": 0,
+      "coupled_near_pairs": 0,
+      "smallest_positive_gap_detuning": 1.403191743494438,
+      "returned_pairs": 10,
+      "ranking": "M2/(detuning2+0.05\u00b2), all E_m>E_n; near-only pairs separately exported",
+      "top1_fraction_all_positive": 0.01287194951412051,
+      "top10_fraction_all_positive": 0.12796839692132744,
+      "all_near_window_fraction_all_positive": 0.0,
+      "coupled_pairs_with_absM_ge_absdetuning": 0,
+      "no_coupled_pair_within_detuning_window_010": true,
+      "omega_exceeds_all_static_energy_differences": true
+    }
+  ],
+  "Rnorm_quantity": "eta\u00b2*R, bounded by unwindowed off-diagonal matrix-element norm; not a transition probability",
+  "eta_window_caution": "The |detuning|<=0.10 diagnostic window is not a physical resonance criterion; |M|/|detuning| can be large outside it.",
+  "Rnorm_upper_bound_range": [
+    0.05481540492095212,
+    0.5184578763999717
+  ]
+}

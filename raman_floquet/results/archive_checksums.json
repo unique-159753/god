@@ -1,0 +1,14 @@
+{
+  "raman_floquet_full_results.zip": {
+    "bytes": 494951491,
+    "sha256": "084d9f032830c11aa004b86820bd6a7526bf50d98c15587ef8cf2dad35302e54",
+    "members": 9274,
+    "CRC_passed": true
+  },
+  "raman_floquet_figures_report_code.zip": {
+    "bytes": 5903118,
+    "sha256": "e2a71e6cf60ea1899a8f131b33e524cef799451ecf30cf6d9464b288b3df4b05",
+    "members": 92,
+    "CRC_passed": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "L": 89,
+    "alpha": 0.6179775280898876,
+    "t0": 1.0,
+    "delta0": 0.5,
+    "V": 2.5,
+    "W": 0.01,
+    "A": 0.8,
+    "B": 0.8,
+    "theta": 0.0
+  },
+  "steps": 64,
+  "omega_range": [
+    5.8,
+    8.0,
+    111
+  ],
+  "phi_range": [
+    0.0,
+    3.141592653589793,
+    81
+  ],
+  "extra_exact_slice_phi": 1.0471975511965976,
+  "physical_drive_initial_time": 0.0,
+  "outer_count": 36,
+  "outer_rule": "center-fold [-omega/2,omega/2), then highest 36 |epsilon|",
+  "static_outer_rule": "highest 36 |unfolded E|, fixed across scan",
+  "primary_D": "-log(sum_j (|up_j|^2+|down_j|^2)^2)/log(89)",
+  "secondary_D": "-log(sum_components |psi|^4)/log(178)",
+  "effective_frame": "lab-frame exp(-i K1(0)); K1(0)=B sin(phi) S/omega",
+  "matching": "maximum-total-squared-overlap Hungarian assignment in lab frame",
+  "model_sha256": "2a8b4ae6cc5d3cf299145170929a4f503214160fb05f93b8cd80501f366b11ef",
+  "observables_sha256": "92812961ed7dafb6893e7644306c8fb573c9e24df90a26853760f12addb9f83d"
+}

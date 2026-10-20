@@ -1,5 +1,20 @@
 # Floquet 数值结果与下载
 
+## 最新计算：双驱动 Raman 晶格的一光子共振与相位干涉
+
+- [中文科研报告：六个问题、真实数值和误差说明](raman_floquet/results/research_report_zh.md)
+- [下载9张图、矢量PDF、报告与复现代码（约5.9 MB）](https://github.com/unique-159753/god/raw/refs/heads/main/raman_floquet/results/raman_floquet_figures_report_code.zip)
+- [全部CSV/NPZ、逐点缓存、代表态及验证文件](raman_floquet/results)
+- [计算代码及复现步骤](raman_floquet/README.md)
+
+L=89，111频率×81相位共8991点，另补算111个π/3切线点。主结果采用站点概率ρj=|ψj↑|²+|ψj↓|²和D=−ln(Σρj²)/ln89，同时保留自旋分量定义与静态投影对照。本轮有一光子多态混合，但裸共振响应不能完整解释空间局域化异常；抵消一阶NNN项后低频增强仍保留。目前没有新相变的充分证据。
+
+![一光子共振与局域化差值](raman_floquet/results/fig1_resonance_vs_localization.png)
+
+主网格NPZ超过100 MB，使用Git LFS；克隆后运行`git lfs pull`获取真实大文件。其余原始数值、全部9102个逐点缓存、图片和代码均直接保存在库中。重复的495 MB全量ZIP保留于计算环境，未重复提交；可运行`raman_floquet/build_delivery.py`从仓库文件重建。
+
+以下保留此前计算及其原有IPR定义，不能直接与本轮站点IPR混用。
+
 ## 新计算：准能量折叠、kick 修正与分支追踪
 
 - [下载五张图及完整分析报告](https://raw.githubusercontent.com/unique-159753/god/main/results/folding_study/figures_and_report.zip)

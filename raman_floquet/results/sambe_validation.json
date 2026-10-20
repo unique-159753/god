@@ -1,0 +1,12 @@
+{
+  "scope": "Independent zero-drive Sambe gauge/reconstruction limit",
+  "raw_central_candidates": 178,
+  "minimum_overlap": 0.9999999999999982,
+  "max_quasienergy_error": 8.43769498715119e-15,
+  "max_abs_D_difference": 9.33142452197444e-13,
+  "max_participation_error": 3.552713678800501e-15,
+  "photon_weight_sum_error": 1.7763568394002505e-15,
+  "static_photon_sum_error": 2.220446049250313e-15,
+  "operator_residual": 3.4123808749718904e-15,
+  "passed": true
+}

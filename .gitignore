@@ -1,0 +1,7 @@
+/raman_floquet/.venv/
+/raman_floquet/.cache/
+/raman_floquet/.mplconfig/
+__pycache__/
+*.py[cod]
+# Full duplicate archive is kept locally; all of its scientific files are tracked.
+/raman_floquet/results/raman_floquet_full_results.zip

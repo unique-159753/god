@@ -1,0 +1,957 @@
+file,key,shape,dtype
+fig1_fig2_plot_data.npz,omega,[111],float64
+fig1_fig2_plot_data.npz,phi,[81],float64
+fig1_fig2_plot_data.npz,R_full,"[81, 111]",float64
+fig1_fig2_plot_data.npz,R_outer,"[81, 111]",float64
+fig1_fig2_plot_data.npz,delta_D_site,"[81, 111]",float64
+fig1_fig2_plot_data.npz,R_phase_centered,"[81, 111]",float64
+fig1_fig2_plot_data.npz,delta_phase_centered,"[81, 111]",float64
+fig1_fig2_plot_data.npz,slice_phi,[6],float64
+fig1_fig2_plot_data.npz,R_full_slices,"[6, 111]",float64
+fig1_fig2_plot_data.npz,delta_slices,"[6, 111]",float64
+fig1_fig2_plot_data.npz,matched_delta_D_site,"[81, 111]",float64
+fig1_fig2_plot_data.npz,selection_delta_D_site,"[81, 111]",float64
+fig1_fig2_plot_data.npz,projected_delta_D_site,"[81, 111]",float64
+fig1_fig2_plot_data.npz,folding_reference,[],float64
+four_model_outer_comparison.npz,omega,[4],float64
+four_model_outer_comparison.npz,phi,[3],float64
+four_model_outer_comparison.npz,model_names,[4],<U13
+four_model_outer_comparison.npz,axes,[3],<U5
+four_model_outer_comparison.npz,outer_D_site,"[3, 4, 4]",float64
+four_model_outer_comparison.npz,outer_D_component,"[3, 4, 4]",float64
+four_model_outer_comparison.npz,outer_D_component_logL,"[3, 4, 4]",float64
+four_model_outer_comparison.npz,projected_D_site,"[3, 4, 4]",float64
+four_model_outer_comparison.npz,projected_D_component,"[3, 4, 4]",float64
+four_model_outer_comparison.npz,outer_selection_gap,"[3, 4, 4]",float64
+four_model_outer_comparison.npz,spectrum_quasienergies,"[3, 4, 4, 178]",float64
+four_model_outer_comparison.npz,spectrum_D_site,"[3, 4, 4, 178]",float64
+four_model_outer_comparison.npz,spectrum_D_component,"[3, 4, 4, 178]",float64
+four_model_outer_comparison.npz,spectrum_D_component_logL,"[3, 4, 4, 178]",float64
+four_model_outer_comparison.npz,spectrum_ipr_site,"[3, 4, 4, 178]",float64
+four_model_outer_comparison.npz,spectrum_ipr_component,"[3, 4, 4, 178]",float64
+grid_min_gap_Q_diagnostic.npz,omega,[],float64
+grid_min_gap_Q_diagnostic.npz,phi,[],float64
+grid_min_gap_Q_diagnostic.npz,quasi,[178],float64
+grid_min_gap_Q_diagnostic.npz,modes,"[178, 178]",complex128
+grid_min_gap_Q_diagnostic.npz,D_site,[178],float64
+grid_min_gap_Q_diagnostic.npz,parity,[178],int64
+kick_only_baseline.npz,omega,[4],float64
+kick_only_baseline.npz,phi,[3],float64
+kick_only_baseline.npz,model_names,[5],<U13
+kick_only_baseline.npz,outer_indices,"[3, 4, 36]",int64
+kick_only_baseline.npz,outer_D_site,"[3, 4, 5]",float64
+kick_only_baseline.npz,projected_D_site,"[3, 4, 5]",float64
+kick_only_baseline.npz,outer_D_component,"[3, 4, 5]",float64
+kick_only_baseline.npz,projected_D_component,"[3, 4, 5]",float64
+kick_only_baseline.npz,A_kick_spectrum_quasienergies,"[3, 4, 178]",float64
+kick_only_baseline.npz,A_kick_spectrum_ipr_site,"[3, 4, 178]",float64
+kick_only_baseline.npz,A_kick_spectrum_ipr_component,"[3, 4, 178]",float64
+kick_only_baseline.npz,A_kick_spectrum_D_site,"[3, 4, 178]",float64
+kick_only_baseline.npz,A_kick_spectrum_D_component,"[3, 4, 178]",float64
+localization_grid.npz,omega,[111],float64
+localization_grid.npz,phi,[81],float64
+localization_grid.npz,metadata,[],<U906
+localization_grid.npz,exact_quasienergies,"[81, 111, 178]",float64
+localization_grid.npz,exact_D_site,"[81, 111, 178]",float64
+localization_grid.npz,exact_D_component,"[81, 111, 178]",float64
+localization_grid.npz,exact_D_component_logL,"[81, 111, 178]",float64
+localization_grid.npz,exact_ipr_site,"[81, 111, 178]",float64
+localization_grid.npz,exact_ipr_component,"[81, 111, 178]",float64
+localization_grid.npz,exact_outer_indices,"[81, 111, 36]",int64
+localization_grid.npz,exact_outer_count,"[81, 111]",int64
+localization_grid.npz,exact_outer_selection_gap,"[81, 111]",float64
+localization_grid.npz,exact_outer_D_site,"[81, 111]",float64
+localization_grid.npz,exact_all_D_site,"[81, 111]",float64
+localization_grid.npz,exact_outer_D_component,"[81, 111]",float64
+localization_grid.npz,exact_all_D_component,"[81, 111]",float64
+localization_grid.npz,exact_outer_D_component_logL,"[81, 111]",float64
+localization_grid.npz,exact_all_D_component_logL,"[81, 111]",float64
+localization_grid.npz,exact_outer_ipr_site,"[81, 111]",float64
+localization_grid.npz,exact_all_ipr_site,"[81, 111]",float64
+localization_grid.npz,exact_outer_ipr_component,"[81, 111]",float64
+localization_grid.npz,exact_all_ipr_component,"[81, 111]",float64
+localization_grid.npz,exact_static_outer_weights,"[81, 111, 178]",float64
+localization_grid.npz,exact_static_outer_weight_sum_error,"[81, 111]",float64
+localization_grid.npz,exact_dominant_static_state,"[81, 111, 178]",int64
+localization_grid.npz,exact_dominant_static_overlap,"[81, 111, 178]",float64
+localization_grid.npz,exact_projected_D_site,"[81, 111]",float64
+localization_grid.npz,exact_projected_D_component,"[81, 111]",float64
+localization_grid.npz,exact_projected_ipr_site,"[81, 111]",float64
+localization_grid.npz,exact_projected_ipr_component,"[81, 111]",float64
+localization_grid.npz,effective_quasienergies,"[81, 111, 178]",float64
+localization_grid.npz,effective_D_site,"[81, 111, 178]",float64
+localization_grid.npz,effective_D_component,"[81, 111, 178]",float64
+localization_grid.npz,effective_D_component_logL,"[81, 111, 178]",float64
+localization_grid.npz,effective_ipr_site,"[81, 111, 178]",float64
+localization_grid.npz,effective_ipr_component,"[81, 111, 178]",float64
+localization_grid.npz,effective_energies,"[81, 111, 178]",float64
+localization_grid.npz,effective_outer_indices,"[81, 111, 36]",int64
+localization_grid.npz,effective_outer_count,"[81, 111]",int64
+localization_grid.npz,effective_outer_selection_gap,"[81, 111]",float64
+localization_grid.npz,effective_outer_D_site,"[81, 111]",float64
+localization_grid.npz,effective_all_D_site,"[81, 111]",float64
+localization_grid.npz,effective_outer_D_component,"[81, 111]",float64
+localization_grid.npz,effective_all_D_component,"[81, 111]",float64
+localization_grid.npz,effective_outer_D_component_logL,"[81, 111]",float64
+localization_grid.npz,effective_all_D_component_logL,"[81, 111]",float64
+localization_grid.npz,effective_outer_ipr_site,"[81, 111]",float64
+localization_grid.npz,effective_all_ipr_site,"[81, 111]",float64
+localization_grid.npz,effective_outer_ipr_component,"[81, 111]",float64
+localization_grid.npz,effective_all_ipr_component,"[81, 111]",float64
+localization_grid.npz,effective_static_outer_weights,"[81, 111, 178]",float64
+localization_grid.npz,effective_static_outer_weight_sum_error,"[81, 111]",float64
+localization_grid.npz,effective_dominant_static_state,"[81, 111, 178]",int64
+localization_grid.npz,effective_dominant_static_overlap,"[81, 111, 178]",float64
+localization_grid.npz,effective_projected_D_site,"[81, 111]",float64
+localization_grid.npz,effective_projected_D_component,"[81, 111]",float64
+localization_grid.npz,effective_projected_ipr_site,"[81, 111]",float64
+localization_grid.npz,effective_projected_ipr_component,"[81, 111]",float64
+localization_grid.npz,exact_to_effective,"[81, 111, 178]",int16
+localization_grid.npz,matched_overlaps,"[81, 111, 178]",float64
+localization_grid.npz,mean_outer_matched_overlap,"[81, 111]",float64
+localization_grid.npz,min_outer_matched_overlap,"[81, 111]",float64
+localization_grid.npz,delta_D_site,"[81, 111]",float64
+localization_grid.npz,matched_delta_D_site,"[81, 111]",float64
+localization_grid.npz,selection_delta_D_site,"[81, 111]",float64
+localization_grid.npz,decomposition_error_D_site,"[81, 111]",float64
+localization_grid.npz,delta_D_component,"[81, 111]",float64
+localization_grid.npz,matched_delta_D_component,"[81, 111]",float64
+localization_grid.npz,selection_delta_D_component,"[81, 111]",float64
+localization_grid.npz,decomposition_error_D_component,"[81, 111]",float64
+localization_grid.npz,delta_D_component_logL,"[81, 111]",float64
+localization_grid.npz,matched_delta_D_component_logL,"[81, 111]",float64
+localization_grid.npz,selection_delta_D_component_logL,"[81, 111]",float64
+localization_grid.npz,decomposition_error_D_component_logL,"[81, 111]",float64
+localization_grid.npz,projected_delta_D_site,"[81, 111]",float64
+localization_grid.npz,projected_delta_D_component,"[81, 111]",float64
+localization_grid.npz,exact_unitarity_error,"[81, 111]",float64
+localization_grid.npz,exact_eigen_residual,"[81, 111]",float64
+localization_grid.npz,exact_orthogonality_error,"[81, 111]",float64
+localization_grid.npz,exact_eigenvalue_modulus_error,"[81, 111]",float64
+localization_grid.npz,exact_schur_offdiagonal_error,"[81, 111]",float64
+localization_grid.npz,exact_min_eigenphase_gap,"[81, 111]",float64
+localization_grid.npz,exact_degenerate_eigenphase_gaps,"[81, 111]",int64
+localization_grid.npz,steps,"[81, 111]",int64
+localization_grid.npz,seconds,"[81, 111]",float64
+localization_slices.npz,omega,[111],float64
+localization_slices.npz,phi,[6],float64
+localization_slices.npz,metadata,[],<U906
+localization_slices.npz,exact_quasienergies,"[6, 111, 178]",float64
+localization_slices.npz,exact_D_site,"[6, 111, 178]",float64
+localization_slices.npz,exact_D_component,"[6, 111, 178]",float64
+localization_slices.npz,exact_D_component_logL,"[6, 111, 178]",float64
+localization_slices.npz,exact_ipr_site,"[6, 111, 178]",float64
+localization_slices.npz,exact_ipr_component,"[6, 111, 178]",float64
+localization_slices.npz,exact_outer_indices,"[6, 111, 36]",int64
+localization_slices.npz,exact_outer_count,"[6, 111]",int64
+localization_slices.npz,exact_outer_selection_gap,"[6, 111]",float64
+localization_slices.npz,exact_outer_D_site,"[6, 111]",float64
+localization_slices.npz,exact_all_D_site,"[6, 111]",float64
+localization_slices.npz,exact_outer_D_component,"[6, 111]",float64
+localization_slices.npz,exact_all_D_component,"[6, 111]",float64
+localization_slices.npz,exact_outer_D_component_logL,"[6, 111]",float64
+localization_slices.npz,exact_all_D_component_logL,"[6, 111]",float64
+localization_slices.npz,exact_outer_ipr_site,"[6, 111]",float64
+localization_slices.npz,exact_all_ipr_site,"[6, 111]",float64
+localization_slices.npz,exact_outer_ipr_component,"[6, 111]",float64
+localization_slices.npz,exact_all_ipr_component,"[6, 111]",float64
+localization_slices.npz,exact_static_outer_weights,"[6, 111, 178]",float64
+localization_slices.npz,exact_static_outer_weight_sum_error,"[6, 111]",float64
+localization_slices.npz,exact_dominant_static_state,"[6, 111, 178]",int64
+localization_slices.npz,exact_dominant_static_overlap,"[6, 111, 178]",float64
+localization_slices.npz,exact_projected_D_site,"[6, 111]",float64
+localization_slices.npz,exact_projected_D_component,"[6, 111]",float64
+localization_slices.npz,exact_projected_ipr_site,"[6, 111]",float64
+localization_slices.npz,exact_projected_ipr_component,"[6, 111]",float64
+localization_slices.npz,effective_quasienergies,"[6, 111, 178]",float64
+localization_slices.npz,effective_D_site,"[6, 111, 178]",float64
+localization_slices.npz,effective_D_component,"[6, 111, 178]",float64
+localization_slices.npz,effective_D_component_logL,"[6, 111, 178]",float64
+localization_slices.npz,effective_ipr_site,"[6, 111, 178]",float64
+localization_slices.npz,effective_ipr_component,"[6, 111, 178]",float64
+localization_slices.npz,effective_energies,"[6, 111, 178]",float64
+localization_slices.npz,effective_outer_indices,"[6, 111, 36]",int64
+localization_slices.npz,effective_outer_count,"[6, 111]",int64
+localization_slices.npz,effective_outer_selection_gap,"[6, 111]",float64
+localization_slices.npz,effective_outer_D_site,"[6, 111]",float64
+localization_slices.npz,effective_all_D_site,"[6, 111]",float64
+localization_slices.npz,effective_outer_D_component,"[6, 111]",float64
+localization_slices.npz,effective_all_D_component,"[6, 111]",float64
+localization_slices.npz,effective_outer_D_component_logL,"[6, 111]",float64
+localization_slices.npz,effective_all_D_component_logL,"[6, 111]",float64
+localization_slices.npz,effective_outer_ipr_site,"[6, 111]",float64
+localization_slices.npz,effective_all_ipr_site,"[6, 111]",float64
+localization_slices.npz,effective_outer_ipr_component,"[6, 111]",float64
+localization_slices.npz,effective_all_ipr_component,"[6, 111]",float64
+localization_slices.npz,effective_static_outer_weights,"[6, 111, 178]",float64
+localization_slices.npz,effective_static_outer_weight_sum_error,"[6, 111]",float64
+localization_slices.npz,effective_dominant_static_state,"[6, 111, 178]",int64
+localization_slices.npz,effective_dominant_static_overlap,"[6, 111, 178]",float64
+localization_slices.npz,effective_projected_D_site,"[6, 111]",float64
+localization_slices.npz,effective_projected_D_component,"[6, 111]",float64
+localization_slices.npz,effective_projected_ipr_site,"[6, 111]",float64
+localization_slices.npz,effective_projected_ipr_component,"[6, 111]",float64
+localization_slices.npz,exact_to_effective,"[6, 111, 178]",int16
+localization_slices.npz,matched_overlaps,"[6, 111, 178]",float64
+localization_slices.npz,mean_outer_matched_overlap,"[6, 111]",float64
+localization_slices.npz,min_outer_matched_overlap,"[6, 111]",float64
+localization_slices.npz,delta_D_site,"[6, 111]",float64
+localization_slices.npz,matched_delta_D_site,"[6, 111]",float64
+localization_slices.npz,selection_delta_D_site,"[6, 111]",float64
+localization_slices.npz,decomposition_error_D_site,"[6, 111]",float64
+localization_slices.npz,delta_D_component,"[6, 111]",float64
+localization_slices.npz,matched_delta_D_component,"[6, 111]",float64
+localization_slices.npz,selection_delta_D_component,"[6, 111]",float64
+localization_slices.npz,decomposition_error_D_component,"[6, 111]",float64
+localization_slices.npz,delta_D_component_logL,"[6, 111]",float64
+localization_slices.npz,matched_delta_D_component_logL,"[6, 111]",float64
+localization_slices.npz,selection_delta_D_component_logL,"[6, 111]",float64
+localization_slices.npz,decomposition_error_D_component_logL,"[6, 111]",float64
+localization_slices.npz,projected_delta_D_site,"[6, 111]",float64
+localization_slices.npz,projected_delta_D_component,"[6, 111]",float64
+localization_slices.npz,exact_unitarity_error,"[6, 111]",float64
+localization_slices.npz,exact_eigen_residual,"[6, 111]",float64
+localization_slices.npz,exact_orthogonality_error,"[6, 111]",float64
+localization_slices.npz,exact_eigenvalue_modulus_error,"[6, 111]",float64
+localization_slices.npz,exact_schur_offdiagonal_error,"[6, 111]",float64
+localization_slices.npz,exact_min_eigenphase_gap,"[6, 111]",float64
+localization_slices.npz,exact_degenerate_eigenphase_gaps,"[6, 111]",int64
+localization_slices.npz,steps,"[6, 111]",int64
+localization_slices.npz,seconds,"[6, 111]",float64
+representative_floquet_projections.npz,static_energies,[178],float64
+representative_floquet_projections.npz,static_modes,"[178, 178]",float64
+representative_floquet_projections.npz,projection,"[4, 178, 178]",float64
+representative_floquet_projections.npz,modes,"[4, 178, 178]",complex128
+representative_floquet_projections.npz,quasienergies,"[4, 178]",float64
+representative_floquet_projections.npz,omega,[4],float64
+representative_floquet_projections.npz,phi,[4],float64
+representative_floquet_projections.npz,selected_indices,[4],int64
+representative_floquet_projections.npz,best_outer_indices,[4],int64
+resonance_grid.npz,omega,[111],float64
+resonance_grid.npz,phi,[81],float64
+resonance_grid.npz,eta,[3],float64
+resonance_grid.npz,R_full,"[3, 81, 111]",float64
+resonance_grid.npz,R_outer,"[3, 81, 111]",float64
+resonance_grid.npz,Rnorm_full,"[3, 81, 111]",float64
+resonance_grid.npz,Rnorm_outer,"[3, 81, 111]",float64
+resonance_grid.npz,term_sums,"[3, 2, 3, 111]",float64
+resonance_grid.npz,unwindowed_terms,"[2, 3]",float64
+resonance_grid.npz,phase_upper_bounds,"[2, 81]",float64
+resonance_grid.npz,static_outer_mask,[178],bool
+resonance_grid.npz,static_outer_count,[],int64
+resonance_grid.npz,involves_outer_mask,"[178, 178]",bool
+resonance_grid.npz,energy_difference,"[178, 178]",float64
+resonance_grid.npz,metadata,[],<U526
+resonance_slices.npz,omega,[111],float64
+resonance_slices.npz,phi,[6],float64
+resonance_slices.npz,eta,[3],float64
+resonance_slices.npz,R_full,"[3, 6, 111]",float64
+resonance_slices.npz,R_outer,"[3, 6, 111]",float64
+resonance_slices.npz,Rnorm_full,"[3, 6, 111]",float64
+resonance_slices.npz,Rnorm_outer,"[3, 6, 111]",float64
+resonance_slices.npz,phase_note,[],<U69
+resonance_state_pairs.npz,omega,[4],float64
+resonance_state_pairs.npz,phi,[4],float64
+resonance_state_pairs.npz,density,"[4, 10, 2, 89]",float64
+resonance_state_pairs.npz,m,"[4, 10]",int64
+resonance_state_pairs.npz,n,"[4, 10]",int64
+resonance_state_pairs.npz,detuning,"[4, 10]",float64
+resonance_state_pairs.npz,M_squared,"[4, 10]",float64
+resonance_static.npz,energies,[178],float64
+resonance_static.npz,eigenvectors,"[178, 178]",float64
+resonance_static.npz,Tmn,"[178, 178]",float64
+resonance_static.npz,Smn,"[178, 178]",float64
+resonance_static.npz,T,"[178, 178]",float64
+resonance_static.npz,S,"[178, 178]",float64
+resonance_static.npz,HZ,"[178, 178]",float64
+resonance_static.npz,H0,"[178, 178]",float64
+resonance_static.npz,static_outer_mask,[178],bool
+resonance_static.npz,density,"[89, 178]",float64
+resonance_static.npz,ipr_component,[178],float64
+resonance_static.npz,ipr_site,[178],float64
+resonance_static.npz,D_component,[178],float64
+resonance_static.npz,D_site,[178],float64
+resonance_static.npz,D_component_logL,[178],float64
+sambe_figure_representative_mode.npz,mode_index,[],int64
+sambe_figure_representative_mode.npz,exact_quasienergy,[],float64
+sambe_figure_representative_mode.npz,static_energies,[178],float64
+sambe_figure_representative_mode.npz,photon_axis,[7],int64
+sambe_figure_representative_mode.npz,weights,"[7, 178]",float64
+sambe_point0_M1.npz,summary,[],<U1312
+sambe_point0_M1.npz,omega,[],float64
+sambe_point0_M1.npz,phi,[],float64
+sambe_point0_M1.npz,mcut,[],int64
+sambe_point0_M1.npz,raw_sambe_eigenvalues,[534],float64
+sambe_point0_M1.npz,candidate_indices,[178],int64
+sambe_point0_M1.npz,selected_raw_eigenvalues,[178],float64
+sambe_point0_M1.npz,quasienergies,[178],float64
+sambe_point0_M1.npz,exact_quasienergies,[178],float64
+sambe_point0_M1.npz,mode_overlap,[178],float64
+sambe_point0_M1.npz,quasienergy_error,[178],float64
+sambe_point0_M1.npz,raw_gauge_shift,[178],int64
+sambe_point0_M1.npz,original_in_zone,[178],bool
+sambe_point0_M1.npz,photon_axis,[5],int64
+sambe_point0_M1.npz,photon_weights,"[178, 5]",float64
+sambe_point0_M1.npz,static_photon_weights,"[178, 5, 178]",float64
+sambe_point0_M1.npz,static_energies,[178],float64
+sambe_point0_M1.npz,photon_participation,[178],float64
+sambe_point0_M1.npz,photon_entropy,[178],float64
+sambe_point0_M1.npz,raw_edge_weight,[178],float64
+sambe_point0_M1.npz,reconstructed_norm,[178],float64
+sambe_point0_M1.npz,modes,"[178, 178]",complex128
+sambe_point0_M1.npz,outer_indices_exact_reference,[36],int64
+sambe_point0_M1.npz,exact_D_site,[178],float64
+sambe_point0_M1.npz,ipr_site,[178],float64
+sambe_point0_M1.npz,ipr_component,[178],float64
+sambe_point0_M1.npz,D_site,[178],float64
+sambe_point0_M1.npz,D_component,[178],float64
+sambe_point0_M1.npz,D_component_logL,[178],float64
+sambe_point0_M1.npz,density,"[89, 178]",float64
+sambe_point0_M2.npz,summary,[],<U1328
+sambe_point0_M2.npz,omega,[],float64
+sambe_point0_M2.npz,phi,[],float64
+sambe_point0_M2.npz,mcut,[],int64
+sambe_point0_M2.npz,raw_sambe_eigenvalues,[890],float64
+sambe_point0_M2.npz,candidate_indices,[178],int64
+sambe_point0_M2.npz,selected_raw_eigenvalues,[178],float64
+sambe_point0_M2.npz,quasienergies,[178],float64
+sambe_point0_M2.npz,exact_quasienergies,[178],float64
+sambe_point0_M2.npz,mode_overlap,[178],float64
+sambe_point0_M2.npz,quasienergy_error,[178],float64
+sambe_point0_M2.npz,raw_gauge_shift,[178],int64
+sambe_point0_M2.npz,original_in_zone,[178],bool
+sambe_point0_M2.npz,photon_axis,[5],int64
+sambe_point0_M2.npz,photon_weights,"[178, 5]",float64
+sambe_point0_M2.npz,static_photon_weights,"[178, 5, 178]",float64
+sambe_point0_M2.npz,static_energies,[178],float64
+sambe_point0_M2.npz,photon_participation,[178],float64
+sambe_point0_M2.npz,photon_entropy,[178],float64
+sambe_point0_M2.npz,raw_edge_weight,[178],float64
+sambe_point0_M2.npz,reconstructed_norm,[178],float64
+sambe_point0_M2.npz,modes,"[178, 178]",complex128
+sambe_point0_M2.npz,outer_indices_exact_reference,[36],int64
+sambe_point0_M2.npz,exact_D_site,[178],float64
+sambe_point0_M2.npz,ipr_site,[178],float64
+sambe_point0_M2.npz,ipr_component,[178],float64
+sambe_point0_M2.npz,D_site,[178],float64
+sambe_point0_M2.npz,D_component,[178],float64
+sambe_point0_M2.npz,D_component_logL,[178],float64
+sambe_point0_M2.npz,density,"[89, 178]",float64
+sambe_point0_M3.npz,summary,[],<U1328
+sambe_point0_M3.npz,omega,[],float64
+sambe_point0_M3.npz,phi,[],float64
+sambe_point0_M3.npz,mcut,[],int64
+sambe_point0_M3.npz,raw_sambe_eigenvalues,[1246],float64
+sambe_point0_M3.npz,candidate_indices,[178],int64
+sambe_point0_M3.npz,selected_raw_eigenvalues,[178],float64
+sambe_point0_M3.npz,quasienergies,[178],float64
+sambe_point0_M3.npz,exact_quasienergies,[178],float64
+sambe_point0_M3.npz,mode_overlap,[178],float64
+sambe_point0_M3.npz,quasienergy_error,[178],float64
+sambe_point0_M3.npz,raw_gauge_shift,[178],int64
+sambe_point0_M3.npz,original_in_zone,[178],bool
+sambe_point0_M3.npz,photon_axis,[7],int64
+sambe_point0_M3.npz,photon_weights,"[178, 7]",float64
+sambe_point0_M3.npz,static_photon_weights,"[178, 7, 178]",float64
+sambe_point0_M3.npz,static_energies,[178],float64
+sambe_point0_M3.npz,photon_participation,[178],float64
+sambe_point0_M3.npz,photon_entropy,[178],float64
+sambe_point0_M3.npz,raw_edge_weight,[178],float64
+sambe_point0_M3.npz,reconstructed_norm,[178],float64
+sambe_point0_M3.npz,modes,"[178, 178]",complex128
+sambe_point0_M3.npz,outer_indices_exact_reference,[36],int64
+sambe_point0_M3.npz,exact_D_site,[178],float64
+sambe_point0_M3.npz,ipr_site,[178],float64
+sambe_point0_M3.npz,ipr_component,[178],float64
+sambe_point0_M3.npz,D_site,[178],float64
+sambe_point0_M3.npz,D_component,[178],float64
+sambe_point0_M3.npz,D_component_logL,[178],float64
+sambe_point0_M3.npz,density,"[89, 178]",float64
+sambe_point1_M1.npz,summary,[],<U1295
+sambe_point1_M1.npz,omega,[],float64
+sambe_point1_M1.npz,phi,[],float64
+sambe_point1_M1.npz,mcut,[],int64
+sambe_point1_M1.npz,raw_sambe_eigenvalues,[534],float64
+sambe_point1_M1.npz,candidate_indices,[178],int64
+sambe_point1_M1.npz,selected_raw_eigenvalues,[178],float64
+sambe_point1_M1.npz,quasienergies,[178],float64
+sambe_point1_M1.npz,exact_quasienergies,[178],float64
+sambe_point1_M1.npz,mode_overlap,[178],float64
+sambe_point1_M1.npz,quasienergy_error,[178],float64
+sambe_point1_M1.npz,raw_gauge_shift,[178],int64
+sambe_point1_M1.npz,original_in_zone,[178],bool
+sambe_point1_M1.npz,photon_axis,[5],int64
+sambe_point1_M1.npz,photon_weights,"[178, 5]",float64
+sambe_point1_M1.npz,static_photon_weights,"[178, 5, 178]",float64
+sambe_point1_M1.npz,static_energies,[178],float64
+sambe_point1_M1.npz,photon_participation,[178],float64
+sambe_point1_M1.npz,photon_entropy,[178],float64
+sambe_point1_M1.npz,raw_edge_weight,[178],float64
+sambe_point1_M1.npz,reconstructed_norm,[178],float64
+sambe_point1_M1.npz,modes,"[178, 178]",complex128
+sambe_point1_M1.npz,outer_indices_exact_reference,[36],int64
+sambe_point1_M1.npz,exact_D_site,[178],float64
+sambe_point1_M1.npz,ipr_site,[178],float64
+sambe_point1_M1.npz,ipr_component,[178],float64
+sambe_point1_M1.npz,D_site,[178],float64
+sambe_point1_M1.npz,D_component,[178],float64
+sambe_point1_M1.npz,D_component_logL,[178],float64
+sambe_point1_M1.npz,density,"[89, 178]",float64
+sambe_point1_M2.npz,summary,[],<U1309
+sambe_point1_M2.npz,omega,[],float64
+sambe_point1_M2.npz,phi,[],float64
+sambe_point1_M2.npz,mcut,[],int64
+sambe_point1_M2.npz,raw_sambe_eigenvalues,[890],float64
+sambe_point1_M2.npz,candidate_indices,[178],int64
+sambe_point1_M2.npz,selected_raw_eigenvalues,[178],float64
+sambe_point1_M2.npz,quasienergies,[178],float64
+sambe_point1_M2.npz,exact_quasienergies,[178],float64
+sambe_point1_M2.npz,mode_overlap,[178],float64
+sambe_point1_M2.npz,quasienergy_error,[178],float64
+sambe_point1_M2.npz,raw_gauge_shift,[178],int64
+sambe_point1_M2.npz,original_in_zone,[178],bool
+sambe_point1_M2.npz,photon_axis,[5],int64
+sambe_point1_M2.npz,photon_weights,"[178, 5]",float64
+sambe_point1_M2.npz,static_photon_weights,"[178, 5, 178]",float64
+sambe_point1_M2.npz,static_energies,[178],float64
+sambe_point1_M2.npz,photon_participation,[178],float64
+sambe_point1_M2.npz,photon_entropy,[178],float64
+sambe_point1_M2.npz,raw_edge_weight,[178],float64
+sambe_point1_M2.npz,reconstructed_norm,[178],float64
+sambe_point1_M2.npz,modes,"[178, 178]",complex128
+sambe_point1_M2.npz,outer_indices_exact_reference,[36],int64
+sambe_point1_M2.npz,exact_D_site,[178],float64
+sambe_point1_M2.npz,ipr_site,[178],float64
+sambe_point1_M2.npz,ipr_component,[178],float64
+sambe_point1_M2.npz,D_site,[178],float64
+sambe_point1_M2.npz,D_component,[178],float64
+sambe_point1_M2.npz,D_component_logL,[178],float64
+sambe_point1_M2.npz,density,"[89, 178]",float64
+sambe_point1_M3.npz,summary,[],<U1318
+sambe_point1_M3.npz,omega,[],float64
+sambe_point1_M3.npz,phi,[],float64
+sambe_point1_M3.npz,mcut,[],int64
+sambe_point1_M3.npz,raw_sambe_eigenvalues,[1246],float64
+sambe_point1_M3.npz,candidate_indices,[178],int64
+sambe_point1_M3.npz,selected_raw_eigenvalues,[178],float64
+sambe_point1_M3.npz,quasienergies,[178],float64
+sambe_point1_M3.npz,exact_quasienergies,[178],float64
+sambe_point1_M3.npz,mode_overlap,[178],float64
+sambe_point1_M3.npz,quasienergy_error,[178],float64
+sambe_point1_M3.npz,raw_gauge_shift,[178],int64
+sambe_point1_M3.npz,original_in_zone,[178],bool
+sambe_point1_M3.npz,photon_axis,[7],int64
+sambe_point1_M3.npz,photon_weights,"[178, 7]",float64
+sambe_point1_M3.npz,static_photon_weights,"[178, 7, 178]",float64
+sambe_point1_M3.npz,static_energies,[178],float64
+sambe_point1_M3.npz,photon_participation,[178],float64
+sambe_point1_M3.npz,photon_entropy,[178],float64
+sambe_point1_M3.npz,raw_edge_weight,[178],float64
+sambe_point1_M3.npz,reconstructed_norm,[178],float64
+sambe_point1_M3.npz,modes,"[178, 178]",complex128
+sambe_point1_M3.npz,outer_indices_exact_reference,[36],int64
+sambe_point1_M3.npz,exact_D_site,[178],float64
+sambe_point1_M3.npz,ipr_site,[178],float64
+sambe_point1_M3.npz,ipr_component,[178],float64
+sambe_point1_M3.npz,D_site,[178],float64
+sambe_point1_M3.npz,D_component,[178],float64
+sambe_point1_M3.npz,D_component_logL,[178],float64
+sambe_point1_M3.npz,density,"[89, 178]",float64
+sambe_point2_M1.npz,summary,[],<U1315
+sambe_point2_M1.npz,omega,[],float64
+sambe_point2_M1.npz,phi,[],float64
+sambe_point2_M1.npz,mcut,[],int64
+sambe_point2_M1.npz,raw_sambe_eigenvalues,[534],float64
+sambe_point2_M1.npz,candidate_indices,[178],int64
+sambe_point2_M1.npz,selected_raw_eigenvalues,[178],float64
+sambe_point2_M1.npz,quasienergies,[178],float64
+sambe_point2_M1.npz,exact_quasienergies,[178],float64
+sambe_point2_M1.npz,mode_overlap,[178],float64
+sambe_point2_M1.npz,quasienergy_error,[178],float64
+sambe_point2_M1.npz,raw_gauge_shift,[178],int64
+sambe_point2_M1.npz,original_in_zone,[178],bool
+sambe_point2_M1.npz,photon_axis,[3],int64
+sambe_point2_M1.npz,photon_weights,"[178, 3]",float64
+sambe_point2_M1.npz,static_photon_weights,"[178, 3, 178]",float64
+sambe_point2_M1.npz,static_energies,[178],float64
+sambe_point2_M1.npz,photon_participation,[178],float64
+sambe_point2_M1.npz,photon_entropy,[178],float64
+sambe_point2_M1.npz,raw_edge_weight,[178],float64
+sambe_point2_M1.npz,reconstructed_norm,[178],float64
+sambe_point2_M1.npz,modes,"[178, 178]",complex128
+sambe_point2_M1.npz,outer_indices_exact_reference,[36],int64
+sambe_point2_M1.npz,exact_D_site,[178],float64
+sambe_point2_M1.npz,ipr_site,[178],float64
+sambe_point2_M1.npz,ipr_component,[178],float64
+sambe_point2_M1.npz,D_site,[178],float64
+sambe_point2_M1.npz,D_component,[178],float64
+sambe_point2_M1.npz,D_component_logL,[178],float64
+sambe_point2_M1.npz,density,"[89, 178]",float64
+sambe_point2_M2.npz,summary,[],<U1325
+sambe_point2_M2.npz,omega,[],float64
+sambe_point2_M2.npz,phi,[],float64
+sambe_point2_M2.npz,mcut,[],int64
+sambe_point2_M2.npz,raw_sambe_eigenvalues,[890],float64
+sambe_point2_M2.npz,candidate_indices,[178],int64
+sambe_point2_M2.npz,selected_raw_eigenvalues,[178],float64
+sambe_point2_M2.npz,quasienergies,[178],float64
+sambe_point2_M2.npz,exact_quasienergies,[178],float64
+sambe_point2_M2.npz,mode_overlap,[178],float64
+sambe_point2_M2.npz,quasienergy_error,[178],float64
+sambe_point2_M2.npz,raw_gauge_shift,[178],int64
+sambe_point2_M2.npz,original_in_zone,[178],bool
+sambe_point2_M2.npz,photon_axis,[5],int64
+sambe_point2_M2.npz,photon_weights,"[178, 5]",float64
+sambe_point2_M2.npz,static_photon_weights,"[178, 5, 178]",float64
+sambe_point2_M2.npz,static_energies,[178],float64
+sambe_point2_M2.npz,photon_participation,[178],float64
+sambe_point2_M2.npz,photon_entropy,[178],float64
+sambe_point2_M2.npz,raw_edge_weight,[178],float64
+sambe_point2_M2.npz,reconstructed_norm,[178],float64
+sambe_point2_M2.npz,modes,"[178, 178]",complex128
+sambe_point2_M2.npz,outer_indices_exact_reference,[36],int64
+sambe_point2_M2.npz,exact_D_site,[178],float64
+sambe_point2_M2.npz,ipr_site,[178],float64
+sambe_point2_M2.npz,ipr_component,[178],float64
+sambe_point2_M2.npz,D_site,[178],float64
+sambe_point2_M2.npz,D_component,[178],float64
+sambe_point2_M2.npz,D_component_logL,[178],float64
+sambe_point2_M2.npz,density,"[89, 178]",float64
+sambe_point2_M3.npz,summary,[],<U1326
+sambe_point2_M3.npz,omega,[],float64
+sambe_point2_M3.npz,phi,[],float64
+sambe_point2_M3.npz,mcut,[],int64
+sambe_point2_M3.npz,raw_sambe_eigenvalues,[1246],float64
+sambe_point2_M3.npz,candidate_indices,[178],int64
+sambe_point2_M3.npz,selected_raw_eigenvalues,[178],float64
+sambe_point2_M3.npz,quasienergies,[178],float64
+sambe_point2_M3.npz,exact_quasienergies,[178],float64
+sambe_point2_M3.npz,mode_overlap,[178],float64
+sambe_point2_M3.npz,quasienergy_error,[178],float64
+sambe_point2_M3.npz,raw_gauge_shift,[178],int64
+sambe_point2_M3.npz,original_in_zone,[178],bool
+sambe_point2_M3.npz,photon_axis,[7],int64
+sambe_point2_M3.npz,photon_weights,"[178, 7]",float64
+sambe_point2_M3.npz,static_photon_weights,"[178, 7, 178]",float64
+sambe_point2_M3.npz,static_energies,[178],float64
+sambe_point2_M3.npz,photon_participation,[178],float64
+sambe_point2_M3.npz,photon_entropy,[178],float64
+sambe_point2_M3.npz,raw_edge_weight,[178],float64
+sambe_point2_M3.npz,reconstructed_norm,[178],float64
+sambe_point2_M3.npz,modes,"[178, 178]",complex128
+sambe_point2_M3.npz,outer_indices_exact_reference,[36],int64
+sambe_point2_M3.npz,exact_D_site,[178],float64
+sambe_point2_M3.npz,ipr_site,[178],float64
+sambe_point2_M3.npz,ipr_component,[178],float64
+sambe_point2_M3.npz,D_site,[178],float64
+sambe_point2_M3.npz,D_component,[178],float64
+sambe_point2_M3.npz,D_component_logL,[178],float64
+sambe_point2_M3.npz,density,"[89, 178]",float64
+sambe_point3_M1.npz,summary,[],<U1322
+sambe_point3_M1.npz,omega,[],float64
+sambe_point3_M1.npz,phi,[],float64
+sambe_point3_M1.npz,mcut,[],int64
+sambe_point3_M1.npz,raw_sambe_eigenvalues,[534],float64
+sambe_point3_M1.npz,candidate_indices,[178],int64
+sambe_point3_M1.npz,selected_raw_eigenvalues,[178],float64
+sambe_point3_M1.npz,quasienergies,[178],float64
+sambe_point3_M1.npz,exact_quasienergies,[178],float64
+sambe_point3_M1.npz,mode_overlap,[178],float64
+sambe_point3_M1.npz,quasienergy_error,[178],float64
+sambe_point3_M1.npz,raw_gauge_shift,[178],int64
+sambe_point3_M1.npz,original_in_zone,[178],bool
+sambe_point3_M1.npz,photon_axis,[3],int64
+sambe_point3_M1.npz,photon_weights,"[178, 3]",float64
+sambe_point3_M1.npz,static_photon_weights,"[178, 3, 178]",float64
+sambe_point3_M1.npz,static_energies,[178],float64
+sambe_point3_M1.npz,photon_participation,[178],float64
+sambe_point3_M1.npz,photon_entropy,[178],float64
+sambe_point3_M1.npz,raw_edge_weight,[178],float64
+sambe_point3_M1.npz,reconstructed_norm,[178],float64
+sambe_point3_M1.npz,modes,"[178, 178]",complex128
+sambe_point3_M1.npz,outer_indices_exact_reference,[36],int64
+sambe_point3_M1.npz,exact_D_site,[178],float64
+sambe_point3_M1.npz,ipr_site,[178],float64
+sambe_point3_M1.npz,ipr_component,[178],float64
+sambe_point3_M1.npz,D_site,[178],float64
+sambe_point3_M1.npz,D_component,[178],float64
+sambe_point3_M1.npz,D_component_logL,[178],float64
+sambe_point3_M1.npz,density,"[89, 178]",float64
+sambe_point3_M2.npz,summary,[],<U1331
+sambe_point3_M2.npz,omega,[],float64
+sambe_point3_M2.npz,phi,[],float64
+sambe_point3_M2.npz,mcut,[],int64
+sambe_point3_M2.npz,raw_sambe_eigenvalues,[890],float64
+sambe_point3_M2.npz,candidate_indices,[178],int64
+sambe_point3_M2.npz,selected_raw_eigenvalues,[178],float64
+sambe_point3_M2.npz,quasienergies,[178],float64
+sambe_point3_M2.npz,exact_quasienergies,[178],float64
+sambe_point3_M2.npz,mode_overlap,[178],float64
+sambe_point3_M2.npz,quasienergy_error,[178],float64
+sambe_point3_M2.npz,raw_gauge_shift,[178],int64
+sambe_point3_M2.npz,original_in_zone,[178],bool
+sambe_point3_M2.npz,photon_axis,[5],int64
+sambe_point3_M2.npz,photon_weights,"[178, 5]",float64
+sambe_point3_M2.npz,static_photon_weights,"[178, 5, 178]",float64
+sambe_point3_M2.npz,static_energies,[178],float64
+sambe_point3_M2.npz,photon_participation,[178],float64
+sambe_point3_M2.npz,photon_entropy,[178],float64
+sambe_point3_M2.npz,raw_edge_weight,[178],float64
+sambe_point3_M2.npz,reconstructed_norm,[178],float64
+sambe_point3_M2.npz,modes,"[178, 178]",complex128
+sambe_point3_M2.npz,outer_indices_exact_reference,[36],int64
+sambe_point3_M2.npz,exact_D_site,[178],float64
+sambe_point3_M2.npz,ipr_site,[178],float64
+sambe_point3_M2.npz,ipr_component,[178],float64
+sambe_point3_M2.npz,D_site,[178],float64
+sambe_point3_M2.npz,D_component,[178],float64
+sambe_point3_M2.npz,D_component_logL,[178],float64
+sambe_point3_M2.npz,density,"[89, 178]",float64
+sambe_point3_M3.npz,summary,[],<U1332
+sambe_point3_M3.npz,omega,[],float64
+sambe_point3_M3.npz,phi,[],float64
+sambe_point3_M3.npz,mcut,[],int64
+sambe_point3_M3.npz,raw_sambe_eigenvalues,[1246],float64
+sambe_point3_M3.npz,candidate_indices,[178],int64
+sambe_point3_M3.npz,selected_raw_eigenvalues,[178],float64
+sambe_point3_M3.npz,quasienergies,[178],float64
+sambe_point3_M3.npz,exact_quasienergies,[178],float64
+sambe_point3_M3.npz,mode_overlap,[178],float64
+sambe_point3_M3.npz,quasienergy_error,[178],float64
+sambe_point3_M3.npz,raw_gauge_shift,[178],int64
+sambe_point3_M3.npz,original_in_zone,[178],bool
+sambe_point3_M3.npz,photon_axis,[7],int64
+sambe_point3_M3.npz,photon_weights,"[178, 7]",float64
+sambe_point3_M3.npz,static_photon_weights,"[178, 7, 178]",float64
+sambe_point3_M3.npz,static_energies,[178],float64
+sambe_point3_M3.npz,photon_participation,[178],float64
+sambe_point3_M3.npz,photon_entropy,[178],float64
+sambe_point3_M3.npz,raw_edge_weight,[178],float64
+sambe_point3_M3.npz,reconstructed_norm,[178],float64
+sambe_point3_M3.npz,modes,"[178, 178]",complex128
+sambe_point3_M3.npz,outer_indices_exact_reference,[36],int64
+sambe_point3_M3.npz,exact_D_site,[178],float64
+sambe_point3_M3.npz,ipr_site,[178],float64
+sambe_point3_M3.npz,ipr_component,[178],float64
+sambe_point3_M3.npz,D_site,[178],float64
+sambe_point3_M3.npz,D_component,[178],float64
+sambe_point3_M3.npz,D_component_logL,[178],float64
+sambe_point3_M3.npz,density,"[89, 178]",float64
+single_drive_controls.npz,omega,[3],float64
+single_drive_controls.npz,phi,[3],float64
+single_drive_controls.npz,control_names,[2],<U6
+single_drive_controls.npz,static_quasienergies,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,static_ipr_site,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,static_ipr_component,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,static_D_site,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,static_D_component,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,static_D_component_logL,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,kick_quasienergies,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,kick_ipr_site,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,kick_ipr_component,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,kick_D_site,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,kick_D_component,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,kick_D_component_logL,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,exact_quasienergies,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,exact_ipr_site,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,exact_ipr_component,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,exact_D_site,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,exact_D_component,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,exact_D_component_logL,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,static_outer_indices,"[2, 3, 3, 36]",int64
+single_drive_controls.npz,kick_outer_indices,"[2, 3, 3, 36]",int64
+single_drive_controls.npz,exact_outer_indices,"[2, 3, 3, 36]",int64
+single_drive_controls.npz,static_static_outer_weights,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,kick_static_outer_weights,"[2, 3, 3, 178]",float64
+single_drive_controls.npz,exact_static_outer_weights,"[2, 3, 3, 178]",float64
+validation_diagnostics.npz,point0_DOP853_quasienergies,[178],float64
+validation_diagnostics.npz,point0_DOP853_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point0_DOP853_D_site,[178],float64
+validation_diagnostics.npz,point0_DOP853_D_component,[178],float64
+validation_diagnostics.npz,point0_DOP853_ipr_site,[178],float64
+validation_diagnostics.npz,point0_DOP853_ipr_component,[178],float64
+validation_diagnostics.npz,point0_DOP853_outer_indices,[36],int64
+validation_diagnostics.npz,point0_coordinates,[2],float64
+validation_diagnostics.npz,point0_steps32_quasienergies,[178],float64
+validation_diagnostics.npz,point0_steps32_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point0_steps32_D_site,[178],float64
+validation_diagnostics.npz,point0_steps32_D_component,[178],float64
+validation_diagnostics.npz,point0_steps32_ipr_site,[178],float64
+validation_diagnostics.npz,point0_steps32_ipr_component,[178],float64
+validation_diagnostics.npz,point0_steps32_outer_indices,[36],int64
+validation_diagnostics.npz,point0_steps64_quasienergies,[178],float64
+validation_diagnostics.npz,point0_steps64_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point0_steps64_D_site,[178],float64
+validation_diagnostics.npz,point0_steps64_D_component,[178],float64
+validation_diagnostics.npz,point0_steps64_ipr_site,[178],float64
+validation_diagnostics.npz,point0_steps64_ipr_component,[178],float64
+validation_diagnostics.npz,point0_steps64_outer_indices,[36],int64
+validation_diagnostics.npz,point0_steps128_quasienergies,[178],float64
+validation_diagnostics.npz,point0_steps128_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point0_steps128_D_site,[178],float64
+validation_diagnostics.npz,point0_steps128_D_component,[178],float64
+validation_diagnostics.npz,point0_steps128_ipr_site,[178],float64
+validation_diagnostics.npz,point0_steps128_ipr_component,[178],float64
+validation_diagnostics.npz,point0_steps128_outer_indices,[36],int64
+validation_diagnostics.npz,point1_DOP853_quasienergies,[178],float64
+validation_diagnostics.npz,point1_DOP853_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point1_DOP853_D_site,[178],float64
+validation_diagnostics.npz,point1_DOP853_D_component,[178],float64
+validation_diagnostics.npz,point1_DOP853_ipr_site,[178],float64
+validation_diagnostics.npz,point1_DOP853_ipr_component,[178],float64
+validation_diagnostics.npz,point1_DOP853_outer_indices,[36],int64
+validation_diagnostics.npz,point1_coordinates,[2],float64
+validation_diagnostics.npz,point1_steps32_quasienergies,[178],float64
+validation_diagnostics.npz,point1_steps32_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point1_steps32_D_site,[178],float64
+validation_diagnostics.npz,point1_steps32_D_component,[178],float64
+validation_diagnostics.npz,point1_steps32_ipr_site,[178],float64
+validation_diagnostics.npz,point1_steps32_ipr_component,[178],float64
+validation_diagnostics.npz,point1_steps32_outer_indices,[36],int64
+validation_diagnostics.npz,point1_steps64_quasienergies,[178],float64
+validation_diagnostics.npz,point1_steps64_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point1_steps64_D_site,[178],float64
+validation_diagnostics.npz,point1_steps64_D_component,[178],float64
+validation_diagnostics.npz,point1_steps64_ipr_site,[178],float64
+validation_diagnostics.npz,point1_steps64_ipr_component,[178],float64
+validation_diagnostics.npz,point1_steps64_outer_indices,[36],int64
+validation_diagnostics.npz,point1_steps128_quasienergies,[178],float64
+validation_diagnostics.npz,point1_steps128_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point1_steps128_D_site,[178],float64
+validation_diagnostics.npz,point1_steps128_D_component,[178],float64
+validation_diagnostics.npz,point1_steps128_ipr_site,[178],float64
+validation_diagnostics.npz,point1_steps128_ipr_component,[178],float64
+validation_diagnostics.npz,point1_steps128_outer_indices,[36],int64
+validation_diagnostics.npz,point2_DOP853_quasienergies,[178],float64
+validation_diagnostics.npz,point2_DOP853_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point2_DOP853_D_site,[178],float64
+validation_diagnostics.npz,point2_DOP853_D_component,[178],float64
+validation_diagnostics.npz,point2_DOP853_ipr_site,[178],float64
+validation_diagnostics.npz,point2_DOP853_ipr_component,[178],float64
+validation_diagnostics.npz,point2_DOP853_outer_indices,[36],int64
+validation_diagnostics.npz,point2_coordinates,[2],float64
+validation_diagnostics.npz,point2_steps32_quasienergies,[178],float64
+validation_diagnostics.npz,point2_steps32_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point2_steps32_D_site,[178],float64
+validation_diagnostics.npz,point2_steps32_D_component,[178],float64
+validation_diagnostics.npz,point2_steps32_ipr_site,[178],float64
+validation_diagnostics.npz,point2_steps32_ipr_component,[178],float64
+validation_diagnostics.npz,point2_steps32_outer_indices,[36],int64
+validation_diagnostics.npz,point2_steps64_quasienergies,[178],float64
+validation_diagnostics.npz,point2_steps64_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point2_steps64_D_site,[178],float64
+validation_diagnostics.npz,point2_steps64_D_component,[178],float64
+validation_diagnostics.npz,point2_steps64_ipr_site,[178],float64
+validation_diagnostics.npz,point2_steps64_ipr_component,[178],float64
+validation_diagnostics.npz,point2_steps64_outer_indices,[36],int64
+validation_diagnostics.npz,point2_steps128_quasienergies,[178],float64
+validation_diagnostics.npz,point2_steps128_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point2_steps128_D_site,[178],float64
+validation_diagnostics.npz,point2_steps128_D_component,[178],float64
+validation_diagnostics.npz,point2_steps128_ipr_site,[178],float64
+validation_diagnostics.npz,point2_steps128_ipr_component,[178],float64
+validation_diagnostics.npz,point2_steps128_outer_indices,[36],int64
+validation_diagnostics.npz,point3_DOP853_quasienergies,[178],float64
+validation_diagnostics.npz,point3_DOP853_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point3_DOP853_D_site,[178],float64
+validation_diagnostics.npz,point3_DOP853_D_component,[178],float64
+validation_diagnostics.npz,point3_DOP853_ipr_site,[178],float64
+validation_diagnostics.npz,point3_DOP853_ipr_component,[178],float64
+validation_diagnostics.npz,point3_DOP853_outer_indices,[36],int64
+validation_diagnostics.npz,point3_coordinates,[2],float64
+validation_diagnostics.npz,point3_steps32_quasienergies,[178],float64
+validation_diagnostics.npz,point3_steps32_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point3_steps32_D_site,[178],float64
+validation_diagnostics.npz,point3_steps32_D_component,[178],float64
+validation_diagnostics.npz,point3_steps32_ipr_site,[178],float64
+validation_diagnostics.npz,point3_steps32_ipr_component,[178],float64
+validation_diagnostics.npz,point3_steps32_outer_indices,[36],int64
+validation_diagnostics.npz,point3_steps64_quasienergies,[178],float64
+validation_diagnostics.npz,point3_steps64_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point3_steps64_D_site,[178],float64
+validation_diagnostics.npz,point3_steps64_D_component,[178],float64
+validation_diagnostics.npz,point3_steps64_ipr_site,[178],float64
+validation_diagnostics.npz,point3_steps64_ipr_component,[178],float64
+validation_diagnostics.npz,point3_steps64_outer_indices,[36],int64
+validation_diagnostics.npz,point3_steps128_quasienergies,[178],float64
+validation_diagnostics.npz,point3_steps128_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point3_steps128_D_site,[178],float64
+validation_diagnostics.npz,point3_steps128_D_component,[178],float64
+validation_diagnostics.npz,point3_steps128_ipr_site,[178],float64
+validation_diagnostics.npz,point3_steps128_ipr_component,[178],float64
+validation_diagnostics.npz,point3_steps128_outer_indices,[36],int64
+validation_diagnostics.npz,point4_DOP853_quasienergies,[178],float64
+validation_diagnostics.npz,point4_DOP853_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point4_DOP853_D_site,[178],float64
+validation_diagnostics.npz,point4_DOP853_D_component,[178],float64
+validation_diagnostics.npz,point4_DOP853_ipr_site,[178],float64
+validation_diagnostics.npz,point4_DOP853_ipr_component,[178],float64
+validation_diagnostics.npz,point4_DOP853_outer_indices,[36],int64
+validation_diagnostics.npz,point4_coordinates,[2],float64
+validation_diagnostics.npz,point4_steps32_quasienergies,[178],float64
+validation_diagnostics.npz,point4_steps32_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point4_steps32_D_site,[178],float64
+validation_diagnostics.npz,point4_steps32_D_component,[178],float64
+validation_diagnostics.npz,point4_steps32_ipr_site,[178],float64
+validation_diagnostics.npz,point4_steps32_ipr_component,[178],float64
+validation_diagnostics.npz,point4_steps32_outer_indices,[36],int64
+validation_diagnostics.npz,point4_steps64_quasienergies,[178],float64
+validation_diagnostics.npz,point4_steps64_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point4_steps64_D_site,[178],float64
+validation_diagnostics.npz,point4_steps64_D_component,[178],float64
+validation_diagnostics.npz,point4_steps64_ipr_site,[178],float64
+validation_diagnostics.npz,point4_steps64_ipr_component,[178],float64
+validation_diagnostics.npz,point4_steps64_outer_indices,[36],int64
+validation_diagnostics.npz,point4_steps128_quasienergies,[178],float64
+validation_diagnostics.npz,point4_steps128_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point4_steps128_D_site,[178],float64
+validation_diagnostics.npz,point4_steps128_D_component,[178],float64
+validation_diagnostics.npz,point4_steps128_ipr_site,[178],float64
+validation_diagnostics.npz,point4_steps128_ipr_component,[178],float64
+validation_diagnostics.npz,point4_steps128_outer_indices,[36],int64
+validation_diagnostics.npz,point5_DOP853_quasienergies,[178],float64
+validation_diagnostics.npz,point5_DOP853_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point5_DOP853_D_site,[178],float64
+validation_diagnostics.npz,point5_DOP853_D_component,[178],float64
+validation_diagnostics.npz,point5_DOP853_ipr_site,[178],float64
+validation_diagnostics.npz,point5_DOP853_ipr_component,[178],float64
+validation_diagnostics.npz,point5_DOP853_outer_indices,[36],int64
+validation_diagnostics.npz,point5_coordinates,[2],float64
+validation_diagnostics.npz,point5_steps32_quasienergies,[178],float64
+validation_diagnostics.npz,point5_steps32_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point5_steps32_D_site,[178],float64
+validation_diagnostics.npz,point5_steps32_D_component,[178],float64
+validation_diagnostics.npz,point5_steps32_ipr_site,[178],float64
+validation_diagnostics.npz,point5_steps32_ipr_component,[178],float64
+validation_diagnostics.npz,point5_steps32_outer_indices,[36],int64
+validation_diagnostics.npz,point5_steps64_quasienergies,[178],float64
+validation_diagnostics.npz,point5_steps64_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point5_steps64_D_site,[178],float64
+validation_diagnostics.npz,point5_steps64_D_component,[178],float64
+validation_diagnostics.npz,point5_steps64_ipr_site,[178],float64
+validation_diagnostics.npz,point5_steps64_ipr_component,[178],float64
+validation_diagnostics.npz,point5_steps64_outer_indices,[36],int64
+validation_diagnostics.npz,point5_steps128_quasienergies,[178],float64
+validation_diagnostics.npz,point5_steps128_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point5_steps128_D_site,[178],float64
+validation_diagnostics.npz,point5_steps128_D_component,[178],float64
+validation_diagnostics.npz,point5_steps128_ipr_site,[178],float64
+validation_diagnostics.npz,point5_steps128_ipr_component,[178],float64
+validation_diagnostics.npz,point5_steps128_outer_indices,[36],int64
+validation_diagnostics.npz,point6_DOP853_quasienergies,[178],float64
+validation_diagnostics.npz,point6_DOP853_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point6_DOP853_D_site,[178],float64
+validation_diagnostics.npz,point6_DOP853_D_component,[178],float64
+validation_diagnostics.npz,point6_DOP853_ipr_site,[178],float64
+validation_diagnostics.npz,point6_DOP853_ipr_component,[178],float64
+validation_diagnostics.npz,point6_DOP853_outer_indices,[36],int64
+validation_diagnostics.npz,point6_coordinates,[2],float64
+validation_diagnostics.npz,point6_steps32_quasienergies,[178],float64
+validation_diagnostics.npz,point6_steps32_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point6_steps32_D_site,[178],float64
+validation_diagnostics.npz,point6_steps32_D_component,[178],float64
+validation_diagnostics.npz,point6_steps32_ipr_site,[178],float64
+validation_diagnostics.npz,point6_steps32_ipr_component,[178],float64
+validation_diagnostics.npz,point6_steps32_outer_indices,[36],int64
+validation_diagnostics.npz,point6_steps64_quasienergies,[178],float64
+validation_diagnostics.npz,point6_steps64_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point6_steps64_D_site,[178],float64
+validation_diagnostics.npz,point6_steps64_D_component,[178],float64
+validation_diagnostics.npz,point6_steps64_ipr_site,[178],float64
+validation_diagnostics.npz,point6_steps64_ipr_component,[178],float64
+validation_diagnostics.npz,point6_steps64_outer_indices,[36],int64
+validation_diagnostics.npz,point6_steps128_quasienergies,[178],float64
+validation_diagnostics.npz,point6_steps128_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point6_steps128_D_site,[178],float64
+validation_diagnostics.npz,point6_steps128_D_component,[178],float64
+validation_diagnostics.npz,point6_steps128_ipr_site,[178],float64
+validation_diagnostics.npz,point6_steps128_ipr_component,[178],float64
+validation_diagnostics.npz,point6_steps128_outer_indices,[36],int64
+validation_diagnostics.npz,point7_DOP853_quasienergies,[178],float64
+validation_diagnostics.npz,point7_DOP853_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point7_DOP853_D_site,[178],float64
+validation_diagnostics.npz,point7_DOP853_D_component,[178],float64
+validation_diagnostics.npz,point7_DOP853_ipr_site,[178],float64
+validation_diagnostics.npz,point7_DOP853_ipr_component,[178],float64
+validation_diagnostics.npz,point7_DOP853_outer_indices,[36],int64
+validation_diagnostics.npz,point7_coordinates,[2],float64
+validation_diagnostics.npz,point7_steps32_quasienergies,[178],float64
+validation_diagnostics.npz,point7_steps32_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point7_steps32_D_site,[178],float64
+validation_diagnostics.npz,point7_steps32_D_component,[178],float64
+validation_diagnostics.npz,point7_steps32_ipr_site,[178],float64
+validation_diagnostics.npz,point7_steps32_ipr_component,[178],float64
+validation_diagnostics.npz,point7_steps32_outer_indices,[36],int64
+validation_diagnostics.npz,point7_steps64_quasienergies,[178],float64
+validation_diagnostics.npz,point7_steps64_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point7_steps64_D_site,[178],float64
+validation_diagnostics.npz,point7_steps64_D_component,[178],float64
+validation_diagnostics.npz,point7_steps64_ipr_site,[178],float64
+validation_diagnostics.npz,point7_steps64_ipr_component,[178],float64
+validation_diagnostics.npz,point7_steps64_outer_indices,[36],int64
+validation_diagnostics.npz,point7_steps128_quasienergies,[178],float64
+validation_diagnostics.npz,point7_steps128_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point7_steps128_D_site,[178],float64
+validation_diagnostics.npz,point7_steps128_D_component,[178],float64
+validation_diagnostics.npz,point7_steps128_ipr_site,[178],float64
+validation_diagnostics.npz,point7_steps128_ipr_component,[178],float64
+validation_diagnostics.npz,point7_steps128_outer_indices,[36],int64
+validation_diagnostics.npz,point8_DOP853_quasienergies,[178],float64
+validation_diagnostics.npz,point8_DOP853_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point8_DOP853_D_site,[178],float64
+validation_diagnostics.npz,point8_DOP853_D_component,[178],float64
+validation_diagnostics.npz,point8_DOP853_ipr_site,[178],float64
+validation_diagnostics.npz,point8_DOP853_ipr_component,[178],float64
+validation_diagnostics.npz,point8_DOP853_outer_indices,[36],int64
+validation_diagnostics.npz,point8_coordinates,[2],float64
+validation_diagnostics.npz,point8_steps32_quasienergies,[178],float64
+validation_diagnostics.npz,point8_steps32_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point8_steps32_D_site,[178],float64
+validation_diagnostics.npz,point8_steps32_D_component,[178],float64
+validation_diagnostics.npz,point8_steps32_ipr_site,[178],float64
+validation_diagnostics.npz,point8_steps32_ipr_component,[178],float64
+validation_diagnostics.npz,point8_steps32_outer_indices,[36],int64
+validation_diagnostics.npz,point8_steps64_quasienergies,[178],float64
+validation_diagnostics.npz,point8_steps64_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point8_steps64_D_site,[178],float64
+validation_diagnostics.npz,point8_steps64_D_component,[178],float64
+validation_diagnostics.npz,point8_steps64_ipr_site,[178],float64
+validation_diagnostics.npz,point8_steps64_ipr_component,[178],float64
+validation_diagnostics.npz,point8_steps64_outer_indices,[36],int64
+validation_diagnostics.npz,point8_steps128_quasienergies,[178],float64
+validation_diagnostics.npz,point8_steps128_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point8_steps128_D_site,[178],float64
+validation_diagnostics.npz,point8_steps128_D_component,[178],float64
+validation_diagnostics.npz,point8_steps128_ipr_site,[178],float64
+validation_diagnostics.npz,point8_steps128_ipr_component,[178],float64
+validation_diagnostics.npz,point8_steps128_outer_indices,[36],int64
+validation_diagnostics.npz,minimum_gap_Q_resolved_DOP853_quasienergies,[178],float64
+validation_diagnostics.npz,minimum_gap_Q_resolved_DOP853_modes,"[178, 178]",complex128
+validation_diagnostics.npz,minimum_gap_Q_resolved_DOP853_D_site,[178],float64
+validation_diagnostics.npz,minimum_gap_Q_resolved_DOP853_D_component,[178],float64
+validation_diagnostics.npz,minimum_gap_Q_resolved_DOP853_ipr_site,[178],float64
+validation_diagnostics.npz,minimum_gap_Q_resolved_DOP853_ipr_component,[178],float64
+validation_diagnostics.npz,minimum_gap_Q_resolved_DOP853_outer_indices,[36],int64
+validation_diagnostics.npz,point3_Q_resolved_DOP853_quasienergies,[178],float64
+validation_diagnostics.npz,point3_Q_resolved_DOP853_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point3_Q_resolved_DOP853_D_site,[178],float64
+validation_diagnostics.npz,point3_Q_resolved_DOP853_D_component,[178],float64
+validation_diagnostics.npz,point3_Q_resolved_DOP853_ipr_site,[178],float64
+validation_diagnostics.npz,point3_Q_resolved_DOP853_ipr_component,[178],float64
+validation_diagnostics.npz,point3_Q_resolved_DOP853_outer_indices,[36],int64
+validation_diagnostics.npz,point3_steps256_quasienergies,[178],float64
+validation_diagnostics.npz,point3_steps256_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point3_steps256_D_site,[178],float64
+validation_diagnostics.npz,point3_steps256_D_component,[178],float64
+validation_diagnostics.npz,point3_steps256_ipr_site,[178],float64
+validation_diagnostics.npz,point3_steps256_ipr_component,[178],float64
+validation_diagnostics.npz,point3_steps256_outer_indices,[36],int64
+validation_diagnostics.npz,point3_steps512_quasienergies,[178],float64
+validation_diagnostics.npz,point3_steps512_modes,"[178, 178]",complex128
+validation_diagnostics.npz,point3_steps512_D_site,[178],float64
+validation_diagnostics.npz,point3_steps512_D_component,[178],float64
+validation_diagnostics.npz,point3_steps512_ipr_site,[178],float64
+validation_diagnostics.npz,point3_steps512_ipr_component,[178],float64
+validation_diagnostics.npz,point3_steps512_outer_indices,[36],int64
+validation_diagnostics.npz,points_json,[],<U1324
+validation_diagnostics.npz,schema,[],<U179

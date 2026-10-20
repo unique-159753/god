@@ -1,0 +1,129 @@
+{
+  "generated_utc": "2026-10-20T08:51:22.010217+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "libraries": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0",
+    "Pillow": "12.3.0"
+  },
+  "grid_points": 8991,
+  "additional_pi_over_3_points": 111,
+  "main_time_steps": 64,
+  "representative_time_steps": 128,
+  "validation": "whole-grid integrity plus selected convergence; see numerical warnings",
+  "figures": [
+    {
+      "png": "fig1_resonance_vs_localization.png",
+      "pdf": "fig1_resonance_vs_localization.pdf",
+      "pixels": [
+        4662,
+        1452
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "png": "fig2_resonance_correlation.png",
+      "pdf": "fig2_resonance_correlation.pdf",
+      "pixels": [
+        3753,
+        2700
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "png": "fig3_representative_cases.png",
+      "pdf": "fig3_representative_cases.pdf",
+      "pixels": [
+        3715,
+        4065
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    },
+    {
+      "png": "fig3_resonant_state_pairs.png",
+      "pdf": "fig3_resonant_state_pairs.pdf",
+      "pixels": [
+        4590,
+        1370
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    },
+    {
+      "png": "fig4_NNN_vs_resonance.png",
+      "pdf": "fig4_NNN_vs_resonance.pdf",
+      "pixels": [
+        4520,
+        2518
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    },
+    {
+      "png": "fig5_sambe_mixing.png",
+      "pdf": "fig5_sambe_mixing.pdf",
+      "pixels": [
+        4775,
+        1702
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "png": "figS_branch_selection_diagnostics.png",
+      "pdf": "figS_branch_selection_diagnostics.pdf",
+      "pixels": [
+        3392,
+        2422
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "png": "figS_broadening_sensitivity.png",
+      "pdf": "figS_broadening_sensitivity.pdf",
+      "pixels": [
+        4081,
+        2198
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    {
+      "png": "figureS_kick_baseline.png",
+      "pdf": "figureS_kick_baseline.pdf",
+      "pixels": [
+        4450,
+        2483
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    }
+  ],
+  "archive_scope": "All scientific output including every point checkpoint, source code, reports and diagnostics; venv/temp binaries excluded",
+  "uniform_accuracy_claim": false
+}
