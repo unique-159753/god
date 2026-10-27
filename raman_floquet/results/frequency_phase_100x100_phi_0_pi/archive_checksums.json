@@ -1,0 +1,14 @@
+{
+  "frequency_refined_figures_report_code.zip": {
+    "bytes": 11283831,
+    "sha256": "6da18c60d263f64db966b206ccd30a7d56479f3ad91f181994b2decf630c7bb3",
+    "members": 53,
+    "CRC_passed": true
+  },
+  "frequency_refined_complete_data.zip": {
+    "bytes": 4267568336,
+    "sha256": "17051271fd79715a6fe9b432a88f73e3d52d9514e54ce4e582fc01f6e5fb7381",
+    "members": 30358,
+    "CRC_passed": true
+  }
+}

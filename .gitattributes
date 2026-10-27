@@ -3,3 +3,7 @@ raman_floquet/results/localization_grid.npz filter=lfs diff=lfs merge=lfs -text
 raman_floquet/results/*.csv -text whitespace=cr-at-eol
 raman_floquet/results/frequency_phase_three_V/*.csv -text whitespace=cr-at-eol
 raman_floquet/results/frequency_phase_three_V/eigenstate_observables.csv filter=lfs diff=lfs merge=lfs -text
+raman_floquet/results/frequency_phase_100x100_phi_0_pi/*.csv -text whitespace=cr-at-eol
+raman_floquet/results/frequency_phase_100x100_phi_0_pi/eigenstate_observables.csv filter=lfs diff=lfs merge=lfs -text
+raman_floquet/results/frequency_phase_100x100_phi_0_pi/frequency_phase_scan.npz filter=lfs diff=lfs merge=lfs -text
+raman_floquet/results/frequency_phase_100x100_phi_0_pi/raw_points_V*.zip filter=lfs diff=lfs merge=lfs -text

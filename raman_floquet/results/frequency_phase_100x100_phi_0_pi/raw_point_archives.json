@@ -1,0 +1,37 @@
+{
+  "total_points": 30300,
+  "archives": {
+    "raw_points_V0.zip": {
+      "V_index": 0,
+      "V": 0.5,
+      "bytes": 1340741396,
+      "members": 10100,
+      "sha256": "5744b9777e2d1baa01ec0451dbc7977c0026b37f74e4654666eb66956af9e7cb",
+      "CRC_passed": true,
+      "compression": "ZIP_STORED",
+      "member_prefix": "points/"
+    },
+    "raw_points_V1.zip": {
+      "V_index": 1,
+      "V": 2.0,
+      "bytes": 1343930445,
+      "members": 10100,
+      "sha256": "9a896927cd420602cd582d0411a726b7d8a9cc2fa7227672f974ce115ecb7788",
+      "CRC_passed": true,
+      "compression": "ZIP_STORED",
+      "member_prefix": "points/"
+    },
+    "raw_points_V2.zip": {
+      "V_index": 2,
+      "V": 4.0,
+      "bytes": 1348942747,
+      "members": 10100,
+      "sha256": "78da0fe9edda90b7e70c52a21dfa46c14e5a08b136acc302276769b1acf08712",
+      "CRC_passed": true,
+      "compression": "ZIP_STORED",
+      "member_prefix": "points/"
+    }
+  },
+  "restore": "python3 unpack_frequency_refined_points.py",
+  "purpose": "lossless Git LFS storage of all raw-state checkpoints; full delivery ZIP contains actual points instead"
+}

@@ -1,0 +1,130 @@
+{
+  "created_utc": "2026-10-27T14:15:26.438328+00:00",
+  "python": "3.12.14",
+  "libraries": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0",
+    "Pillow": "12.3.0"
+  },
+  "sources": [
+    {
+      "path": "model.py",
+      "sha256": "2a8b4ae6cc5d3cf299145170929a4f503214160fb05f93b8cd80501f366b11ef"
+    },
+    {
+      "path": "frequency_solver.py",
+      "sha256": "ec2c2a03bbe450378d2d9769f6d373cf77bb1293e232031ece71cabc1d77de5b"
+    },
+    {
+      "path": "frequency_fast_native.py",
+      "sha256": "d4a72c302cafabc8a8be4708b88c1b95f921609c0a381b8dfabc1a3abd8a244b"
+    },
+    {
+      "path": "frequency_baselines.py",
+      "sha256": "d397227257f6616803598469748c78fc92510150f350fb3df4d3c7b68b8ba59b"
+    },
+    {
+      "path": "scan_frequency_phase_refined.py",
+      "sha256": "88bc1a37cf5dc6f86f05457ef8145ec2c1629c8d1479fcee69e8f32e5d3afbae"
+    },
+    {
+      "path": "validate_frequency_phase_refined.py",
+      "sha256": "f9c16b60103d891f95789d3c3f9e1db123b5457471218e3b5cfef841bd532a77"
+    },
+    {
+      "path": "plot_frequency_phase_refined.py",
+      "sha256": "440dd4c54b028e47f764a6bbbaa5a2f1379ea5c085de21eb34a4492535f76ef1"
+    },
+    {
+      "path": "write_frequency_refined_report.py",
+      "sha256": "90b55f8f1fc0e5a01feed0dfa31efee90c384436741fac9b6ca0e39a4ea6188f"
+    },
+    {
+      "path": "package_frequency_refined.py",
+      "sha256": "d849f539b46bc272e11bf7dc5710e6ee524509f814723e2ac5a5f40e9323fc5d"
+    },
+    {
+      "path": "read_frequency_point.py",
+      "sha256": "feebcca50e4b1a67c299472dfd8858f65dd1247f95026e01537bc0c18807ff7b"
+    },
+    {
+      "path": "run_frequency_refined.sh",
+      "sha256": "1c5ad65a13e4bca061bb1c5b6f8674d6e2c667dbb23e669d21ff70a8d7f88620"
+    },
+    {
+      "path": "unpack_frequency_refined_points.py",
+      "sha256": "fa1229a7437d0628e2a5833725fbbf4fa1f691f54819fbf1c8d3361c08a04eac"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "646097987b5807fd37822d594965baec440f1791899d89a20eb98405b8e2f555"
+    }
+  ],
+  "figures": [
+    {
+      "png": "three_V_refined_IPR_Dn_summary.png",
+      "pdf": "three_V_refined_IPR_Dn_summary.pdf",
+      "pixels": [
+        4960,
+        2965
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "vector_pdf_image_objects": 0
+    },
+    {
+      "png": "three_V_refined_mean_IPR.png",
+      "pdf": "three_V_refined_mean_IPR.pdf",
+      "pixels": [
+        4977,
+        1659
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "vector_pdf_image_objects": 0
+    },
+    {
+      "png": "three_V_refined_mean_Dn.png",
+      "pdf": "three_V_refined_mean_Dn.pdf",
+      "pixels": [
+        4923,
+        1659
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "vector_pdf_image_objects": 0
+    },
+    {
+      "png": "three_V_refined_frequency_cuts.png",
+      "pdf": "three_V_refined_frequency_cuts.pdf",
+      "pixels": [
+        4968,
+        2528
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "vector_pdf_image_objects": 0
+    }
+  ],
+  "grid_points": 30000,
+  "extra_phi_pi_over_2_points": 300,
+  "eigenstate_rows": 5393400,
+  "frequency_units": "dimensionless omega/t0, range 0.2..10 inclusive, 100 points",
+  "phase_grid": "0..pi inclusive, 100 points; pi/2 separately calculated",
+  "observables": "all-spectrum spin-resolved IPR; Dn=-ln(IPR)/ln89",
+  "wavefunctions": "lossless Q-sector coefficients reconstruct all178 complete eigenstates",
+  "git_raw_data": "three Git LFS ZIP_STORED per-V archives,10100 raw point files each; SHA256 in raw_point_archives.json",
+  "removed_observables": "No undriven-baseline IPR/Dn differences; no outer20% selection; no effective controls",
+  "finite_size_limit": "L=89 only; no thermodynamic localization transition claim",
+  "validation_file": "frequency_refined_validation.json"
+}

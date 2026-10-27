@@ -1,0 +1,5 @@
+{"raw_points_V0.zip": {"V_index": 0, "V": 0.5, "bytes": 1340741396, "members": 10100, "sha256": "5744b9777e2d1baa01ec0451dbc7977c0026b37f74e4654666eb66956af9e7cb", "CRC_passed": true, "compression": "ZIP_STORED", "member_prefix": "points/"}}
+{"raw_points_V1.zip": {"V_index": 1, "V": 2.0, "bytes": 1343930445, "members": 10100, "sha256": "9a896927cd420602cd582d0411a726b7d8a9cc2fa7227672f974ce115ecb7788", "CRC_passed": true, "compression": "ZIP_STORED", "member_prefix": "points/"}}
+{"raw_points_V2.zip": {"V_index": 2, "V": 4.0, "bytes": 1348942747, "members": 10100, "sha256": "78da0fe9edda90b7e70c52a21dfa46c14e5a08b136acc302276769b1acf08712", "CRC_passed": true, "compression": "ZIP_STORED", "member_prefix": "points/"}}
+{"frequency_refined_figures_report_code.zip": {"bytes": 11283831, "sha256": "6da18c60d263f64db966b206ccd30a7d56479f3ad91f181994b2decf630c7bb3", "members": 53, "CRC_passed": true}}
+{"frequency_refined_complete_data.zip": {"bytes": 4267568336, "sha256": "17051271fd79715a6fe9b432a88f73e3d52d9514e54ce4e582fc01f6e5fb7381", "members": 30358, "CRC_passed": true}}

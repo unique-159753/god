@@ -1,0 +1,46 @@
+Audited checkpoints V-index 0, phase-index 0/100
+Audited checkpoints V-index 0, phase-index 25/100
+Audited checkpoints V-index 0, phase-index 50/100
+Audited checkpoints V-index 0, phase-index 75/100
+Audited checkpoints V-index 0, phase-index 100/100
+Audited checkpoints V-index 1, phase-index 0/100
+Audited checkpoints V-index 1, phase-index 25/100
+Audited checkpoints V-index 1, phase-index 50/100
+Audited checkpoints V-index 1, phase-index 75/100
+Audited checkpoints V-index 1, phase-index 100/100
+Audited checkpoints V-index 2, phase-index 0/100
+Audited checkpoints V-index 2, phase-index 25/100
+Audited checkpoints V-index 2, phase-index 50/100
+Audited checkpoints V-index 2, phase-index 75/100
+Audited checkpoints V-index 2, phase-index 100/100
+Validated convergence 1/24 V=0.5, omega=0.2, phi/pi=0
+Validated convergence 2/24 V=0.5, omega=0.2, phi/pi=0.5
+Validated convergence 3/24 V=0.5, omega=0.991919, phi/pi=0
+Validated convergence 4/24 V=0.5, omega=0.991919, phi/pi=0.5
+Validated convergence 5/24 V=0.5, omega=6.0404, phi/pi=0
+Validated convergence 6/24 V=0.5, omega=6.0404, phi/pi=0.5
+Validated convergence 7/24 V=0.5, omega=10, phi/pi=0
+Validated convergence 8/24 V=0.5, omega=10, phi/pi=0.5
+Validated convergence 9/24 V=2, omega=0.2, phi/pi=0
+Validated convergence 10/24 V=2, omega=0.2, phi/pi=0.5
+Validated convergence 11/24 V=2, omega=0.991919, phi/pi=0
+Validated convergence 12/24 V=2, omega=0.991919, phi/pi=0.5
+Validated convergence 13/24 V=2, omega=6.0404, phi/pi=0
+Validated convergence 14/24 V=2, omega=6.0404, phi/pi=0.5
+Validated convergence 15/24 V=2, omega=10, phi/pi=0
+Validated convergence 16/24 V=2, omega=10, phi/pi=0.5
+Validated convergence 17/24 V=4, omega=0.2, phi/pi=0
+Validated convergence 18/24 V=4, omega=0.2, phi/pi=0.5
+Validated convergence 19/24 V=4, omega=0.991919, phi/pi=0
+Validated convergence 20/24 V=4, omega=0.991919, phi/pi=0.5
+Validated convergence 21/24 V=4, omega=6.0404, phi/pi=0
+Validated convergence 22/24 V=4, omega=6.0404, phi/pi=0.5
+Validated convergence 23/24 V=4, omega=10, phi/pi=0
+Validated convergence 24/24 V=4, omega=10, phi/pi=0.5
+{
+  "data_integrity_passed": true,
+  "failures": [],
+  "warnings": [],
+  "independent_ODE_points": 6,
+  "seconds": 154.30221112800064
+}

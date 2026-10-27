@@ -1,0 +1,48 @@
+{
+  "figures": [
+    "three_V_refined_IPR_Dn_summary.png",
+    "three_V_refined_IPR_Dn_summary.pdf",
+    "three_V_refined_mean_IPR.png",
+    "three_V_refined_mean_IPR.pdf",
+    "three_V_refined_mean_Dn.png",
+    "three_V_refined_mean_Dn.pdf",
+    "three_V_refined_frequency_cuts.png",
+    "three_V_refined_frequency_cuts.pdf"
+  ],
+  "computed_grid_shape": [
+    3,
+    100,
+    100
+  ],
+  "computed_main_points": 30000,
+  "omega_interval_inclusive": [
+    0.2,
+    10.0
+  ],
+  "phase_interval_inclusive": [
+    0.0,
+    3.141592653589793
+  ],
+  "observables": [
+    "all_IPR",
+    "all_Dn"
+  ],
+  "color_limits_shared_across_V": {
+    "all_IPR": [
+      0.010420155420520178,
+      0.19693696895988028
+    ],
+    "all_Dn": [
+      0.3762940201243384,
+      1.0183816079465249
+    ]
+  },
+  "IPR_definition": "sum_j,spin |psi_jspin|^4",
+  "Dn_definition": "mean_n[-ln(IPR_n)/ln(89)]",
+  "interpolation": "none",
+  "png_dpi": 350,
+  "pdf": "vector mesh and vector colorbar",
+  "state_count_per_point": 178,
+  "Dn_identity_max_error": 0.0,
+  "modal_mean_check": "passed"
+}

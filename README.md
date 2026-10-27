@@ -1,6 +1,19 @@
 # Floquet 数值结果与下载
 
-## 最新：三种静态基准相的无量纲频率—相位扫描
+## 最新：100×100 全谱 IPR 与 Dn 扫描
+
+- [高清 PNG、矢量 PDF、说明及完整源码](https://github.com/unique-159753/god/raw/refs/heads/main/raman_floquet/results/frequency_phase_100x100_phi_0_pi/frequency_refined_figures_report_code.zip)
+- [中文报告与数值验证](raman_floquet/results/frequency_phase_100x100_phi_0_pi/research_report_zh.md)
+- [CSV/NPZ 与原始本征态数据](raman_floquet/results/frequency_phase_100x100_phi_0_pi)
+- [复现与原始数据解包说明](raman_floquet/results/frequency_phase_100x100_phi_0_pi/README.md)
+
+保持双驱动 Hamiltonian 和 L=89、V=0.5/2/4 等参数，重新独立计算 ω/t₀=0.2…10、φ=0…π 两端均包含的 100×100 网格。三组共 30,000 个主网格点，另真实计算 300 个 φ=π/2 频率切线点。仅输出全谱平均 IPR、Dn；不选外侧态，不计算相对静态基准的差值。主指标为自旋分辨 IPR，Dn=−ln(IPR)/ln89，同一指标在三组 V 之间共享色标。
+
+![100×100 全谱 IPR 与 Dn](raman_floquet/results/frequency_phase_100x100_phi_0_pi/three_V_refined_IPR_Dn_summary.png)
+
+主网格 NPZ、逐态 CSV 与三个逐点原始数据 ZIP 分卷使用 Git LFS。克隆后运行 `git lfs pull`，按结果目录说明解包即可恢复全部逐点 NPZ。图示为有限尺寸参与指标，不能单独确立局域化相变。
+
+## 此前：50×50 三种静态基准相的无量纲频率—相位扫描
 
 - [完整中文报告与五项比较问题](raman_floquet/results/frequency_phase_three_V/research_report_zh.md)
 - [下载全部高清图片、矢量PDF、报告及源码](https://github.com/unique-159753/god/raw/refs/heads/main/raman_floquet/results/frequency_phase_three_V/frequency_three_V_figures_report_code.zip)

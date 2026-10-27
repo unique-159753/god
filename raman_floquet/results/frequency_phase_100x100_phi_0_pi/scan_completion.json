@@ -1,0 +1,12 @@
+{
+  "grid_points": 30000,
+  "additional_pi_over_2_points": 300,
+  "frozen_points_in_grid": 0,
+  "positive_frequency_points_in_grid": 30000,
+  "nonconverged": [],
+  "positive_steps_range": [
+    64,
+    4096
+  ],
+  "seconds": 2696.5000928999943
+}

@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "file": "three_V_refined_IPR_Dn_summary.png",
+      "pixels": [
+        4960,
+        2965
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "passed": true
+    },
+    {
+      "file": "three_V_refined_IPR_Dn_summary.pdf",
+      "raster_image_objects": 0,
+      "passed": true
+    },
+    {
+      "file": "three_V_refined_mean_IPR.png",
+      "pixels": [
+        4977,
+        1659
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "passed": true
+    },
+    {
+      "file": "three_V_refined_mean_IPR.pdf",
+      "raster_image_objects": 0,
+      "passed": true
+    },
+    {
+      "file": "three_V_refined_mean_Dn.png",
+      "pixels": [
+        4923,
+        1659
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "passed": true
+    },
+    {
+      "file": "three_V_refined_mean_Dn.pdf",
+      "raster_image_objects": 0,
+      "passed": true
+    },
+    {
+      "file": "three_V_refined_frequency_cuts.png",
+      "pixels": [
+        4968,
+        2528
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ],
+      "passed": true
+    },
+    {
+      "file": "three_V_refined_frequency_cuts.pdf",
+      "raster_image_objects": 0,
+      "passed": true
+    }
+  ],
+  "visually_inspected": [
+    "three_V_refined_IPR_Dn_summary.png",
+    "three_V_refined_frequency_cuts.png"
+  ],
+  "visual_notes": "Axes, titles, shared row colorbars, legend, and footnotes are legible with no overlap. Exactly two full-spectrum observables; no outer states or difference panels."
+}

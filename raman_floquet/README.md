@@ -1,6 +1,10 @@
 # 双驱动准周期 Raman 晶格计算
 
-新增三静态基准相的无量纲ω=0…10、50×50扫描见[最新报告](results/frequency_phase_three_V/research_report_zh.md)及[复现说明](results/frequency_phase_three_V/README.md)。运行`bash run_frequency_three_V.sh`可复现；W=0、V=0.5/2/4，主IPR为自旋分辨且Dn分母为ln89。下面保留原计算的参数与定义，不能混用。
+最新计算为三组 V=0.5/2/4 的 **100×100 全谱 IPR、Dn** 扫描：ω/t₀=0.2…10、φ=0…π，两端均包含，L=89、W=0。见[新结果与原始数据](results/frequency_phase_100x100_phi_0_pi)、[中文报告](results/frequency_phase_100x100_phi_0_pi/research_report_zh.md)和[复现说明](results/frequency_phase_100x100_phi_0_pi/README.md)。运行 `bash run_frequency_refined.sh` 可复现。此次只计算全谱参与指标，不选外侧准能量态，不计算静态差值。IPR 为自旋分辨定义，Dn 分母为 ln89。生产后端要求 C99 编译器，采用自适应六阶时间有序数值演化。
+
+此前的无量纲 ω=0…10、50×50 扫描仍保留于[原报告](results/frequency_phase_three_V/research_report_zh.md)与[原复现说明](results/frequency_phase_three_V/README.md)，对应 `bash run_frequency_three_V.sh`。
+
+以下保留更早任务的参数与定义，不能与最新结果混用。
 
 计算与报告为本次最新 Raman 模型任务，L=89、矩阵维数178、PBC。与此前 SVQL 双链任务无关。所有科研结果见 [results/research_report_zh.md](results/research_report_zh.md)，数据字典见 [results/data_dictionary.md](results/data_dictionary.md)。
 
