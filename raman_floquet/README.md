@@ -1,5 +1,7 @@
 # 双驱动准周期 Raman 晶格计算
 
+新增三静态基准相的无量纲ω=0…10、50×50扫描见[最新报告](results/frequency_phase_three_V/research_report_zh.md)及[复现说明](results/frequency_phase_three_V/README.md)。运行`bash run_frequency_three_V.sh`可复现；W=0、V=0.5/2/4，主IPR为自旋分辨且Dn分母为ln89。下面保留原计算的参数与定义，不能混用。
+
 计算与报告为本次最新 Raman 模型任务，L=89、矩阵维数178、PBC。与此前 SVQL 双链任务无关。所有科研结果见 [results/research_report_zh.md](results/research_report_zh.md)，数据字典见 [results/data_dictionary.md](results/data_dictionary.md)。
 
 本目录已保存到`unique-159753/god`。使用`git lfs install`和`git lfs pull`获取超过100 MB的`results/localization_grid.npz`；其余科学文件直接保存在Git中。完整重复ZIP不纳入版本管理，可用`python build_delivery.py`重建。环境安装脚本和计算入口均相对其自身目录运行，支持任意检出路径。

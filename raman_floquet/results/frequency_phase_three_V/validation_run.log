@@ -1,0 +1,35 @@
+Validated representative 1/24: V=0.5, omega=0.204082, phi/pi=0
+Validated representative 2/24: V=0.5, omega=0.204082, phi/pi=0.5
+Validated representative 3/24: V=0.5, omega=1.02041, phi/pi=0
+Validated representative 4/24: V=0.5, omega=1.02041, phi/pi=0.5
+Validated representative 5/24: V=0.5, omega=5.91837, phi/pi=0
+Validated representative 6/24: V=0.5, omega=5.91837, phi/pi=0.5
+Validated representative 7/24: V=0.5, omega=10, phi/pi=0
+Validated representative 8/24: V=0.5, omega=10, phi/pi=0.5
+Validated representative 9/24: V=2, omega=0.204082, phi/pi=0
+Validated representative 10/24: V=2, omega=0.204082, phi/pi=0.5
+Validated representative 11/24: V=2, omega=1.02041, phi/pi=0
+Validated representative 12/24: V=2, omega=1.02041, phi/pi=0.5
+Validated representative 13/24: V=2, omega=5.91837, phi/pi=0
+Validated representative 14/24: V=2, omega=5.91837, phi/pi=0.5
+Validated representative 15/24: V=2, omega=10, phi/pi=0
+Validated representative 16/24: V=2, omega=10, phi/pi=0.5
+Validated representative 17/24: V=4, omega=0.204082, phi/pi=0
+Validated representative 18/24: V=4, omega=0.204082, phi/pi=0.5
+Validated representative 19/24: V=4, omega=1.02041, phi/pi=0
+Validated representative 20/24: V=4, omega=1.02041, phi/pi=0.5
+Validated representative 21/24: V=4, omega=5.91837, phi/pi=0
+Validated representative 22/24: V=4, omega=5.91837, phi/pi=0.5
+Validated representative 23/24: V=4, omega=10, phi/pi=0
+Validated representative 24/24: V=4, omega=10, phi/pi=0.5
+{
+  "data_integrity_passed": true,
+  "failures": [],
+  "warnings": [
+    "hard outer membership differs by 2 modes between native and retained FFT at V=0.5, omega=1.02040816, phi/pi=0; inspect outer_selection_backend_sensitivities",
+    "hard outer membership differs by 2 modes between native and retained FFT at V=0.5, omega=5.91836735, phi/pi=0; inspect outer_selection_backend_sensitivities",
+    "hard outer membership differs by 2 modes between native and retained FFT at V=0.5, omega=1.02040816, phi/pi=1; inspect outer_selection_backend_sensitivities"
+  ],
+  "representative_points": 24,
+  "seconds": 17.69891971800007
+}

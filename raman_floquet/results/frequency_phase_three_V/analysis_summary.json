@@ -1,0 +1,2042 @@
+{
+  "scope": "only completed genuine time-ordered exact Floquet data; zero frequency separate",
+  "primary_IPR": "spin-resolved sum |psi_jspin|^4",
+  "primary_Dn": "-ln(IPR)/ln89, not ln178; values above one are allowed",
+  "positive_frequency_definition": "omega>0; omega=0 excluded from dynamic aggregate/RMS",
+  "high_frequency_definition": "sampled dimensionless omega>=6",
+  "high_frequency_caution": "This common plotting/statistics window need not be asymptotic for every V; static bandwidth is supplied per V.",
+  "phase_spread_definition": "max_phi minus min_phi and RMS about own phase mean at each omega",
+  "residual_definition": "exact minus specified effective/control observable; not additive causal fractions",
+  "delta_definition": "mean of individual exact Dn minus mean of individual undriven H0 Dn for the same V",
+  "statistical_scope": "structured finite-size grid, no thermodynamic transition or significance inferred",
+  "frequency_calibration": "dimensionless omega/t0; no fixed Hz equivalence is assumed",
+  "number_of_V": 3,
+  "unique_phase_points": 50,
+  "frequency_points": 50,
+  "positive_points_per_V": 2450,
+  "pi_over_2_slice": "independently computed, not interpolated",
+  "per_V": [
+    {
+      "V": 0.5,
+      "static_mean_Dn": 0.930997815653496,
+      "static_mean_IPR": 0.015522710291479095,
+      "positive_grid_points": 2450,
+      "delta_all_Dn_vs_undriven": {
+        "mean": 0.018675463793118924,
+        "rms": 0.029519879063762283,
+        "minimum": {
+          "omega": 1.4285714285714286,
+          "phi": 0.0,
+          "phi_over_pi": 0.0,
+          "value": -0.030904126503208063
+        },
+        "maximum": {
+          "omega": 2.0408163265306123,
+          "phi": 0.5026548245743669,
+          "phi_over_pi": 0.16,
+          "value": 0.0952714695226532
+        },
+        "largest_absolute": {
+          "omega": 2.0408163265306123,
+          "phi": 0.5026548245743669,
+          "phi_over_pi": 0.16,
+          "value": 0.0952714695226532
+        }
+      },
+      "all_IPR_minus_undriven": {
+        "mean": -0.001103642584504541,
+        "rms": 0.0017825193435962497,
+        "minimum": {
+          "omega": 2.0408163265306123,
+          "phi": 0.5026548245743669,
+          "phi_over_pi": 0.16,
+          "value": -0.005454328722738188
+        },
+        "maximum": {
+          "omega": 1.4285714285714286,
+          "phi": 0.0,
+          "phi_over_pi": 0.0,
+          "value": 0.003449159656536952
+        },
+        "largest_absolute": {
+          "omega": 2.0408163265306123,
+          "phi": 0.5026548245743669,
+          "phi_over_pi": 0.16,
+          "value": -0.005454328722738188
+        }
+      },
+      "all_IPR_relative_change": {
+        "mean": -0.07109857517023718,
+        "rms": 0.11483299695251872,
+        "minimum": {
+          "omega": 2.0408163265306123,
+          "phi": 0.5026548245743669,
+          "phi_over_pi": 0.16,
+          "value": -0.35137734456928194
+        },
+        "maximum": {
+          "omega": 1.4285714285714286,
+          "phi": 0.0,
+          "phi_over_pi": 0.0,
+          "value": 0.2222008651691647
+        },
+        "largest_absolute": {
+          "omega": 2.0408163265306123,
+          "phi": 0.5026548245743669,
+          "phi_over_pi": 0.16,
+          "value": -0.35137734456928194
+        }
+      },
+      "phase_pi_over_2_minus_zero_all_Dn": {
+        "definition": "phi=pi/2 minus phi=0 at the same positive omega",
+        "rms": 0.03673583207248328,
+        "mean": 0.027265721450173686,
+        "maximum": {
+          "omega": 1.4285714285714286,
+          "value": 0.08912318929900087
+        },
+        "minimum": {
+          "omega": 2.0408163265306123,
+          "value": -0.04391225412725963
+        },
+        "largest_absolute": {
+          "omega": 1.4285714285714286,
+          "value": 0.08912318929900087
+        }
+      },
+      "phase_pi_over_2_minus_zero_outer_Dn": {
+        "definition": "phi=pi/2 minus phi=0 at the same positive omega",
+        "rms": 0.042617933423172265,
+        "mean": 0.020634801474389976,
+        "maximum": {
+          "omega": 1.4285714285714286,
+          "value": 0.15918387160579905
+        },
+        "minimum": {
+          "omega": 2.0408163265306123,
+          "value": -0.06127297059980674
+        },
+        "largest_absolute": {
+          "omega": 1.4285714285714286,
+          "value": 0.15918387160579905
+        }
+      },
+      "positive_phase_spread": {
+        "mean_range": 0.03931663428107065,
+        "rms_range": 0.04859722402157003,
+        "mean_RMS_about_phase_mean": 0.009954869389087772,
+        "global_RMS_about_phase_mean": 0.011946574104159849,
+        "maximum_range": {
+          "omega": 1.4285714285714286,
+          "value": 0.09554106286626085
+        }
+      },
+      "static_spectral_scale": {
+        "minimum_energy": -2.0489186399057724,
+        "maximum_energy": 2.048918639905773,
+        "bandwidth": 4.097837279811545,
+        "omega_ge_6_samples_not_above_static_bandwidth": 0,
+        "interpretation": "omega>=6 is a reporting window; it is not uniformly asymptotic across V. Being within the bare bandwidth permits but does not demonstrate a one-photon resonance."
+      },
+      "high_frequency_residuals": {
+        "all_Dn_exact_minus_effective_with_kick": {
+          "mean": -0.0020105587108332807,
+          "rms": 0.0031596231527948556,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.022263394290919836
+          },
+          "maximum": {
+            "omega": 10.0,
+            "phi": 4.272566008882119,
+            "phi_over_pi": 1.3600000000000003,
+            "value": -0.0007502573599846851
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.022263394290919836
+          }
+        },
+        "outer_Dn_exact_minus_effective_with_kick": {
+          "mean": -0.009135349193902225,
+          "rms": 0.010574190072073074,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 3.015928947446201,
+            "phi_over_pi": 0.96,
+            "value": -0.021201051371458002
+          },
+          "maximum": {
+            "omega": 10.0,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": -0.0014853296523543724
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 3.015928947446201,
+            "phi_over_pi": 0.96,
+            "value": -0.021201051371458002
+          }
+        },
+        "all_Dn_exact_minus_effective_without_kick": {
+          "mean": -0.0009881851849570793,
+          "rms": 0.0029179874402615437,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.022263394290919503
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 4.775220833456485,
+            "phi_over_pi": 1.5199999999999998,
+            "value": 0.0018885039034887141
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.022263394290919503
+          }
+        },
+        "all_Dn_exact_minus_kick_only_static": {
+          "mean": 0.000508633319655238,
+          "rms": 0.0031898309308676692,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.022263394290920058
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 4.775220833456485,
+            "phi_over_pi": 1.5199999999999998,
+            "value": 0.0033399972641680042
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.022263394290920058
+          }
+        },
+        "kick_only_minus_undriven": {
+          "mean": 0.0024744382160149588,
+          "rms": 0.003154559154674118,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": 2.220446049250313e-16
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.007865060759461362
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.007865060759461362
+          }
+        },
+        "effective_with_minus_without_kick": {
+          "mean": 0.0010223735258762011,
+          "rms": 0.001300115095149243,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": 3.3306690738754696e-16
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.0032263926142117594
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.0032263926142117594
+          }
+        },
+        "effective_without_kick_minus_undriven": {
+          "mean": 0.003971256720627276,
+          "rms": 0.004713491512386307,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": -3.3306690738754696e-16
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.009316554120140652
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.009316554120140652
+          }
+        },
+        "effective_with_kick_minus_undriven": {
+          "mean": 0.004993630246503478,
+          "rms": 0.006002963645552838,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": 0.0
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.012542946734352411
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.012542946734352411
+          }
+        }
+      },
+      "frozen_omega_zero": {
+        "definition": "independent frozen Hamiltonians; no Floquet outer statistic",
+        "floquet_outer_Dn": null,
+        "phase_mean_Dn": 0.9245407827341324,
+        "phase_range_Dn": 0.04708212900598918,
+        "minimum_Dn": {
+          "phi": 2.261946710584651,
+          "phi_over_pi": 0.72,
+          "value": 0.8975036076892702
+        },
+        "maximum_Dn": {
+          "phi": 0.12566370614359174,
+          "phi_over_pi": 0.04,
+          "value": 0.9445857366952594
+        },
+        "mean_delta_vs_undriven": -0.006457032919363679,
+        "rms_delta_vs_undriven": 0.01690990611058083,
+        "phi0_Dn": 0.9445796013722623,
+        "phi_pi_over_2_Dn": 0.9240460867023249,
+        "phi_pi_over_2_minus_zero_Dn": -0.02053351466993736
+      }
+    },
+    {
+      "V": 2.0,
+      "static_mean_Dn": 0.793217606721352,
+      "static_mean_IPR": 0.03152539519101456,
+      "positive_grid_points": 2450,
+      "delta_all_Dn_vs_undriven": {
+        "mean": 0.06422275854835387,
+        "rms": 0.09618464979694769,
+        "minimum": {
+          "omega": 1.836734693877551,
+          "phi": 0.0,
+          "phi_over_pi": 0.0,
+          "value": -0.19563821059831488
+        },
+        "maximum": {
+          "omega": 1.836734693877551,
+          "phi": 4.272566008882119,
+          "phi_over_pi": 1.3600000000000003,
+          "value": 0.20370053855321024
+        },
+        "largest_absolute": {
+          "omega": 1.836734693877551,
+          "phi": 4.272566008882119,
+          "phi_over_pi": 1.3600000000000003,
+          "value": 0.20370053855321024
+        }
+      },
+      "all_IPR_minus_undriven": {
+        "mean": -0.007127896914255714,
+        "rms": 0.01189508638171957,
+        "minimum": {
+          "omega": 1.836734693877551,
+          "phi": 4.272566008882119,
+          "phi_over_pi": 1.3600000000000003,
+          "value": -0.019975783098481137
+        },
+        "maximum": {
+          "omega": 1.836734693877551,
+          "phi": 0.0,
+          "phi_over_pi": 0.0,
+          "value": 0.04946516923725924
+        },
+        "largest_absolute": {
+          "omega": 1.836734693877551,
+          "phi": 0.0,
+          "phi_over_pi": 0.0,
+          "value": 0.04946516923725924
+        }
+      },
+      "all_IPR_relative_change": {
+        "mean": -0.22610016055523782,
+        "rms": 0.3773175977540143,
+        "minimum": {
+          "omega": 1.836734693877551,
+          "phi": 4.272566008882119,
+          "phi_over_pi": 1.3600000000000003,
+          "value": -0.6336410052101322
+        },
+        "maximum": {
+          "omega": 1.836734693877551,
+          "phi": 0.0,
+          "phi_over_pi": 0.0,
+          "value": 1.5690578639076953
+        },
+        "largest_absolute": {
+          "omega": 1.836734693877551,
+          "phi": 0.0,
+          "phi_over_pi": 0.0,
+          "value": 1.5690578639076953
+        }
+      },
+      "phase_pi_over_2_minus_zero_all_Dn": {
+        "definition": "phi=pi/2 minus phi=0 at the same positive omega",
+        "rms": 0.1942255036362841,
+        "mean": 0.1625352317799465,
+        "maximum": {
+          "omega": 1.836734693877551,
+          "value": 0.3941688460758075
+        },
+        "minimum": {
+          "omega": 10.0,
+          "value": 0.042722244504682316
+        },
+        "largest_absolute": {
+          "omega": 1.836734693877551,
+          "value": 0.3941688460758075
+        }
+      },
+      "phase_pi_over_2_minus_zero_outer_Dn": {
+        "definition": "phi=pi/2 minus phi=0 at the same positive omega",
+        "rms": 0.18573550354975796,
+        "mean": 0.15725317621097198,
+        "maximum": {
+          "omega": 1.2244897959183674,
+          "value": 0.44948604613532683
+        },
+        "minimum": {
+          "omega": 10.0,
+          "value": 0.05123436772145984
+        },
+        "largest_absolute": {
+          "omega": 1.2244897959183674,
+          "value": 0.44948604613532683
+        }
+      },
+      "positive_phase_spread": {
+        "mean_range": 0.1744439509375136,
+        "rms_range": 0.20878260804664714,
+        "mean_RMS_about_phase_mean": 0.049644094663873935,
+        "global_RMS_about_phase_mean": 0.05951991508684304,
+        "maximum_range": {
+          "omega": 1.836734693877551,
+          "value": 0.3993387491515251
+        }
+      },
+      "static_spectral_scale": {
+        "minimum_energy": -2.8985850474525914,
+        "maximum_energy": 2.8985850474525927,
+        "bandwidth": 5.797170094905184,
+        "omega_ge_6_samples_not_above_static_bandwidth": 0,
+        "interpretation": "omega>=6 is a reporting window; it is not uniformly asymptotic across V. Being within the bare bandwidth permits but does not demonstrate a one-photon resonance."
+      },
+      "high_frequency_residuals": {
+        "all_Dn_exact_minus_effective_with_kick": {
+          "mean": -0.004708547962476458,
+          "rms": 0.005901041375187095,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": -0.02384060462446924
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 4.1469023027385274,
+            "phi_over_pi": 1.32,
+            "value": 0.0060621818431672025
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": -0.02384060462446924
+          }
+        },
+        "outer_Dn_exact_minus_effective_with_kick": {
+          "mean": -0.006669500120182771,
+          "rms": 0.009349369643096711,
+          "minimum": {
+            "omega": 6.530612244897959,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.03629488461231234
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 4.39822971502571,
+            "phi_over_pi": 1.4,
+            "value": 0.009947551473231564
+          },
+          "largest_absolute": {
+            "omega": 6.530612244897959,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.03629488461231234
+          }
+        },
+        "all_Dn_exact_minus_effective_without_kick": {
+          "mean": -0.002772379200073118,
+          "rms": 0.00538885909064066,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": -0.02384060462446891
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 2.0106192982974678,
+            "phi_over_pi": 0.64,
+            "value": 0.010779623148035822
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": -0.02384060462446891
+          }
+        },
+        "all_Dn_exact_minus_kick_only_static": {
+          "mean": 0.022674441916471798,
+          "rms": 0.028202830455814384,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": -0.023840604624468575
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 4.523893421169302,
+            "phi_over_pi": 1.44,
+            "value": 0.053340928029918744
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 4.523893421169302,
+            "phi_over_pi": 1.44,
+            "value": 0.053340928029918744
+          }
+        },
+        "kick_only_minus_undriven": {
+          "mean": 0.00243732145023927,
+          "rms": 0.0031088559941808446,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": 2.220446049250313e-16
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.007767587753702121
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.007767587753702121
+          }
+        },
+        "effective_with_minus_without_kick": {
+          "mean": 0.0019361687624033397,
+          "rms": 0.002455251537739193,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": 3.3306690738754696e-16
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.00602218222785722
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.00602218222785722
+          }
+        },
+        "effective_without_kick_minus_undriven": {
+          "mean": 0.027884142566784186,
+          "rms": 0.03144785159466583,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": 5.551115123125783e-16
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.05142635474658963
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.05142635474658963
+          }
+        },
+        "effective_with_kick_minus_undriven": {
+          "mean": 0.029820311329187523,
+          "rms": 0.03382533359535114,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": 8.881784197001252e-16
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.05744853697444685
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.05744853697444685
+          }
+        }
+      },
+      "frozen_omega_zero": {
+        "definition": "independent frozen Hamiltonians; no Floquet outer statistic",
+        "floquet_outer_Dn": null,
+        "phase_mean_Dn": 0.8490856801734646,
+        "phase_range_Dn": 0.06940270775945057,
+        "minimum_Dn": {
+          "phi": 0.0,
+          "phi_over_pi": 0.0,
+          "value": 0.8208670901980858
+        },
+        "maximum_Dn": {
+          "phi": 1.5079644737231006,
+          "phi_over_pi": 0.48,
+          "value": 0.8902697979575364
+        },
+        "mean_delta_vs_undriven": 0.05586807345211261,
+        "rms_delta_vs_undriven": 0.06042676768149786,
+        "phi0_Dn": 0.8208670901980858,
+        "phi_pi_over_2_Dn": 0.8879314063742881,
+        "phi_pi_over_2_minus_zero_Dn": 0.06706431617620234
+      }
+    },
+    {
+      "V": 4.0,
+      "static_mean_Dn": 0.3815501500099217,
+      "static_mean_IPR": 0.1918026291595826,
+      "positive_grid_points": 2450,
+      "delta_all_Dn_vs_undriven": {
+        "mean": 0.24159138994491858,
+        "rms": 0.2769719832442671,
+        "minimum": {
+          "omega": 10.0,
+          "phi": 3.141592653589793,
+          "phi_over_pi": 1.0,
+          "value": -0.005256129885583327
+        },
+        "maximum": {
+          "omega": 3.2653061224489797,
+          "phi": 4.1469023027385274,
+          "phi_over_pi": 1.32,
+          "value": 0.533248851950179
+        },
+        "largest_absolute": {
+          "omega": 3.2653061224489797,
+          "phi": 4.1469023027385274,
+          "phi_over_pi": 1.32,
+          "value": 0.533248851950179
+        }
+      },
+      "all_IPR_minus_undriven": {
+        "mean": -0.10432808901029775,
+        "rms": 0.11476659286130232,
+        "minimum": {
+          "omega": 3.2653061224489797,
+          "phi": 4.1469023027385274,
+          "phi_over_pi": 1.32,
+          "value": -0.1747193285453215
+        },
+        "maximum": {
+          "omega": 10.0,
+          "phi": 3.141592653589793,
+          "phi_over_pi": 1.0,
+          "value": 0.005134339800297677
+        },
+        "largest_absolute": {
+          "omega": 3.2653061224489797,
+          "phi": 4.1469023027385274,
+          "phi_over_pi": 1.32,
+          "value": -0.1747193285453215
+        }
+      },
+      "all_IPR_relative_change": {
+        "mean": -0.5439346137611871,
+        "rms": 0.5983577668573814,
+        "minimum": {
+          "omega": 3.2653061224489797,
+          "phi": 4.1469023027385274,
+          "phi_over_pi": 1.32,
+          "value": -0.9109329173999614
+        },
+        "maximum": {
+          "omega": 10.0,
+          "phi": 3.141592653589793,
+          "phi_over_pi": 1.0,
+          "value": 0.026768870806384154
+        },
+        "largest_absolute": {
+          "omega": 3.2653061224489797,
+          "phi": 4.1469023027385274,
+          "phi_over_pi": 1.32,
+          "value": -0.9109329173999614
+        }
+      },
+      "phase_pi_over_2_minus_zero_all_Dn": {
+        "definition": "phi=pi/2 minus phi=0 at the same positive omega",
+        "rms": 0.13963380744132378,
+        "mean": 0.12282837696163948,
+        "maximum": {
+          "omega": 2.857142857142857,
+          "value": 0.26740598500117096
+        },
+        "minimum": {
+          "omega": 8.16326530612245,
+          "value": 0.012544248097130783
+        },
+        "largest_absolute": {
+          "omega": 2.857142857142857,
+          "value": 0.26740598500117096
+        }
+      },
+      "phase_pi_over_2_minus_zero_outer_Dn": {
+        "definition": "phi=pi/2 minus phi=0 at the same positive omega",
+        "rms": 0.12458380038750434,
+        "mean": 0.058867175897406934,
+        "maximum": {
+          "omega": 2.857142857142857,
+          "value": 0.41288252665783587
+        },
+        "minimum": {
+          "omega": 8.16326530612245,
+          "value": -0.13906997365665308
+        },
+        "largest_absolute": {
+          "omega": 2.857142857142857,
+          "value": 0.41288252665783587
+        }
+      },
+      "positive_phase_spread": {
+        "mean_range": 0.15288754500362636,
+        "rms_range": 0.16723403286978333,
+        "mean_RMS_about_phase_mean": 0.04480135152493056,
+        "global_RMS_about_phase_mean": 0.04915430587084204,
+        "maximum_range": {
+          "omega": 0.8163265306122449,
+          "value": 0.37410115783845765
+        }
+      },
+      "static_spectral_scale": {
+        "minimum_energy": -4.5973553063248636,
+        "maximum_energy": 4.597355306324871,
+        "bandwidth": 9.194710612649734,
+        "omega_ge_6_samples_not_above_static_bandwidth": 16,
+        "interpretation": "omega>=6 is a reporting window; it is not uniformly asymptotic across V. Being within the bare bandwidth permits but does not demonstrate a one-photon resonance."
+      },
+      "high_frequency_residuals": {
+        "all_Dn_exact_minus_effective_with_kick": {
+          "mean": 0.10565891995251961,
+          "rms": 0.13006164672724124,
+          "minimum": {
+            "omega": 10.0,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.005256129885584215
+          },
+          "maximum": {
+            "omega": 6.530612244897959,
+            "phi": 4.272566008882119,
+            "phi_over_pi": 1.3600000000000003,
+            "value": 0.23888603028828553
+          },
+          "largest_absolute": {
+            "omega": 6.530612244897959,
+            "phi": 4.272566008882119,
+            "phi_over_pi": 1.3600000000000003,
+            "value": 0.23888603028828553
+          }
+        },
+        "outer_Dn_exact_minus_effective_with_kick": {
+          "mean": 0.19168466140359153,
+          "rms": 0.21764551034126067,
+          "minimum": {
+            "omega": 8.979591836734695,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.016449319045967137
+          },
+          "maximum": {
+            "omega": 8.571428571428571,
+            "phi": 1.2566370614359172,
+            "phi_over_pi": 0.4,
+            "value": 0.38468117699536736
+          },
+          "largest_absolute": {
+            "omega": 8.571428571428571,
+            "phi": 1.2566370614359172,
+            "phi_over_pi": 0.4,
+            "value": 0.38468117699536736
+          }
+        },
+        "all_Dn_exact_minus_effective_without_kick": {
+          "mean": 0.10914894430989347,
+          "rms": 0.13367822162667764,
+          "minimum": {
+            "omega": 10.0,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.005256129885583938
+          },
+          "maximum": {
+            "omega": 6.530612244897959,
+            "phi": 4.39822971502571,
+            "phi_over_pi": 1.4,
+            "value": 0.24758747848396412
+          },
+          "largest_absolute": {
+            "omega": 6.530612244897959,
+            "phi": 4.39822971502571,
+            "phi_over_pi": 1.4,
+            "value": 0.24758747848396412
+          }
+        },
+        "all_Dn_exact_minus_kick_only_static": {
+          "mean": 0.11852088755486624,
+          "rms": 0.14268026503698675,
+          "minimum": {
+            "omega": 10.0,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": -0.005256129885583605
+          },
+          "maximum": {
+            "omega": 6.530612244897959,
+            "phi": 4.39822971502571,
+            "phi_over_pi": 1.4,
+            "value": 0.2641447417921285
+          },
+          "largest_absolute": {
+            "omega": 6.530612244897959,
+            "phi": 4.39822971502571,
+            "phi_over_pi": 1.4,
+            "value": 0.2641447417921285
+          }
+        },
+        "kick_only_minus_undriven": {
+          "mean": 0.0037346527712535426,
+          "rms": 0.004771230007806265,
+          "minimum": {
+            "omega": 7.346938775510204,
+            "phi": 3.141592653589793,
+            "phi_over_pi": 1.0,
+            "value": 2.7755575615628914e-16
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.011995344278300346
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.011995344278300346
+          }
+        },
+        "effective_with_minus_without_kick": {
+          "mean": 0.0034900243573738436,
+          "rms": 0.004444152421293742,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": 2.220446049250313e-16
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.011062555318321565
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.011062555318321565
+          }
+        },
+        "effective_without_kick_minus_undriven": {
+          "mean": 0.013106596016226314,
+          "rms": 0.015380540274118604,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": 6.106226635438361e-16
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.029784338196915394
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.029784338196915394
+          }
+        },
+        "effective_with_kick_minus_undriven": {
+          "mean": 0.016596620373600157,
+          "rms": 0.019776443922103266,
+          "minimum": {
+            "omega": 6.122448979591837,
+            "phi": 0.0,
+            "phi_over_pi": 0.0,
+            "value": 8.326672684688674e-16
+          },
+          "maximum": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.04084689351523696
+          },
+          "largest_absolute": {
+            "omega": 6.122448979591837,
+            "phi": 1.5079644737231006,
+            "phi_over_pi": 0.48,
+            "value": 0.04084689351523696
+          }
+        }
+      },
+      "frozen_omega_zero": {
+        "definition": "independent frozen Hamiltonians; no Floquet outer statistic",
+        "floquet_outer_Dn": null,
+        "phase_mean_Dn": 0.7026412063860609,
+        "phase_range_Dn": 0.4078970756862965,
+        "minimum_Dn": {
+          "phi": 2.261946710584651,
+          "phi_over_pi": 0.72,
+          "value": 0.3963323786183741
+        },
+        "maximum_Dn": {
+          "phi": 0.0,
+          "phi_over_pi": 0.0,
+          "value": 0.8042294543046706
+        },
+        "mean_delta_vs_undriven": 0.32109105637613916,
+        "rms_delta_vs_undriven": 0.34180709730902875,
+        "phi0_Dn": 0.8042294543046706,
+        "phi_pi_over_2_Dn": 0.7469717525403657,
+        "phi_pi_over_2_minus_zero_Dn": -0.05725770176430489
+      }
+    }
+  ],
+  "window_rankings": [
+    {
+      "window": "all_positive",
+      "sampled_omega_min": 0.20408163265306123,
+      "sampled_omega_max": 10.0,
+      "frequency_points": 49,
+      "scores": [
+        {
+          "V": 0.5,
+          "rms_delta_Dn": 0.029519879063762283,
+          "mean_delta_Dn": 0.018675463793118924,
+          "maximum_abs_delta_Dn": 0.0952714695226532,
+          "mean_phase_range_Dn": 0.03931663428107065,
+          "phase_centered_RMS_Dn": 0.011946574104159849
+        },
+        {
+          "V": 2.0,
+          "rms_delta_Dn": 0.09618464979694769,
+          "mean_delta_Dn": 0.06422275854835387,
+          "maximum_abs_delta_Dn": 0.20370053855321024,
+          "mean_phase_range_Dn": 0.1744439509375136,
+          "phase_centered_RMS_Dn": 0.05951991508684304
+        },
+        {
+          "V": 4.0,
+          "rms_delta_Dn": 0.2769719832442671,
+          "mean_delta_Dn": 0.24159138994491858,
+          "maximum_abs_delta_Dn": 0.533248851950179,
+          "mean_phase_range_Dn": 0.15288754500362636,
+          "phase_centered_RMS_Dn": 0.04915430587084204
+        }
+      ],
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_mean_phase_range": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "window": "low_0_lt_omega_lt_2",
+      "sampled_omega_min": 0.20408163265306123,
+      "sampled_omega_max": 1.836734693877551,
+      "frequency_points": 9,
+      "scores": [
+        {
+          "V": 0.5,
+          "rms_delta_Dn": 0.05283528220934722,
+          "mean_delta_Dn": 0.048160462572309506,
+          "maximum_abs_delta_Dn": 0.08409936812635721,
+          "mean_phase_range_Dn": 0.07818913024286275,
+          "phase_centered_RMS_Dn": 0.018658848008241847
+        },
+        {
+          "V": 2.0,
+          "rms_delta_Dn": 0.14151269538612496,
+          "mean_delta_Dn": 0.11852939702582514,
+          "maximum_abs_delta_Dn": 0.20370053855321024,
+          "mean_phase_range_Dn": 0.2991106852130802,
+          "phase_centered_RMS_Dn": 0.0771130081501711
+        },
+        {
+          "V": 4.0,
+          "rms_delta_Dn": 0.31776284953033784,
+          "mean_delta_Dn": 0.30993584201763397,
+          "maximum_abs_delta_Dn": 0.4265705833570051,
+          "mean_phase_range_Dn": 0.1773670364978565,
+          "phase_centered_RMS_Dn": 0.058735043089418355
+        }
+      ],
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_mean_phase_range": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "window": "middle_2_le_omega_lt_6",
+      "sampled_omega_min": 2.0408163265306123,
+      "sampled_omega_max": 5.918367346938775,
+      "frequency_points": 20,
+      "scores": [
+        {
+          "V": 0.5,
+          "rms_delta_Dn": 0.0291304545818942,
+          "mean_delta_Dn": 0.021099606599931896,
+          "maximum_abs_delta_Dn": 0.0952714695226532,
+          "mean_phase_range_Dn": 0.048167690776891856,
+          "phase_centered_RMS_Dn": 0.013118449716855255
+        },
+        {
+          "V": 2.0,
+          "rms_delta_Dn": 0.11260547674403107,
+          "mean_delta_Dn": 0.07889576641513461,
+          "maximum_abs_delta_Dn": 0.19562874275339226,
+          "mean_phase_range_Dn": 0.23519230470675545,
+          "phase_centered_RMS_Dn": 0.07532873478213833
+        },
+        {
+          "V": 4.0,
+          "rms_delta_Dn": 0.34783074557010946,
+          "mean_delta_Dn": 0.33017223613099544,
+          "maximum_abs_delta_Dn": 0.533248851950179,
+          "mean_phase_range_Dn": 0.19171060571174484,
+          "phase_centered_RMS_Dn": 0.05629311420125096
+        }
+      ],
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_mean_phase_range": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "window": "high_omega_ge_6",
+      "sampled_omega_min": 6.122448979591837,
+      "sampled_omega_max": 10.0,
+      "frequency_points": 20,
+      "scores": [
+        {
+          "V": 0.5,
+          "rms_delta_Dn": 0.005495309994850599,
+          "mean_delta_Dn": 0.002983071535670197,
+          "maximum_abs_delta_Dn": 0.022263394290919836,
+          "mean_phase_range_Dn": 0.012972954602442988,
+          "phase_centered_RMS_Dn": 0.004571996653857702
+        },
+        {
+          "V": 2.0,
+          "rms_delta_Dn": 0.031217304109648774,
+          "mean_delta_Dn": 0.025111763366711067,
+          "maximum_abs_delta_Dn": 0.06087234671109143,
+          "mean_phase_range_Dn": 0.05759556674426684,
+          "phase_centered_RMS_Dn": 0.0181415054419904
+        },
+        {
+          "V": 4.0,
+          "rms_delta_Dn": 0.14671006909188958,
+          "mean_delta_Dn": 0.12225554032611977,
+          "maximum_abs_delta_Dn": 0.27374431714658704,
+          "mean_phase_range_Dn": 0.10304871312310433,
+          "phase_centered_RMS_Dn": 0.03461546026461758
+        }
+      ],
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_mean_phase_range": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    }
+  ],
+  "frequency_rankings": [
+    {
+      "omega": 0.0,
+      "is_frozen": true,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 0.20408163265306123,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 0.40816326530612246,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 0.6122448979591837,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 0.8163265306122449,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 1.0204081632653061,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 1.2244897959183674,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 1.4285714285714286,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 1.6326530612244898,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 1.836734693877551,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 2.0408163265306123,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 2.2448979591836737,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 2.4489795918367347,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 2.6530612244897958,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 2.857142857142857,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 3.0612244897959187,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 3.2653061224489797,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 3.4693877551020407,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 3.673469387755102,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 3.8775510204081636,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 4.081632653061225,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 4.285714285714286,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 4.4897959183673475,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 4.6938775510204085,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 4.8979591836734695,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        2.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 5.1020408163265305,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 5.3061224489795915,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 5.510204081632653,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 5.714285714285714,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 5.918367346938775,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 6.122448979591837,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 6.326530612244898,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 6.530612244897959,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 6.73469387755102,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 6.938775510204081,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 7.142857142857143,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 7.346938775510204,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 7.551020408163265,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 7.755102040816327,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 7.959183673469388,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 8.16326530612245,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 8.36734693877551,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 8.571428571428571,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 8.775510204081632,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 8.979591836734695,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 9.183673469387756,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 9.387755102040817,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 9.591836734693878,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 9.795918367346939,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "omega": 10.0,
+      "is_frozen": false,
+      "descending_V_by_rms_delta_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ],
+      "descending_V_by_phase_range_Dn": [
+        4.0,
+        2.0,
+        0.5
+      ]
+    }
+  ],
+  "scan_completion": {
+    "grid_points": 7500,
+    "additional_pi_over_2_points": 150,
+    "frozen_points_in_grid": 150,
+    "positive_frequency_points_in_grid": 7350,
+    "nonconverged": [],
+    "positive_steps_range": [
+      64,
+      4096
+    ],
+    "seconds": 725.2764076409999
+  },
+  "source_metadata": {
+    "frequency_units": "dimensionless omega/t0, no Hz axis",
+    "optional_physical_calibration_t0_over_h_hz": 500.0,
+    "parameters": [
+      {
+        "L": 89,
+        "alpha": 0.6179775280898876,
+        "t0": 1.0,
+        "delta0": 0.5,
+        "V": 0.5,
+        "W": 0.0,
+        "A": 0.8,
+        "B": 0.8,
+        "theta": 0.0
+      },
+      {
+        "L": 89,
+        "alpha": 0.6179775280898876,
+        "t0": 1.0,
+        "delta0": 0.5,
+        "V": 2.0,
+        "W": 0.0,
+        "A": 0.8,
+        "B": 0.8,
+        "theta": 0.0
+      },
+      {
+        "L": 89,
+        "alpha": 0.6179775280898876,
+        "t0": 1.0,
+        "delta0": 0.5,
+        "V": 4.0,
+        "W": 0.0,
+        "A": 0.8,
+        "B": 0.8,
+        "theta": 0.0
+      }
+    ],
+    "omega": [
+      0.0,
+      0.20408163265306123,
+      0.40816326530612246,
+      0.6122448979591837,
+      0.8163265306122449,
+      1.0204081632653061,
+      1.2244897959183674,
+      1.4285714285714286,
+      1.6326530612244898,
+      1.836734693877551,
+      2.0408163265306123,
+      2.2448979591836737,
+      2.4489795918367347,
+      2.6530612244897958,
+      2.857142857142857,
+      3.0612244897959187,
+      3.2653061224489797,
+      3.4693877551020407,
+      3.673469387755102,
+      3.8775510204081636,
+      4.081632653061225,
+      4.285714285714286,
+      4.4897959183673475,
+      4.6938775510204085,
+      4.8979591836734695,
+      5.1020408163265305,
+      5.3061224489795915,
+      5.510204081632653,
+      5.714285714285714,
+      5.918367346938775,
+      6.122448979591837,
+      6.326530612244898,
+      6.530612244897959,
+      6.73469387755102,
+      6.938775510204081,
+      7.142857142857143,
+      7.346938775510204,
+      7.551020408163265,
+      7.755102040816327,
+      7.959183673469388,
+      8.16326530612245,
+      8.36734693877551,
+      8.571428571428571,
+      8.775510204081632,
+      8.979591836734695,
+      9.183673469387756,
+      9.387755102040817,
+      9.591836734693878,
+      9.795918367346939,
+      10.0
+    ],
+    "phi": [
+      0.0,
+      0.12566370614359174,
+      0.25132741228718347,
+      0.37699111843077515,
+      0.5026548245743669,
+      0.6283185307179586,
+      0.7539822368615503,
+      0.8796459430051421,
+      1.0053096491487339,
+      1.1309733552923256,
+      1.2566370614359172,
+      1.382300767579509,
+      1.5079644737231006,
+      1.6336281798666925,
+      1.7592918860102842,
+      1.8849555921538756,
+      2.0106192982974678,
+      2.1362830044410597,
+      2.261946710584651,
+      2.3876104167282426,
+      2.5132741228718345,
+      2.6389378290154264,
+      2.764601535159018,
+      2.8902652413026093,
+      3.015928947446201,
+      3.141592653589793,
+      3.267256359733385,
+      3.3929200658769765,
+      3.5185837720205684,
+      3.6442474781641603,
+      3.7699111843077513,
+      3.895574890451343,
+      4.0212385965949355,
+      4.1469023027385274,
+      4.272566008882119,
+      4.39822971502571,
+      4.523893421169302,
+      4.649557127312894,
+      4.775220833456485,
+      4.900884539600077,
+      5.026548245743669,
+      5.15221195188726,
+      5.277875658030853,
+      5.403539364174444,
+      5.529203070318036,
+      5.654866776461628,
+      5.780530482605219,
+      5.906194188748811,
+      6.031857894892402,
+      6.157521601035994
+    ],
+    "extra_phase_pi_over_2": 1.5707963267948966,
+    "primary_IPR": "sum over j,spin of |psi_jspin(tau=0)|^4",
+    "primary_Dn": "-ln(IPR)/ln(L=89); can exceed one",
+    "zero_frequency": "frozen static Hamiltonian; quasienergy and Floquet outer statistics NaN",
+    "zero_frozen_hoppings": "t=1.8, Delta=0.5+0.8*cos(phi)",
+    "outer_count": 36,
+    "outer_rule": "omega>0: highest 36 absolute centered-zone quasienergies",
+    "static_baseline": "undriven H0 separately for each V; mean of individual Dn",
+    "initial_steps": 32,
+    "max_steps": 32768,
+    "integration_order": 6,
+    "integration_backend": "reflection-preserving native bond/star gates; FFT independently validated",
+    "operator_tolerance": 1e-06,
+    "mode_tolerance": 0.0001,
+    "mean_tolerance": 1e-05,
+    "code_sha256": {
+      "model.py": "2a8b4ae6cc5d3cf299145170929a4f503214160fb05f93b8cd80501f366b11ef",
+      "frequency_solver.py": "ec2c2a03bbe450378d2d9769f6d373cf77bb1293e232031ece71cabc1d77de5b",
+      "frequency_fast_native.py": "d4a72c302cafabc8a8be4708b88c1b95f921609c0a381b8dfabc1a3abd8a244b",
+      "frequency_baselines.py": "d397227257f6616803598469748c78fc92510150f350fb3df4d3c7b68b8ba59b",
+      "scan_frequency_phases.py": "460653ecf6769f79cbc498870ab47fe6719f34d27574ea50d2025b5512c8f7b4"
+    },
+    "raw_wavefunctions": "lossless symmetry-sector coefficients plus supplied reconstruction code"
+  },
+  "input_sha256": {
+    "frequency_phase_scan.npz": "827d42eb9f028475948d9a3bdb4bacc75aed188ea779d2c2196163bc2c0a97b0",
+    "frequency_phase_slices.npz": "85246fa60851eea0734d1a9f9e51cefc7eb2deebc64aed136c8a31fe2217cafd",
+    "baselines.npz": "060c3b3cabf715dac9d0666f261b4d8378610aefb9516cf133901998873b0842"
+  },
+  "analyzer_sha256": "776a29f1509be114170037553d29f7417ddf21c1e018678c2c5913c3c8f97a8f"
+}

@@ -1,5 +1,20 @@
 # Floquet 数值结果与下载
 
+## 最新：三种静态基准相的无量纲频率—相位扫描
+
+- [完整中文报告与五项比较问题](raman_floquet/results/frequency_phase_three_V/research_report_zh.md)
+- [下载全部高清图片、矢量PDF、报告及源码](https://github.com/unique-159753/god/raw/refs/heads/main/raman_floquet/results/frequency_phase_three_V/frequency_three_V_figures_report_code.zip)
+- [全部CSV/NPZ、原始本征态及收敛检查](raman_floquet/results/frequency_phase_three_V)
+- [复现与数据定义](raman_floquet/results/frequency_phase_three_V/README.md)
+
+固定L=89、A=B=0.8、W=0，分别取V=0.5、2、4。无量纲ω/t₀=0…10、50点，φ有50个不重复周期点；三组7500点，另真实补算150个π/2切线点。主IPR为自旋分辨定义，Dn=−lnIPR/ln89。ω0只计算冻结静态H，外侧Floquet指标为NaN。
+
+Critical基准整体相位敏感性最大；Localized基准相对H₀的总体变化最大，最大ΔDn约+0.53325。V4在ω6…10仍有明显的一阶有效模型残差。所有结果为有限尺寸指标，未据此断言新相变。生产使用自适应真实时间有序演化，非零频率最终M=64…4096；独立ODE和相位/跨方法核对见报告。
+
+![三相同色标频率—相位响应](raman_floquet/results/frequency_phase_three_V/three_V_frequency_phase_summary.png)
+
+下方保留此前各次计算，其IPR及Dn定义以各自报告为准。
+
 ## 最新计算：双驱动 Raman 晶格的一光子共振与相位干涉
 
 - [中文科研报告：六个问题、真实数值和误差说明](raman_floquet/results/research_report_zh.md)

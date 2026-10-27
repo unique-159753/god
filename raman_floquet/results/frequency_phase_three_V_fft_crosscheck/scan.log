@@ -1,0 +1,33 @@
+Baselines V=0.5: H0 mean Dn=0.930997816; 50 frozen phases
+Baselines V=2: H0 mean Dn=0.793217607; 50 frozen phases
+Baselines V=4: H0 mean Dn=0.381550150; 50 frozen phases
+50/7650 V=0.5 phi/pi=0 omega=10 M=64 elapsed=18.4s nonconverged=0
+100/7650 V=0.5 phi/pi=0.04 omega=10 M=64 elapsed=36.5s nonconverged=0
+150/7650 V=0.5 phi/pi=0.08 omega=10 M=64 elapsed=56.4s nonconverged=0
+200/7650 V=0.5 phi/pi=0.12 omega=10 M=64 elapsed=74.6s nonconverged=0
+250/7650 V=0.5 phi/pi=0.16 omega=10 M=64 elapsed=92.8s nonconverged=0
+300/7650 V=0.5 phi/pi=0.2 omega=10 M=64 elapsed=110.6s nonconverged=0
+350/7650 V=0.5 phi/pi=0.24 omega=10 M=64 elapsed=128.9s nonconverged=0
+400/7650 V=0.5 phi/pi=0.28 omega=10 M=64 elapsed=147.1s nonconverged=0
+450/7650 V=0.5 phi/pi=0.32 omega=10 M=64 elapsed=164.6s nonconverged=0
+500/7650 V=0.5 phi/pi=0.36 omega=10 M=64 elapsed=182.8s nonconverged=0
+550/7650 V=0.5 phi/pi=0.4 omega=10 M=64 elapsed=200.8s nonconverged=0
+600/7650 V=0.5 phi/pi=0.44 omega=10 M=64 elapsed=219.0s nonconverged=0
+650/7650 V=0.5 phi/pi=0.48 omega=10 M=64 elapsed=236.7s nonconverged=0
+700/7650 V=0.5 phi/pi=0.52 omega=10 M=64 elapsed=255.2s nonconverged=0
+750/7650 V=0.5 phi/pi=0.56 omega=10 M=64 elapsed=272.5s nonconverged=0
+800/7650 V=0.5 phi/pi=0.6 omega=10 M=64 elapsed=291.7s nonconverged=0
+850/7650 V=0.5 phi/pi=0.64 omega=10 M=64 elapsed=310.5s nonconverged=0
+900/7650 V=0.5 phi/pi=0.68 omega=10 M=64 elapsed=328.2s nonconverged=0
+950/7650 V=0.5 phi/pi=0.72 omega=10 M=64 elapsed=346.9s nonconverged=0
+1000/7650 V=0.5 phi/pi=0.76 omega=10 M=64 elapsed=365.2s nonconverged=0
+1050/7650 V=0.5 phi/pi=0.8 omega=10 M=64 elapsed=382.6s nonconverged=0
+1100/7650 V=0.5 phi/pi=0.84 omega=10 M=64 elapsed=400.0s nonconverged=0
+1150/7650 V=0.5 phi/pi=0.88 omega=10 M=64 elapsed=417.9s nonconverged=0
+1200/7650 V=0.5 phi/pi=0.92 omega=10 M=64 elapsed=436.7s nonconverged=0
+1250/7650 V=0.5 phi/pi=0.96 omega=10 M=64 elapsed=457.0s nonconverged=0
+1300/7650 V=0.5 phi/pi=1 omega=10 M=64 elapsed=478.8s nonconverged=0
+1350/7650 V=0.5 phi/pi=1.04 omega=10 M=64 elapsed=496.9s nonconverged=0
+1400/7650 V=0.5 phi/pi=1.08 omega=10 M=64 elapsed=515.6s nonconverged=0
+1450/7650 V=0.5 phi/pi=1.12 omega=10 M=64 elapsed=534.1s nonconverged=0
+1500/7650 V=0.5 phi/pi=1.16 omega=10 M=64 elapsed=551.8s nonconverged=0

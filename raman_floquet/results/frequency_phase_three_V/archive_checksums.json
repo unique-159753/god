@@ -1,0 +1,14 @@
+{
+  "frequency_three_V_complete_data.zip": {
+    "bytes": 1295615041,
+    "sha256": "09be0014cd3cf6331e85c8d275135136630fc75e906cb9791e7d12033a26f6dd",
+    "members": 7739,
+    "CRC_passed": true
+  },
+  "frequency_three_V_figures_report_code.zip": {
+    "bytes": 5424634,
+    "sha256": "9e081888da30a78a23da69310c126c97ed9f7506189bd14d3f84f759a5134b5f",
+    "members": 74,
+    "CRC_passed": true
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "python": "3.12.14",
+  "libraries": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "threadpoolctl": "3.6.0",
+    "Pillow": "12.3.0"
+  },
+  "source_files": [
+    "analyze_frequency_scan.py",
+    "frequency_baselines.py",
+    "frequency_fast_native.py",
+    "frequency_solver.py",
+    "method_benchmark.py",
+    "model.py",
+    "package_frequency_results.py",
+    "plot_frequency_phases.py",
+    "read_frequency_point.py",
+    "requirements.txt",
+    "run_frequency_three_V.sh",
+    "scan_frequency_phases.py",
+    "validate_frequency_fast_native.py",
+    "validate_frequency_order6.py",
+    "validate_frequency_scan.py",
+    "validate_frequency_solver.py",
+    "write_frequency_report.py"
+  ],
+  "figures": [
+    {
+      "png": "three_V_delta_mean_Dn.png",
+      "pdf": "three_V_delta_mean_Dn.pdf",
+      "pixels": [
+        4933,
+        1713
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    },
+    {
+      "png": "three_V_exact_minus_effective_residual.png",
+      "pdf": "three_V_exact_minus_effective_residual.pdf",
+      "pixels": [
+        4878,
+        2856
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    },
+    {
+      "png": "three_V_frequency_cuts.png",
+      "pdf": "three_V_frequency_cuts.pdf",
+      "pixels": [
+        4963,
+        4148
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    },
+    {
+      "png": "three_V_frequency_phase_summary.png",
+      "pdf": "three_V_frequency_phase_summary.pdf",
+      "pixels": [
+        4965,
+        4798
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    },
+    {
+      "png": "three_V_high_frequency_effective_control.png",
+      "pdf": "three_V_high_frequency_effective_control.pdf",
+      "pixels": [
+        4991,
+        2414
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    },
+    {
+      "png": "three_V_mean_Dn.png",
+      "pdf": "three_V_mean_Dn.pdf",
+      "pixels": [
+        4892,
+        1713
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    },
+    {
+      "png": "three_V_mean_IPR.png",
+      "pdf": "three_V_mean_IPR.pdf",
+      "pixels": [
+        4946,
+        1713
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    },
+    {
+      "png": "three_V_outer_Dn.png",
+      "pdf": "three_V_outer_Dn.pdf",
+      "pixels": [
+        4891,
+        1713
+      ],
+      "dpi": [
+        350.012,
+        350.012
+      ]
+    }
+  ],
+  "data_definition": "spin-resolved IPR, Dn=-ln(IPR)/ln89; omega dimensionless",
+  "zero_frequency": "genuine frozen static states, outer Floquet metrics NaN",
+  "wavefunction_storage": "lossless sector coefficients; read_frequency_point reconstructs all178 modes",
+  "finite_size_limit": "L=89 only; no claim of a thermodynamic phase transition"
+}

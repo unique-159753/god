@@ -3,5 +3,7 @@
 /raman_floquet/.mplconfig/
 __pycache__/
 *.py[cod]
+*.tmp.npz
 # Full duplicate archive is kept locally; all of its scientific files are tracked.
 /raman_floquet/results/raman_floquet_full_results.zip
+/raman_floquet/results/frequency_phase_three_V/frequency_three_V_complete_data.zip

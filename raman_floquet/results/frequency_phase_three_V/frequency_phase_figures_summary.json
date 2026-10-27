@@ -1,0 +1,69 @@
+{
+  "source": "frequency_phase_scan.npz",
+  "V": [
+    0.5,
+    2.0,
+    4.0
+  ],
+  "grid_shape_V_phi_omega": [
+    3,
+    50,
+    50
+  ],
+  "primary_IPR": "sum of fourth powers over all 2L spin-resolved amplitudes",
+  "primary_Dn": "-ln(IPR)/ln(89)",
+  "Dn_probability_upper_bound": 1.15442266280111,
+  "frequency_axis": "dimensionless omega/t0, 50 points inclusive 0 and 10; no Hz assumption",
+  "phase_closure": "Only first data row duplicated at 2pi; no data interpolation",
+  "zero_frequency": "Frozen static Hamiltonian; outer Floquet Dn undefined and shown gray",
+  "shared_row_color_bounds": {
+    "all_IPR": [
+      0.0056179775280898875,
+      0.19693696895988028
+    ],
+    "all_Dn": [
+      0.0,
+      1.15442266280111
+    ],
+    "outer_Dn": [
+      0.0,
+      1.15442266280111
+    ],
+    "delta_all_Dn": [
+      -0.533248851950179,
+      0.533248851950179
+    ]
+  },
+  "exact_minus_effective_row_bounds": {
+    "exact_minus_effective_all_Dn": [
+      -0.46657288230874716,
+      0.46657288230874716
+    ],
+    "exact_minus_effective_outer_Dn": [
+      -0.542030022547719,
+      0.542030022547719
+    ]
+  },
+  "files": [
+    "three_V_frequency_phase_summary.png",
+    "three_V_frequency_phase_summary.pdf",
+    "three_V_mean_IPR.png",
+    "three_V_mean_IPR.pdf",
+    "three_V_mean_Dn.png",
+    "three_V_mean_Dn.pdf",
+    "three_V_outer_Dn.png",
+    "three_V_outer_Dn.pdf",
+    "three_V_delta_mean_Dn.png",
+    "three_V_delta_mean_Dn.pdf",
+    "three_V_exact_minus_effective_residual.png",
+    "three_V_exact_minus_effective_residual.pdf",
+    "three_V_frequency_cuts.png",
+    "three_V_frequency_cuts.pdf",
+    "three_V_high_frequency_effective_control.png",
+    "three_V_high_frequency_effective_control.pdf"
+  ],
+  "png_dpi": 350,
+  "pdf_mesh": "vector pcolormesh, rasterized=False",
+  "slices_available": true,
+  "finite_size_note": "Participation diagnostics alone do not establish a phase transition"
+}
